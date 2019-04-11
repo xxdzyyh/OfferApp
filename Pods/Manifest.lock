@@ -1,0 +1,194 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - IQKeyboardManager (6.2.0)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJRefresh (3.1.16)
+  - PromisesObjC (1.2.7)
+  - ReactiveCocoa (2.3):
+    - ReactiveCocoa/UI (= 2.3)
+  - ReactiveCocoa/Core (2.3):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.3)
+  - ReactiveCocoa/UI (2.3):
+    - ReactiveCocoa/Core
+  - SAMKeychain (1.5.3)
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
+  - SVProgressHUD (2.2.5)
+  - XFFoundation (0.0.1):
+    - AFNetworking
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - SAMKeychain
+    - SDCycleScrollView
+    - SVProgressHUD
+    - XFFoundation/AccountManager (= 0.0.1)
+    - XFFoundation/Base (= 0.0.1)
+    - XFFoundation/Category (= 0.0.1)
+    - XFFoundation/Marco (= 0.0.1)
+    - XFFoundation/Plugin (= 0.0.1)
+    - XFFoundation/Request (= 0.0.1)
+    - XFFoundation/Tools (= 0.0.1)
+    - XFFoundation/View (= 0.0.1)
+    - XFFoundation/ViewController (= 0.0.1)
+    - YYModel
+  - XFFoundation/AccountManager (0.0.1):
+    - AFNetworking
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - SAMKeychain
+    - SDCycleScrollView
+    - SVProgressHUD
+    - YYModel
+  - XFFoundation/Base (0.0.1):
+    - AFNetworking
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - SAMKeychain
+    - SDCycleScrollView
+    - SVProgressHUD
+    - YYModel
+  - XFFoundation/Category (0.0.1):
+    - AFNetworking
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - SAMKeychain
+    - SDCycleScrollView
+    - SVProgressHUD
+    - YYModel
+  - XFFoundation/Marco (0.0.1):
+    - AFNetworking
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - SAMKeychain
+    - SDCycleScrollView
+    - SVProgressHUD
+    - YYModel
+  - XFFoundation/Plugin (0.0.1):
+    - AFNetworking
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - SAMKeychain
+    - SDCycleScrollView
+    - SVProgressHUD
+    - YYModel
+  - XFFoundation/Request (0.0.1):
+    - AFNetworking
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - SAMKeychain
+    - SDCycleScrollView
+    - SVProgressHUD
+    - YYModel
+  - XFFoundation/Tools (0.0.1):
+    - AFNetworking
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - SAMKeychain
+    - SDCycleScrollView
+    - SVProgressHUD
+    - YYModel
+  - XFFoundation/View (0.0.1):
+    - AFNetworking
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - SAMKeychain
+    - SDCycleScrollView
+    - SVProgressHUD
+    - YYModel
+  - XFFoundation/ViewController (0.0.1):
+    - AFNetworking
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - SAMKeychain
+    - SDCycleScrollView
+    - SVProgressHUD
+    - YYModel
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - FMDB
+  - PromisesObjC (~> 1.2.7)
+  - ReactiveCocoa (= 2.3)
+  - XFFoundation (from `/Users/xiaoniu/Workspace/XFFoundation`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - FMDB
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - PromisesObjC
+    - ReactiveCocoa
+    - SAMKeychain
+    - SDCycleScrollView
+    - SDWebImage
+    - SVProgressHUD
+    - YYModel
+
+EXTERNAL SOURCES:
+  XFFoundation:
+    :path: "/Users/xiaoniu/Workspace/XFFoundation"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: 7798e16e53a5ef7f332dd05b27664db4e29530fd
+  PromisesObjC: 7b28ddd1e78cce8f80f1ada927d2217663a9c672
+  ReactiveCocoa: 81ee2fb7df2dfc6bd52b5d70473662195e20ca7d
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  XFFoundation: 8ba50dc5a581c324d1e164d3a96677c287705140
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 6159d0df536185b6b07f08fa66bc693740c8e681
+
+COCOAPODS: 1.5.3
