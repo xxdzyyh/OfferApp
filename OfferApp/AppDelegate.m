@@ -18,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //    [SMCallTrace start];
+    
+    [[UIView appearance] setBackgroundColor:[UIColor whiteColor]];
+    
     return YES;
 }
 

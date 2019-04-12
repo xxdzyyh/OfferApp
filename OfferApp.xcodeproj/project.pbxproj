@@ -48,6 +48,7 @@
 		D4CEB6E3225DC6AE007E4B55 /* DoubleDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6E2225DC6AE007E4B55 /* DoubleDemoVC.m */; };
 		D4CEB6E8225DF3D7007E4B55 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6E7225DF3D7007E4B55 /* WebViewController.m */; };
 		D4CEB6E9225ED1A5007E4B55 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = D4CEB6E5225DF322007E4B55 /* test.html */; };
+		D4CEB6ED22606150007E4B55 /* UrlVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6EC22606150007E4B55 /* UrlVC.m */; };
 		D4E26392222CBCB000E24287 /* UIDebuggingInformationOverlay+Enable.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E26391222CBCB000E24287 /* UIDebuggingInformationOverlay+Enable.m */; };
 		D4E263B3222F527D00E24287 /* ClassVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E263B2222F527D00E24287 /* ClassVC.m */; };
 /* End PBXBuildFile section */
@@ -133,6 +134,8 @@
 		D4CEB6E5225DF322007E4B55 /* test.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		D4CEB6E6225DF3D7007E4B55 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		D4CEB6E7225DF3D7007E4B55 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		D4CEB6EB22606150007E4B55 /* UrlVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UrlVC.h; sourceTree = "<group>"; };
+		D4CEB6EC22606150007E4B55 /* UrlVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UrlVC.m; sourceTree = "<group>"; };
 		D4E26391222CBCB000E24287 /* UIDebuggingInformationOverlay+Enable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDebuggingInformationOverlay+Enable.m"; sourceTree = "<group>"; };
 		D4E263B1222F527D00E24287 /* ClassVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassVC.h; sourceTree = "<group>"; };
 		D4E263B2222F527D00E24287 /* ClassVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassVC.m; sourceTree = "<group>"; };
@@ -283,6 +286,7 @@
 		D47F28D6216EF5C800424800 /* OfferApp */ = {
 			isa = PBXGroup;
 			children = (
+				D4CEB6EA2260612B007E4B55 /* URL */,
 				D4CEB6E4225DF250007E4B55 /* WKWebview */,
 				D4CEB6E0225DC68B007E4B55 /* Double */,
 				D41F8D41224C617500555B63 /* Crash */,
@@ -381,6 +385,15 @@
 				D4CEB6E7225DF3D7007E4B55 /* WebViewController.m */,
 			);
 			path = WKWebview;
+			sourceTree = "<group>";
+		};
+		D4CEB6EA2260612B007E4B55 /* URL */ = {
+			isa = PBXGroup;
+			children = (
+				D4CEB6EB22606150007E4B55 /* UrlVC.h */,
+				D4CEB6EC22606150007E4B55 /* UrlVC.m */,
+			);
+			path = URL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -510,6 +523,7 @@
 				D44805F1224320C400184A7D /* SMStackCell.m in Sources */,
 				D4E263B3222F527D00E24287 /* ClassVC.m in Sources */,
 				D41F8D44224C619000555B63 /* CrashVC.m in Sources */,
+				D4CEB6ED22606150007E4B55 /* UrlVC.m in Sources */,
 				D44805F3224320C400184A7D /* SMCallStack.m in Sources */,
 				D47F28DC216EF5C800424800 /* ViewController.m in Sources */,
 				D47F28E7216EF5CA00424800 /* main.m in Sources */,
