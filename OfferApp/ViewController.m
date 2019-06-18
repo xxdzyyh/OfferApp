@@ -23,7 +23,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    self.dataSources = @[@{@"type" : @(ActionTypeController),@"value" : @"UrlVC",@"desc":@"url相关"},
+    self.dataSources = @[@{@"type" : @(ActionTypeController),@"value" : @"AssembleVC",@"desc":@"汇编"},
+                         @{@"type" : @(ActionTypeController),@"value" : @"CarthageVC",@"desc":@"carthage"},
+                         @{@"type" : @(ActionTypeController),@"value" : @"CViewController",@"desc":@"C语言相关"},
+                         @{@"type" : @(ActionTypeController),@"value" : @"UrlVC",@"desc":@"url相关"},
                          @{@"type" : @(ActionTypeController),@"value" : @"WebViewController",@"desc":@"WKWebView"},
                          @{@"type" : @(ActionTypeController),@"value" : @"MultiThreadVC",@"desc":@"多线程"},
                          @{@"type" : @(ActionTypeController),@"value" : @"KeywordVC",@"desc":@"关键字"},

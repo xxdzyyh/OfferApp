@@ -8,137 +8,165 @@
 
 /* Begin PBXBuildFile section */
 		7FCA1BB4B2CAB6F78F15E32A /* libPods-OfferApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 447797FAC45F44447C6E5313 /* libPods-OfferApp.a */; };
-		D41F8D44224C619000555B63 /* CrashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D41F8D43224C619000555B63 /* CrashVC.m */; };
-		D4480422223789E700184A7D /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4480421223789E700184A7D /* GroupViewController.m */; };
-		D44805C5223BA32B00184A7D /* MemoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D44805C4223BA32B00184A7D /* MemoryVC.m */; };
-		D44805C8223BA37100184A7D /* MemoryObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D44805C7223BA37100184A7D /* MemoryObj.m */; };
-		D44805CC223F287200184A7D /* RunloopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D44805CB223F287200184A7D /* RunloopVC.m */; };
-		D44805EA224320C400184A7D /* SMCallStackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D44805CF224320C400184A7D /* SMCallStackModel.m */; };
-		D44805EB224320C400184A7D /* SMLagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D44805D2224320C400184A7D /* SMLagButton.m */; };
-		D44805EC224320C400184A7D /* SMLagDB.m in Sources */ = {isa = PBXBuildFile; fileRef = D44805D3224320C400184A7D /* SMLagDB.m */; };
-		D44805ED224320C400184A7D /* SMCPUMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = D44805D5224320C400184A7D /* SMCPUMonitor.m */; };
-		D44805EE224320C400184A7D /* SMCallTraceTimeCostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D44805DA224320C400184A7D /* SMCallTraceTimeCostModel.m */; };
-		D44805EF224320C400184A7D /* SMLagMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = D44805DD224320C400184A7D /* SMLagMonitor.m */; };
-		D44805F0224320C400184A7D /* SMCallTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = D44805DE224320C400184A7D /* SMCallTrace.m */; };
-		D44805F1224320C400184A7D /* SMStackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D44805E0224320C400184A7D /* SMStackCell.m */; };
-		D44805F2224320C400184A7D /* SMStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D44805E1224320C400184A7D /* SMStackViewController.m */; };
-		D44805F3224320C400184A7D /* SMCallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D44805E2224320C400184A7D /* SMCallStack.m */; };
-		D44805F4224320C400184A7D /* SMClsCallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D44805E5224320C400184A7D /* SMClsCallCell.m */; };
-		D44805F5224320C400184A7D /* SMCallTraceCore.c in Sources */ = {isa = PBXBuildFile; fileRef = D44805E6224320C400184A7D /* SMCallTraceCore.c */; };
-		D44805F6224320C400184A7D /* SMCallLib.m in Sources */ = {isa = PBXBuildFile; fileRef = D44805E7224320C400184A7D /* SMCallLib.m */; };
-		D44805F7224320C400184A7D /* SMClsCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D44805E9224320C400184A7D /* SMClsCallViewController.m */; };
-		D44805FB2243610500184A7D /* CrashCollectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D44805FA2243610500184A7D /* CrashCollectVC.m */; };
-		D46771232223F3CE000FF23E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D46771222223F3CE000FF23E /* BaseViewController.m */; };
-		D46771262223F46C000FF23E /* Sub.m in Sources */ = {isa = PBXBuildFile; fileRef = D46771252223F46C000FF23E /* Sub.m */; };
-		D46771292223F4E3000FF23E /* UIViewController+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = D46771282223F4E3000FF23E /* UIViewController+Log.m */; };
-		D47F28D9216EF5C800424800 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D47F28D8216EF5C800424800 /* AppDelegate.m */; };
-		D47F28DC216EF5C800424800 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47F28DB216EF5C800424800 /* ViewController.m */; };
-		D47F28DF216EF5C800424800 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47F28DD216EF5C800424800 /* Main.storyboard */; };
-		D47F28E1216EF5CA00424800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47F28E0216EF5CA00424800 /* Assets.xcassets */; };
-		D47F28E4216EF5CA00424800 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47F28E2216EF5CA00424800 /* LaunchScreen.storyboard */; };
-		D47F28E7216EF5CA00424800 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D47F28E6216EF5CA00424800 /* main.m */; };
-		D47F28F8216F3E6400424800 /* MultiThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D47F28F7216F3E6400424800 /* MultiThreadVC.m */; };
-		D47F28FD217030FB00424800 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = D47F28FC217030FB00424800 /* Father.m */; };
-		D47F29002170310A00424800 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = D47F28FF2170310A00424800 /* Son.m */; };
-		D47F2904217037D200424800 /* KeywordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D47F2903217037D200424800 /* KeywordVC.m */; };
-		D47F2908217039A200424800 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47F2907217039A200424800 /* KVOViewController.m */; };
-		D48FD77D2249C30900F98977 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D48FD77C2249C30900F98977 /* MyViewController.m */; };
-		D4CEB6D8225C393A007E4B55 /* RuntimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6D7225C393A007E4B55 /* RuntimeVC.m */; };
-		D4CEB6DB225C3991007E4B55 /* RPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6DA225C3991007E4B55 /* RPerson.m */; };
-		D4CEB6E3225DC6AE007E4B55 /* DoubleDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6E2225DC6AE007E4B55 /* DoubleDemoVC.m */; };
-		D4CEB6E8225DF3D7007E4B55 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6E7225DF3D7007E4B55 /* WebViewController.m */; };
-		D4CEB6E9225ED1A5007E4B55 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = D4CEB6E5225DF322007E4B55 /* test.html */; };
-		D4CEB6ED22606150007E4B55 /* UrlVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB6EC22606150007E4B55 /* UrlVC.m */; };
-		D4E26392222CBCB000E24287 /* UIDebuggingInformationOverlay+Enable.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E26391222CBCB000E24287 /* UIDebuggingInformationOverlay+Enable.m */; };
-		D4E263B3222F527D00E24287 /* ClassVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E263B2222F527D00E24287 /* ClassVC.m */; };
+		D44C824C22B8E4C80001BB79 /* runloop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D44C824B22B8E4C80001BB79 /* runloop.jpg */; };
+		D4672E3922962B3B00A5DE44 /* CrashCollectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DC522962B3B00A5DE44 /* CrashCollectVC.m */; };
+		D4672E3A22962B3B00A5DE44 /* MemoryObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DC922962B3B00A5DE44 /* MemoryObj.m */; };
+		D4672E3B22962B3B00A5DE44 /* MemoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DCB22962B3B00A5DE44 /* MemoryVC.m */; };
+		D4672E3C22962B3B00A5DE44 /* RunloopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DCE22962B3B00A5DE44 /* RunloopVC.m */; };
+		D4672E3D22962B3B00A5DE44 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DD122962B3B00A5DE44 /* BaseViewController.m */; };
+		D4672E3E22962B3B00A5DE44 /* UIViewController+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DD322962B3B00A5DE44 /* UIViewController+Log.m */; };
+		D4672E3F22962B3B00A5DE44 /* Sub.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DD422962B3B00A5DE44 /* Sub.m */; };
+		D4672E4022962B3B00A5DE44 /* UIDebuggingInformationOverlay+Enable.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DD622962B3B00A5DE44 /* UIDebuggingInformationOverlay+Enable.m */; };
+		D4672E4122962B3B00A5DE44 /* AssembleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DD822962B3B00A5DE44 /* AssembleVC.m */; };
+		D4672E4222962B3B00A5DE44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4672DDA22962B3B00A5DE44 /* Assets.xcassets */; };
+		D4672E4322962B3B00A5DE44 /* RuntimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DDC22962B3B00A5DE44 /* RuntimeVC.m */; };
+		D4672E4422962B3B00A5DE44 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DDD22962B3B00A5DE44 /* KVOViewController.m */; };
+		D4672E4522962B3B00A5DE44 /* RPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DE122962B3B00A5DE44 /* RPerson.m */; };
+		D4672E4622962B3B00A5DE44 /* CarthageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DE322962B3B00A5DE44 /* CarthageVC.m */; };
+		D4672E4722962B3B00A5DE44 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DE522962B3B00A5DE44 /* ViewController.m */; };
+		D4672E4822962B3B00A5DE44 /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DE722962B3B00A5DE44 /* GroupViewController.m */; };
+		D4672E4922962B3B00A5DE44 /* CrashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DEB22962B3B00A5DE44 /* CrashVC.m */; };
+		D4672E4A22962B3B00A5DE44 /* NumberViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DF122962B3B00A5DE44 /* NumberViewModel.m */; };
+		D4672E4B22962B3B00A5DE44 /* NumberItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DF222962B3B00A5DE44 /* NumberItemCell.m */; };
+		D4672E4C22962B3B00A5DE44 /* NumberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DF322962B3B00A5DE44 /* NumberCell.m */; };
+		D4672E4D22962B3B00A5DE44 /* BugVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DF422962B3B00A5DE44 /* BugVC.m */; };
+		D4672E4E22962B3B00A5DE44 /* CollectionOffsetBugVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DF522962B3B00A5DE44 /* CollectionOffsetBugVC.m */; };
+		D4672E4F22962B3B00A5DE44 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DF822962B3B00A5DE44 /* WebViewController.m */; };
+		D4672E5022962B3B00A5DE44 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = D4672DF922962B3B00A5DE44 /* test.html */; };
+		D4672E5122962B3B00A5DE44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4672DFB22962B3B00A5DE44 /* LaunchScreen.storyboard */; };
+		D4672E5222962B3B00A5DE44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4672DFD22962B3B00A5DE44 /* Main.storyboard */; };
+		D4672E5322962B3B00A5DE44 /* UrlVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E0122962B3B00A5DE44 /* UrlVC.m */; };
+		D4672E5422962B3B00A5DE44 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E0422962B3B00A5DE44 /* MyViewController.m */; };
+		D4672E5522962B3B00A5DE44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E0522962B3B00A5DE44 /* main.m */; };
+		D4672E5622962B3B00A5DE44 /* DoubleDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E0722962B3B00A5DE44 /* DoubleDemoVC.m */; };
+		D4672E5722962B3B00A5DE44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E0922962B3B00A5DE44 /* AppDelegate.m */; };
+		D4672E5822962B3B00A5DE44 /* SMCallStackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E0C22962B3B00A5DE44 /* SMCallStackModel.m */; };
+		D4672E5922962B3B00A5DE44 /* SMLagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E0F22962B3B00A5DE44 /* SMLagButton.m */; };
+		D4672E5A22962B3B00A5DE44 /* SMLagDB.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E1022962B3B00A5DE44 /* SMLagDB.m */; };
+		D4672E5B22962B3B00A5DE44 /* SMCPUMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E1222962B3B00A5DE44 /* SMCPUMonitor.m */; };
+		D4672E5C22962B3B00A5DE44 /* SMCallTraceTimeCostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E1722962B3B00A5DE44 /* SMCallTraceTimeCostModel.m */; };
+		D4672E5D22962B3B00A5DE44 /* SMLagMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E1A22962B3B00A5DE44 /* SMLagMonitor.m */; };
+		D4672E5E22962B3B00A5DE44 /* SMCallTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E1B22962B3B00A5DE44 /* SMCallTrace.m */; };
+		D4672E5F22962B3B00A5DE44 /* SMStackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E1D22962B3B00A5DE44 /* SMStackCell.m */; };
+		D4672E6022962B3B00A5DE44 /* SMStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E1E22962B3B00A5DE44 /* SMStackViewController.m */; };
+		D4672E6122962B3B00A5DE44 /* SMCallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E1F22962B3B00A5DE44 /* SMCallStack.m */; };
+		D4672E6222962B3B00A5DE44 /* SMClsCallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E2222962B3B00A5DE44 /* SMClsCallCell.m */; };
+		D4672E6322962B3B00A5DE44 /* SMCallTraceCore.c in Sources */ = {isa = PBXBuildFile; fileRef = D4672E2322962B3B00A5DE44 /* SMCallTraceCore.c */; };
+		D4672E6422962B3B00A5DE44 /* SMCallLib.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E2422962B3B00A5DE44 /* SMCallLib.m */; };
+		D4672E6522962B3B00A5DE44 /* SMClsCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E2622962B3B00A5DE44 /* SMClsCallViewController.m */; };
+		D4672E6622962B3B00A5DE44 /* KeywordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E2822962B3B00A5DE44 /* KeywordVC.m */; };
+		D4672E6722962B3B00A5DE44 /* ClassVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E2922962B3B00A5DE44 /* ClassVC.m */; };
+		D4672E6822962B3B00A5DE44 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E2D22962B3B00A5DE44 /* Father.m */; };
+		D4672E6922962B3B00A5DE44 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E2E22962B3B00A5DE44 /* Son.m */; };
+		D4672E6A22962B3B00A5DE44 /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E3322962B3B00A5DE44 /* CViewController.m */; };
+		D4672E6B22962B3B00A5DE44 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4672E3422962B3B00A5DE44 /* Info.plist */; };
+		D4672E6C22962B3B00A5DE44 /* MultiThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E3722962B3B00A5DE44 /* MultiThreadVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3EDEADCF0F9B431238999766 /* Pods-OfferApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfferApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OfferApp/Pods-OfferApp.debug.xcconfig"; sourceTree = "<group>"; };
 		447797FAC45F44447C6E5313 /* libPods-OfferApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OfferApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EF2A1949D334438935EFF19 /* Pods-OfferApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfferApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-OfferApp/Pods-OfferApp.release.xcconfig"; sourceTree = "<group>"; };
-		D41F8D42224C619000555B63 /* CrashVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashVC.h; sourceTree = "<group>"; };
-		D41F8D43224C619000555B63 /* CrashVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashVC.m; sourceTree = "<group>"; };
-		D4480420223789E700184A7D /* GroupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupViewController.h; sourceTree = "<group>"; };
-		D4480421223789E700184A7D /* GroupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupViewController.m; sourceTree = "<group>"; };
-		D44805C3223BA32B00184A7D /* MemoryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryVC.h; sourceTree = "<group>"; };
-		D44805C4223BA32B00184A7D /* MemoryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryVC.m; sourceTree = "<group>"; };
-		D44805C6223BA37100184A7D /* MemoryObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryObj.h; sourceTree = "<group>"; };
-		D44805C7223BA37100184A7D /* MemoryObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryObj.m; sourceTree = "<group>"; };
-		D44805CA223F287200184A7D /* RunloopVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopVC.h; sourceTree = "<group>"; };
-		D44805CB223F287200184A7D /* RunloopVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopVC.m; sourceTree = "<group>"; };
-		D44805CE224320C400184A7D /* SMStackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMStackCell.h; sourceTree = "<group>"; };
-		D44805CF224320C400184A7D /* SMCallStackModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallStackModel.m; sourceTree = "<group>"; };
-		D44805D0224320C400184A7D /* SMCallTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallTrace.h; sourceTree = "<group>"; };
-		D44805D1224320C400184A7D /* SMLagMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLagMonitor.h; sourceTree = "<group>"; };
-		D44805D2224320C400184A7D /* SMLagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLagButton.m; sourceTree = "<group>"; };
-		D44805D3224320C400184A7D /* SMLagDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLagDB.m; sourceTree = "<group>"; };
-		D44805D4224320C400184A7D /* SMCallStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallStack.h; sourceTree = "<group>"; };
-		D44805D5224320C400184A7D /* SMCPUMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCPUMonitor.m; sourceTree = "<group>"; };
-		D44805D6224320C400184A7D /* SMStackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMStackViewController.h; sourceTree = "<group>"; };
-		D44805D7224320C400184A7D /* SMCallTraceCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallTraceCore.h; sourceTree = "<group>"; };
-		D44805D8224320C400184A7D /* SMClsCallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMClsCallCell.h; sourceTree = "<group>"; };
-		D44805D9224320C400184A7D /* SMClsCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMClsCallViewController.h; sourceTree = "<group>"; };
-		D44805DA224320C400184A7D /* SMCallTraceTimeCostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallTraceTimeCostModel.m; sourceTree = "<group>"; };
-		D44805DB224320C400184A7D /* SMCallLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallLib.h; sourceTree = "<group>"; };
-		D44805DC224320C400184A7D /* SMLagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLagButton.h; sourceTree = "<group>"; };
-		D44805DD224320C400184A7D /* SMLagMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLagMonitor.m; sourceTree = "<group>"; };
-		D44805DE224320C400184A7D /* SMCallTrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallTrace.m; sourceTree = "<group>"; };
-		D44805DF224320C400184A7D /* SMCallStackModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallStackModel.h; sourceTree = "<group>"; };
-		D44805E0224320C400184A7D /* SMStackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMStackCell.m; sourceTree = "<group>"; };
-		D44805E1224320C400184A7D /* SMStackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMStackViewController.m; sourceTree = "<group>"; };
-		D44805E2224320C400184A7D /* SMCallStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallStack.m; sourceTree = "<group>"; };
-		D44805E3224320C400184A7D /* SMCPUMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCPUMonitor.h; sourceTree = "<group>"; };
-		D44805E4224320C400184A7D /* SMLagDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLagDB.h; sourceTree = "<group>"; };
-		D44805E5224320C400184A7D /* SMClsCallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMClsCallCell.m; sourceTree = "<group>"; };
-		D44805E6224320C400184A7D /* SMCallTraceCore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SMCallTraceCore.c; sourceTree = "<group>"; };
-		D44805E7224320C400184A7D /* SMCallLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallLib.m; sourceTree = "<group>"; };
-		D44805E8224320C400184A7D /* SMCallTraceTimeCostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallTraceTimeCostModel.h; sourceTree = "<group>"; };
-		D44805E9224320C400184A7D /* SMClsCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMClsCallViewController.m; sourceTree = "<group>"; };
-		D44805F92243610500184A7D /* CrashCollectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashCollectVC.h; sourceTree = "<group>"; };
-		D44805FA2243610500184A7D /* CrashCollectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashCollectVC.m; sourceTree = "<group>"; };
-		D46771212223F3CE000FF23E /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		D46771222223F3CE000FF23E /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		D46771242223F46C000FF23E /* Sub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sub.h; sourceTree = "<group>"; };
-		D46771252223F46C000FF23E /* Sub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sub.m; sourceTree = "<group>"; };
-		D46771272223F4E3000FF23E /* UIViewController+Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Log.h"; sourceTree = "<group>"; };
-		D46771282223F4E3000FF23E /* UIViewController+Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Log.m"; sourceTree = "<group>"; };
+		D44C824B22B8E4C80001BB79 /* runloop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = runloop.jpg; sourceTree = "<group>"; };
+		D4672DC322962B3B00A5DE44 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D4672DC522962B3B00A5DE44 /* CrashCollectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashCollectVC.m; sourceTree = "<group>"; };
+		D4672DC622962B3B00A5DE44 /* CrashCollectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashCollectVC.h; sourceTree = "<group>"; };
+		D4672DC822962B3B00A5DE44 /* MemoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryVC.h; sourceTree = "<group>"; };
+		D4672DC922962B3B00A5DE44 /* MemoryObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryObj.m; sourceTree = "<group>"; };
+		D4672DCA22962B3B00A5DE44 /* MemoryObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryObj.h; sourceTree = "<group>"; };
+		D4672DCB22962B3B00A5DE44 /* MemoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryVC.m; sourceTree = "<group>"; };
+		D4672DCD22962B3B00A5DE44 /* RunloopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunloopVC.h; sourceTree = "<group>"; };
+		D4672DCE22962B3B00A5DE44 /* RunloopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunloopVC.m; sourceTree = "<group>"; };
+		D4672DD022962B3B00A5DE44 /* UIViewController+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Log.h"; sourceTree = "<group>"; };
+		D4672DD122962B3B00A5DE44 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		D4672DD222962B3B00A5DE44 /* Sub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sub.h; sourceTree = "<group>"; };
+		D4672DD322962B3B00A5DE44 /* UIViewController+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Log.m"; sourceTree = "<group>"; };
+		D4672DD422962B3B00A5DE44 /* Sub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sub.m; sourceTree = "<group>"; };
+		D4672DD522962B3B00A5DE44 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		D4672DD622962B3B00A5DE44 /* UIDebuggingInformationOverlay+Enable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDebuggingInformationOverlay+Enable.m"; sourceTree = "<group>"; };
+		D4672DD822962B3B00A5DE44 /* AssembleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssembleVC.m; sourceTree = "<group>"; };
+		D4672DD922962B3B00A5DE44 /* AssembleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssembleVC.h; sourceTree = "<group>"; };
+		D4672DDA22962B3B00A5DE44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4672DDC22962B3B00A5DE44 /* RuntimeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeVC.m; sourceTree = "<group>"; };
+		D4672DDD22962B3B00A5DE44 /* KVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
+		D4672DDE22962B3B00A5DE44 /* RPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPerson.h; sourceTree = "<group>"; };
+		D4672DDF22962B3B00A5DE44 /* KVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
+		D4672DE022962B3B00A5DE44 /* RuntimeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeVC.h; sourceTree = "<group>"; };
+		D4672DE122962B3B00A5DE44 /* RPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPerson.m; sourceTree = "<group>"; };
+		D4672DE322962B3B00A5DE44 /* CarthageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarthageVC.m; sourceTree = "<group>"; };
+		D4672DE422962B3B00A5DE44 /* CarthageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarthageVC.h; sourceTree = "<group>"; };
+		D4672DE522962B3B00A5DE44 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D4672DE722962B3B00A5DE44 /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupViewController.m; sourceTree = "<group>"; };
+		D4672DE822962B3B00A5DE44 /* GroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupViewController.h; sourceTree = "<group>"; };
+		D4672DEA22962B3B00A5DE44 /* CrashVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashVC.h; sourceTree = "<group>"; };
+		D4672DEB22962B3B00A5DE44 /* CrashVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashVC.m; sourceTree = "<group>"; };
+		D4672DED22962B3B00A5DE44 /* NumberItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberItemCell.h; sourceTree = "<group>"; };
+		D4672DEE22962B3B00A5DE44 /* CollectionOffsetBugVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionOffsetBugVC.h; sourceTree = "<group>"; };
+		D4672DEF22962B3B00A5DE44 /* BugVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BugVC.h; sourceTree = "<group>"; };
+		D4672DF022962B3B00A5DE44 /* NumberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberCell.h; sourceTree = "<group>"; };
+		D4672DF122962B3B00A5DE44 /* NumberViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberViewModel.m; sourceTree = "<group>"; };
+		D4672DF222962B3B00A5DE44 /* NumberItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberItemCell.m; sourceTree = "<group>"; };
+		D4672DF322962B3B00A5DE44 /* NumberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberCell.m; sourceTree = "<group>"; };
+		D4672DF422962B3B00A5DE44 /* BugVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BugVC.m; sourceTree = "<group>"; };
+		D4672DF522962B3B00A5DE44 /* CollectionOffsetBugVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionOffsetBugVC.m; sourceTree = "<group>"; };
+		D4672DF622962B3B00A5DE44 /* NumberViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberViewModel.h; sourceTree = "<group>"; };
+		D4672DF822962B3B00A5DE44 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		D4672DF922962B3B00A5DE44 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		D4672DFA22962B3B00A5DE44 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		D4672DFC22962B3B00A5DE44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D4672DFE22962B3B00A5DE44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D4672E0022962B3B00A5DE44 /* UrlVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrlVC.h; sourceTree = "<group>"; };
+		D4672E0122962B3B00A5DE44 /* UrlVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrlVC.m; sourceTree = "<group>"; };
+		D4672E0322962B3B00A5DE44 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		D4672E0422962B3B00A5DE44 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		D4672E0522962B3B00A5DE44 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4672E0722962B3B00A5DE44 /* DoubleDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubleDemoVC.m; sourceTree = "<group>"; };
+		D4672E0822962B3B00A5DE44 /* DoubleDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleDemoVC.h; sourceTree = "<group>"; };
+		D4672E0922962B3B00A5DE44 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D4672E0B22962B3B00A5DE44 /* SMStackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMStackCell.h; sourceTree = "<group>"; };
+		D4672E0C22962B3B00A5DE44 /* SMCallStackModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallStackModel.m; sourceTree = "<group>"; };
+		D4672E0D22962B3B00A5DE44 /* SMCallTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallTrace.h; sourceTree = "<group>"; };
+		D4672E0E22962B3B00A5DE44 /* SMLagMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLagMonitor.h; sourceTree = "<group>"; };
+		D4672E0F22962B3B00A5DE44 /* SMLagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLagButton.m; sourceTree = "<group>"; };
+		D4672E1022962B3B00A5DE44 /* SMLagDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLagDB.m; sourceTree = "<group>"; };
+		D4672E1122962B3B00A5DE44 /* SMCallStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallStack.h; sourceTree = "<group>"; };
+		D4672E1222962B3B00A5DE44 /* SMCPUMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCPUMonitor.m; sourceTree = "<group>"; };
+		D4672E1322962B3B00A5DE44 /* SMStackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMStackViewController.h; sourceTree = "<group>"; };
+		D4672E1422962B3B00A5DE44 /* SMCallTraceCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallTraceCore.h; sourceTree = "<group>"; };
+		D4672E1522962B3B00A5DE44 /* SMClsCallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMClsCallCell.h; sourceTree = "<group>"; };
+		D4672E1622962B3B00A5DE44 /* SMClsCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMClsCallViewController.h; sourceTree = "<group>"; };
+		D4672E1722962B3B00A5DE44 /* SMCallTraceTimeCostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallTraceTimeCostModel.m; sourceTree = "<group>"; };
+		D4672E1822962B3B00A5DE44 /* SMCallLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallLib.h; sourceTree = "<group>"; };
+		D4672E1922962B3B00A5DE44 /* SMLagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLagButton.h; sourceTree = "<group>"; };
+		D4672E1A22962B3B00A5DE44 /* SMLagMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLagMonitor.m; sourceTree = "<group>"; };
+		D4672E1B22962B3B00A5DE44 /* SMCallTrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallTrace.m; sourceTree = "<group>"; };
+		D4672E1C22962B3B00A5DE44 /* SMCallStackModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallStackModel.h; sourceTree = "<group>"; };
+		D4672E1D22962B3B00A5DE44 /* SMStackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMStackCell.m; sourceTree = "<group>"; };
+		D4672E1E22962B3B00A5DE44 /* SMStackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMStackViewController.m; sourceTree = "<group>"; };
+		D4672E1F22962B3B00A5DE44 /* SMCallStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallStack.m; sourceTree = "<group>"; };
+		D4672E2022962B3B00A5DE44 /* SMCPUMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCPUMonitor.h; sourceTree = "<group>"; };
+		D4672E2122962B3B00A5DE44 /* SMLagDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLagDB.h; sourceTree = "<group>"; };
+		D4672E2222962B3B00A5DE44 /* SMClsCallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMClsCallCell.m; sourceTree = "<group>"; };
+		D4672E2322962B3B00A5DE44 /* SMCallTraceCore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SMCallTraceCore.c; sourceTree = "<group>"; };
+		D4672E2422962B3B00A5DE44 /* SMCallLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallLib.m; sourceTree = "<group>"; };
+		D4672E2522962B3B00A5DE44 /* SMCallTraceTimeCostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallTraceTimeCostModel.h; sourceTree = "<group>"; };
+		D4672E2622962B3B00A5DE44 /* SMClsCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMClsCallViewController.m; sourceTree = "<group>"; };
+		D4672E2822962B3B00A5DE44 /* KeywordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeywordVC.m; sourceTree = "<group>"; };
+		D4672E2922962B3B00A5DE44 /* ClassVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassVC.m; sourceTree = "<group>"; };
+		D4672E2A22962B3B00A5DE44 /* ClassVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassVC.h; sourceTree = "<group>"; };
+		D4672E2C22962B3B00A5DE44 /* Son.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
+		D4672E2D22962B3B00A5DE44 /* Father.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
+		D4672E2E22962B3B00A5DE44 /* Son.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
+		D4672E2F22962B3B00A5DE44 /* Father.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
+		D4672E3022962B3B00A5DE44 /* KeywordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeywordVC.h; sourceTree = "<group>"; };
+		D4672E3222962B3B00A5DE44 /* CViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CViewController.h; sourceTree = "<group>"; };
+		D4672E3322962B3B00A5DE44 /* CViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CViewController.m; sourceTree = "<group>"; };
+		D4672E3422962B3B00A5DE44 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4672E3622962B3B00A5DE44 /* MultiThreadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiThreadVC.h; sourceTree = "<group>"; };
+		D4672E3722962B3B00A5DE44 /* MultiThreadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiThreadVC.m; sourceTree = "<group>"; };
+		D4672E3822962B3B00A5DE44 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D47F28D4216EF5C800424800 /* OfferApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfferApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D47F28D7216EF5C800424800 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D47F28D8216EF5C800424800 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D47F28DA216EF5C800424800 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D47F28DB216EF5C800424800 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D47F28DE216EF5C800424800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D47F28E0216EF5CA00424800 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D47F28E3216EF5CA00424800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D47F28E5216EF5CA00424800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D47F28E6216EF5CA00424800 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D47F28F6216F3E6400424800 /* MultiThreadVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiThreadVC.h; sourceTree = "<group>"; };
-		D47F28F7216F3E6400424800 /* MultiThreadVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiThreadVC.m; sourceTree = "<group>"; };
-		D47F28FB217030FB00424800 /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
-		D47F28FC217030FB00424800 /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
-		D47F28FE2170310A00424800 /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
-		D47F28FF2170310A00424800 /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
-		D47F2902217037D200424800 /* KeywordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeywordVC.h; sourceTree = "<group>"; };
-		D47F2903217037D200424800 /* KeywordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeywordVC.m; sourceTree = "<group>"; };
-		D47F2906217039A200424800 /* KVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
-		D47F2907217039A200424800 /* KVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
-		D48FD77B2249C30900F98977 /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
-		D48FD77C2249C30900F98977 /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
-		D4CEB6D6225C393A007E4B55 /* RuntimeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeVC.h; sourceTree = "<group>"; };
-		D4CEB6D7225C393A007E4B55 /* RuntimeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeVC.m; sourceTree = "<group>"; };
-		D4CEB6D9225C3991007E4B55 /* RPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPerson.h; sourceTree = "<group>"; };
-		D4CEB6DA225C3991007E4B55 /* RPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPerson.m; sourceTree = "<group>"; };
-		D4CEB6E1225DC6AE007E4B55 /* DoubleDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleDemoVC.h; sourceTree = "<group>"; };
-		D4CEB6E2225DC6AE007E4B55 /* DoubleDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoubleDemoVC.m; sourceTree = "<group>"; };
-		D4CEB6E5225DF322007E4B55 /* test.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
-		D4CEB6E6225DF3D7007E4B55 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
-		D4CEB6E7225DF3D7007E4B55 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		D4CEB6EB22606150007E4B55 /* UrlVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UrlVC.h; sourceTree = "<group>"; };
-		D4CEB6EC22606150007E4B55 /* UrlVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UrlVC.m; sourceTree = "<group>"; };
-		D4E26391222CBCB000E24287 /* UIDebuggingInformationOverlay+Enable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDebuggingInformationOverlay+Enable.m"; sourceTree = "<group>"; };
-		D4E263B1222F527D00E24287 /* ClassVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassVC.h; sourceTree = "<group>"; };
-		D4E263B2222F527D00E24287 /* ClassVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassVC.m; sourceTree = "<group>"; };
+		D4CEB71E2266CE77007E4B55 /* SweetAlert.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SweetAlert.framework; path = Carthage/Build/iOS/SweetAlert.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,110 +193,273 @@
 		632B53FC7AF156B85C23DD30 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D4CEB71E2266CE77007E4B55 /* SweetAlert.framework */,
 				447797FAC45F44447C6E5313 /* libPods-OfferApp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D41F8D41224C617500555B63 /* Crash */ = {
+		D4672DC222962B3B00A5DE44 /* OfferApp */ = {
 			isa = PBXGroup;
 			children = (
-				D41F8D42224C619000555B63 /* CrashVC.h */,
-				D41F8D43224C619000555B63 /* CrashVC.m */,
+				D4672DC322962B3B00A5DE44 /* AppDelegate.h */,
+				D4672DC422962B3B00A5DE44 /* CrashCollect */,
+				D4672DC722962B3B00A5DE44 /* Memory */,
+				D4672DCC22962B3B00A5DE44 /* Runloop */,
+				D4672DCF22962B3B00A5DE44 /* Category */,
+				D4672DD622962B3B00A5DE44 /* UIDebuggingInformationOverlay+Enable.m */,
+				D4672DD722962B3B00A5DE44 /* Assemble */,
+				D4672DDA22962B3B00A5DE44 /* Assets.xcassets */,
+				D4672DDB22962B3B00A5DE44 /* Runtime */,
+				D4672DE222962B3B00A5DE44 /* Carthage */,
+				D4672DE522962B3B00A5DE44 /* ViewController.m */,
+				D4672DE622962B3B00A5DE44 /* GCD */,
+				D4672DE922962B3B00A5DE44 /* Crash */,
+				D4672DEC22962B3B00A5DE44 /* Bug */,
+				D4672DF722962B3B00A5DE44 /* WKWebview */,
+				D4672DFB22962B3B00A5DE44 /* LaunchScreen.storyboard */,
+				D4672DFD22962B3B00A5DE44 /* Main.storyboard */,
+				D4672DFF22962B3B00A5DE44 /* URL */,
+				D4672E0222962B3B00A5DE44 /* UIViewController */,
+				D4672E0522962B3B00A5DE44 /* main.m */,
+				D4672E0622962B3B00A5DE44 /* Double */,
+				D4672E0922962B3B00A5DE44 /* AppDelegate.m */,
+				D4672E0A22962B3B00A5DE44 /* SMLagMonitor */,
+				D4672E2722962B3B00A5DE44 /* Keyword */,
+				D4672E3122962B3B00A5DE44 /* CLanguage */,
+				D4672E3422962B3B00A5DE44 /* Info.plist */,
+				D4672E3522962B3B00A5DE44 /* MultiThread */,
+				D4672E3822962B3B00A5DE44 /* ViewController.h */,
 			);
-			path = Crash;
+			path = OfferApp;
 			sourceTree = "<group>";
 		};
-		D448041F223789CE00184A7D /* GCD */ = {
+		D4672DC422962B3B00A5DE44 /* CrashCollect */ = {
 			isa = PBXGroup;
 			children = (
-				D4480420223789E700184A7D /* GroupViewController.h */,
-				D4480421223789E700184A7D /* GroupViewController.m */,
-			);
-			path = GCD;
-			sourceTree = "<group>";
-		};
-		D44805C1223BA30700184A7D /* Memory */ = {
-			isa = PBXGroup;
-			children = (
-				D44805C3223BA32B00184A7D /* MemoryVC.h */,
-				D44805C4223BA32B00184A7D /* MemoryVC.m */,
-				D44805C6223BA37100184A7D /* MemoryObj.h */,
-				D44805C7223BA37100184A7D /* MemoryObj.m */,
-			);
-			path = Memory;
-			sourceTree = "<group>";
-		};
-		D44805C9223F25AC00184A7D /* Runloop */ = {
-			isa = PBXGroup;
-			children = (
-				D44805CA223F287200184A7D /* RunloopVC.h */,
-				D44805CB223F287200184A7D /* RunloopVC.m */,
-			);
-			path = Runloop;
-			sourceTree = "<group>";
-		};
-		D44805CD224320C400184A7D /* SMLagMonitor */ = {
-			isa = PBXGroup;
-			children = (
-				D44805DB224320C400184A7D /* SMCallLib.h */,
-				D44805E7224320C400184A7D /* SMCallLib.m */,
-				D44805D4224320C400184A7D /* SMCallStack.h */,
-				D44805E2224320C400184A7D /* SMCallStack.m */,
-				D44805DF224320C400184A7D /* SMCallStackModel.h */,
-				D44805CF224320C400184A7D /* SMCallStackModel.m */,
-				D44805D0224320C400184A7D /* SMCallTrace.h */,
-				D44805DE224320C400184A7D /* SMCallTrace.m */,
-				D44805E6224320C400184A7D /* SMCallTraceCore.c */,
-				D44805D7224320C400184A7D /* SMCallTraceCore.h */,
-				D44805E8224320C400184A7D /* SMCallTraceTimeCostModel.h */,
-				D44805DA224320C400184A7D /* SMCallTraceTimeCostModel.m */,
-				D44805D8224320C400184A7D /* SMClsCallCell.h */,
-				D44805E5224320C400184A7D /* SMClsCallCell.m */,
-				D44805D9224320C400184A7D /* SMClsCallViewController.h */,
-				D44805E9224320C400184A7D /* SMClsCallViewController.m */,
-				D44805E3224320C400184A7D /* SMCPUMonitor.h */,
-				D44805D5224320C400184A7D /* SMCPUMonitor.m */,
-				D44805DC224320C400184A7D /* SMLagButton.h */,
-				D44805D2224320C400184A7D /* SMLagButton.m */,
-				D44805E4224320C400184A7D /* SMLagDB.h */,
-				D44805D3224320C400184A7D /* SMLagDB.m */,
-				D44805D1224320C400184A7D /* SMLagMonitor.h */,
-				D44805DD224320C400184A7D /* SMLagMonitor.m */,
-				D44805CE224320C400184A7D /* SMStackCell.h */,
-				D44805E0224320C400184A7D /* SMStackCell.m */,
-				D44805D6224320C400184A7D /* SMStackViewController.h */,
-				D44805E1224320C400184A7D /* SMStackViewController.m */,
-			);
-			path = SMLagMonitor;
-			sourceTree = "<group>";
-		};
-		D44805F8224360DD00184A7D /* CrashCollect */ = {
-			isa = PBXGroup;
-			children = (
-				D44805F92243610500184A7D /* CrashCollectVC.h */,
-				D44805FA2243610500184A7D /* CrashCollectVC.m */,
+				D4672DC522962B3B00A5DE44 /* CrashCollectVC.m */,
+				D4672DC622962B3B00A5DE44 /* CrashCollectVC.h */,
 			);
 			path = CrashCollect;
 			sourceTree = "<group>";
 		};
-		D46771202223F3BA000FF23E /* Category */ = {
+		D4672DC722962B3B00A5DE44 /* Memory */ = {
 			isa = PBXGroup;
 			children = (
-				D46771212223F3CE000FF23E /* BaseViewController.h */,
-				D46771222223F3CE000FF23E /* BaseViewController.m */,
-				D46771242223F46C000FF23E /* Sub.h */,
-				D46771252223F46C000FF23E /* Sub.m */,
-				D46771272223F4E3000FF23E /* UIViewController+Log.h */,
-				D46771282223F4E3000FF23E /* UIViewController+Log.m */,
+				D4672DC822962B3B00A5DE44 /* MemoryVC.h */,
+				D4672DC922962B3B00A5DE44 /* MemoryObj.m */,
+				D4672DCA22962B3B00A5DE44 /* MemoryObj.h */,
+				D4672DCB22962B3B00A5DE44 /* MemoryVC.m */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		D4672DCC22962B3B00A5DE44 /* Runloop */ = {
+			isa = PBXGroup;
+			children = (
+				D44C824B22B8E4C80001BB79 /* runloop.jpg */,
+				D4672DCD22962B3B00A5DE44 /* RunloopVC.h */,
+				D4672DCE22962B3B00A5DE44 /* RunloopVC.m */,
+			);
+			path = Runloop;
+			sourceTree = "<group>";
+		};
+		D4672DCF22962B3B00A5DE44 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D4672DD022962B3B00A5DE44 /* UIViewController+Log.h */,
+				D4672DD122962B3B00A5DE44 /* BaseViewController.m */,
+				D4672DD222962B3B00A5DE44 /* Sub.h */,
+				D4672DD322962B3B00A5DE44 /* UIViewController+Log.m */,
+				D4672DD422962B3B00A5DE44 /* Sub.m */,
+				D4672DD522962B3B00A5DE44 /* BaseViewController.h */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		D4672DD722962B3B00A5DE44 /* Assemble */ = {
+			isa = PBXGroup;
+			children = (
+				D4672DD822962B3B00A5DE44 /* AssembleVC.m */,
+				D4672DD922962B3B00A5DE44 /* AssembleVC.h */,
+			);
+			path = Assemble;
+			sourceTree = "<group>";
+		};
+		D4672DDB22962B3B00A5DE44 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				D4672DDC22962B3B00A5DE44 /* RuntimeVC.m */,
+				D4672DDD22962B3B00A5DE44 /* KVOViewController.m */,
+				D4672DDE22962B3B00A5DE44 /* RPerson.h */,
+				D4672DDF22962B3B00A5DE44 /* KVOViewController.h */,
+				D4672DE022962B3B00A5DE44 /* RuntimeVC.h */,
+				D4672DE122962B3B00A5DE44 /* RPerson.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		D4672DE222962B3B00A5DE44 /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				D4672DE322962B3B00A5DE44 /* CarthageVC.m */,
+				D4672DE422962B3B00A5DE44 /* CarthageVC.h */,
+			);
+			path = Carthage;
+			sourceTree = "<group>";
+		};
+		D4672DE622962B3B00A5DE44 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				D4672DE722962B3B00A5DE44 /* GroupViewController.m */,
+				D4672DE822962B3B00A5DE44 /* GroupViewController.h */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		D4672DE922962B3B00A5DE44 /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				D4672DEA22962B3B00A5DE44 /* CrashVC.h */,
+				D4672DEB22962B3B00A5DE44 /* CrashVC.m */,
+			);
+			path = Crash;
+			sourceTree = "<group>";
+		};
+		D4672DEC22962B3B00A5DE44 /* Bug */ = {
+			isa = PBXGroup;
+			children = (
+				D4672DED22962B3B00A5DE44 /* NumberItemCell.h */,
+				D4672DEE22962B3B00A5DE44 /* CollectionOffsetBugVC.h */,
+				D4672DEF22962B3B00A5DE44 /* BugVC.h */,
+				D4672DF022962B3B00A5DE44 /* NumberCell.h */,
+				D4672DF122962B3B00A5DE44 /* NumberViewModel.m */,
+				D4672DF222962B3B00A5DE44 /* NumberItemCell.m */,
+				D4672DF322962B3B00A5DE44 /* NumberCell.m */,
+				D4672DF422962B3B00A5DE44 /* BugVC.m */,
+				D4672DF522962B3B00A5DE44 /* CollectionOffsetBugVC.m */,
+				D4672DF622962B3B00A5DE44 /* NumberViewModel.h */,
+			);
+			path = Bug;
+			sourceTree = "<group>";
+		};
+		D4672DF722962B3B00A5DE44 /* WKWebview */ = {
+			isa = PBXGroup;
+			children = (
+				D4672DF822962B3B00A5DE44 /* WebViewController.m */,
+				D4672DF922962B3B00A5DE44 /* test.html */,
+				D4672DFA22962B3B00A5DE44 /* WebViewController.h */,
+			);
+			path = WKWebview;
+			sourceTree = "<group>";
+		};
+		D4672DFF22962B3B00A5DE44 /* URL */ = {
+			isa = PBXGroup;
+			children = (
+				D4672E0022962B3B00A5DE44 /* UrlVC.h */,
+				D4672E0122962B3B00A5DE44 /* UrlVC.m */,
+			);
+			path = URL;
+			sourceTree = "<group>";
+		};
+		D4672E0222962B3B00A5DE44 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D4672E0322962B3B00A5DE44 /* MyViewController.h */,
+				D4672E0422962B3B00A5DE44 /* MyViewController.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		D4672E0622962B3B00A5DE44 /* Double */ = {
+			isa = PBXGroup;
+			children = (
+				D4672E0722962B3B00A5DE44 /* DoubleDemoVC.m */,
+				D4672E0822962B3B00A5DE44 /* DoubleDemoVC.h */,
+			);
+			path = Double;
+			sourceTree = "<group>";
+		};
+		D4672E0A22962B3B00A5DE44 /* SMLagMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				D4672E0B22962B3B00A5DE44 /* SMStackCell.h */,
+				D4672E0C22962B3B00A5DE44 /* SMCallStackModel.m */,
+				D4672E0D22962B3B00A5DE44 /* SMCallTrace.h */,
+				D4672E0E22962B3B00A5DE44 /* SMLagMonitor.h */,
+				D4672E0F22962B3B00A5DE44 /* SMLagButton.m */,
+				D4672E1022962B3B00A5DE44 /* SMLagDB.m */,
+				D4672E1122962B3B00A5DE44 /* SMCallStack.h */,
+				D4672E1222962B3B00A5DE44 /* SMCPUMonitor.m */,
+				D4672E1322962B3B00A5DE44 /* SMStackViewController.h */,
+				D4672E1422962B3B00A5DE44 /* SMCallTraceCore.h */,
+				D4672E1522962B3B00A5DE44 /* SMClsCallCell.h */,
+				D4672E1622962B3B00A5DE44 /* SMClsCallViewController.h */,
+				D4672E1722962B3B00A5DE44 /* SMCallTraceTimeCostModel.m */,
+				D4672E1822962B3B00A5DE44 /* SMCallLib.h */,
+				D4672E1922962B3B00A5DE44 /* SMLagButton.h */,
+				D4672E1A22962B3B00A5DE44 /* SMLagMonitor.m */,
+				D4672E1B22962B3B00A5DE44 /* SMCallTrace.m */,
+				D4672E1C22962B3B00A5DE44 /* SMCallStackModel.h */,
+				D4672E1D22962B3B00A5DE44 /* SMStackCell.m */,
+				D4672E1E22962B3B00A5DE44 /* SMStackViewController.m */,
+				D4672E1F22962B3B00A5DE44 /* SMCallStack.m */,
+				D4672E2022962B3B00A5DE44 /* SMCPUMonitor.h */,
+				D4672E2122962B3B00A5DE44 /* SMLagDB.h */,
+				D4672E2222962B3B00A5DE44 /* SMClsCallCell.m */,
+				D4672E2322962B3B00A5DE44 /* SMCallTraceCore.c */,
+				D4672E2422962B3B00A5DE44 /* SMCallLib.m */,
+				D4672E2522962B3B00A5DE44 /* SMCallTraceTimeCostModel.h */,
+				D4672E2622962B3B00A5DE44 /* SMClsCallViewController.m */,
+			);
+			path = SMLagMonitor;
+			sourceTree = "<group>";
+		};
+		D4672E2722962B3B00A5DE44 /* Keyword */ = {
+			isa = PBXGroup;
+			children = (
+				D4672E2822962B3B00A5DE44 /* KeywordVC.m */,
+				D4672E2922962B3B00A5DE44 /* ClassVC.m */,
+				D4672E2A22962B3B00A5DE44 /* ClassVC.h */,
+				D4672E2B22962B3B00A5DE44 /* Super */,
+				D4672E3022962B3B00A5DE44 /* KeywordVC.h */,
+			);
+			path = Keyword;
+			sourceTree = "<group>";
+		};
+		D4672E2B22962B3B00A5DE44 /* Super */ = {
+			isa = PBXGroup;
+			children = (
+				D4672E2C22962B3B00A5DE44 /* Son.h */,
+				D4672E2D22962B3B00A5DE44 /* Father.m */,
+				D4672E2E22962B3B00A5DE44 /* Son.m */,
+				D4672E2F22962B3B00A5DE44 /* Father.h */,
+			);
+			path = Super;
+			sourceTree = "<group>";
+		};
+		D4672E3122962B3B00A5DE44 /* CLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				D4672E3222962B3B00A5DE44 /* CViewController.h */,
+				D4672E3322962B3B00A5DE44 /* CViewController.m */,
+			);
+			path = CLanguage;
+			sourceTree = "<group>";
+		};
+		D4672E3522962B3B00A5DE44 /* MultiThread */ = {
+			isa = PBXGroup;
+			children = (
+				D4672E3622962B3B00A5DE44 /* MultiThreadVC.h */,
+				D4672E3722962B3B00A5DE44 /* MultiThreadVC.m */,
+			);
+			path = MultiThread;
 			sourceTree = "<group>";
 		};
 		D47F28CB216EF5C800424800 = {
 			isa = PBXGroup;
 			children = (
-				D47F28D6216EF5C800424800 /* OfferApp */,
+				D4672DC222962B3B00A5DE44 /* OfferApp */,
 				D47F28D5216EF5C800424800 /* Products */,
 				01D04CA5CB6E3CDC7CFA2923 /* Pods */,
 				632B53FC7AF156B85C23DD30 /* Frameworks */,
@@ -281,119 +472,6 @@
 				D47F28D4216EF5C800424800 /* OfferApp.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D47F28D6216EF5C800424800 /* OfferApp */ = {
-			isa = PBXGroup;
-			children = (
-				D4CEB6EA2260612B007E4B55 /* URL */,
-				D4CEB6E4225DF250007E4B55 /* WKWebview */,
-				D4CEB6E0225DC68B007E4B55 /* Double */,
-				D41F8D41224C617500555B63 /* Crash */,
-				D48FD77A2249C2F700F98977 /* UIViewController */,
-				D44805F8224360DD00184A7D /* CrashCollect */,
-				D44805CD224320C400184A7D /* SMLagMonitor */,
-				D44805C9223F25AC00184A7D /* Runloop */,
-				D44805C1223BA30700184A7D /* Memory */,
-				D448041F223789CE00184A7D /* GCD */,
-				D46771202223F3BA000FF23E /* Category */,
-				D47F29052170394700424800 /* Runtime */,
-				D47F2901217037A600424800 /* Keyword */,
-				D47F28F921702FF800424800 /* MultiThread */,
-				D47F28D7216EF5C800424800 /* AppDelegate.h */,
-				D47F28D8216EF5C800424800 /* AppDelegate.m */,
-				D47F28DA216EF5C800424800 /* ViewController.h */,
-				D47F28DB216EF5C800424800 /* ViewController.m */,
-				D4E26391222CBCB000E24287 /* UIDebuggingInformationOverlay+Enable.m */,
-				D47F28DD216EF5C800424800 /* Main.storyboard */,
-				D47F28E0216EF5CA00424800 /* Assets.xcassets */,
-				D47F28E2216EF5CA00424800 /* LaunchScreen.storyboard */,
-				D47F28E5216EF5CA00424800 /* Info.plist */,
-				D47F28E6216EF5CA00424800 /* main.m */,
-			);
-			path = OfferApp;
-			sourceTree = "<group>";
-		};
-		D47F28F921702FF800424800 /* MultiThread */ = {
-			isa = PBXGroup;
-			children = (
-				D47F28F6216F3E6400424800 /* MultiThreadVC.h */,
-				D47F28F7216F3E6400424800 /* MultiThreadVC.m */,
-			);
-			path = MultiThread;
-			sourceTree = "<group>";
-		};
-		D47F28FA217030E500424800 /* Super */ = {
-			isa = PBXGroup;
-			children = (
-				D47F28FB217030FB00424800 /* Father.h */,
-				D47F28FC217030FB00424800 /* Father.m */,
-				D47F28FE2170310A00424800 /* Son.h */,
-				D47F28FF2170310A00424800 /* Son.m */,
-			);
-			path = Super;
-			sourceTree = "<group>";
-		};
-		D47F2901217037A600424800 /* Keyword */ = {
-			isa = PBXGroup;
-			children = (
-				D47F28FA217030E500424800 /* Super */,
-				D47F2902217037D200424800 /* KeywordVC.h */,
-				D47F2903217037D200424800 /* KeywordVC.m */,
-				D4E263B1222F527D00E24287 /* ClassVC.h */,
-				D4E263B2222F527D00E24287 /* ClassVC.m */,
-			);
-			path = Keyword;
-			sourceTree = "<group>";
-		};
-		D47F29052170394700424800 /* Runtime */ = {
-			isa = PBXGroup;
-			children = (
-				D47F2906217039A200424800 /* KVOViewController.h */,
-				D47F2907217039A200424800 /* KVOViewController.m */,
-				D4CEB6D6225C393A007E4B55 /* RuntimeVC.h */,
-				D4CEB6D7225C393A007E4B55 /* RuntimeVC.m */,
-				D4CEB6D9225C3991007E4B55 /* RPerson.h */,
-				D4CEB6DA225C3991007E4B55 /* RPerson.m */,
-			);
-			path = Runtime;
-			sourceTree = "<group>";
-		};
-		D48FD77A2249C2F700F98977 /* UIViewController */ = {
-			isa = PBXGroup;
-			children = (
-				D48FD77B2249C30900F98977 /* MyViewController.h */,
-				D48FD77C2249C30900F98977 /* MyViewController.m */,
-			);
-			path = UIViewController;
-			sourceTree = "<group>";
-		};
-		D4CEB6E0225DC68B007E4B55 /* Double */ = {
-			isa = PBXGroup;
-			children = (
-				D4CEB6E1225DC6AE007E4B55 /* DoubleDemoVC.h */,
-				D4CEB6E2225DC6AE007E4B55 /* DoubleDemoVC.m */,
-			);
-			path = Double;
-			sourceTree = "<group>";
-		};
-		D4CEB6E4225DF250007E4B55 /* WKWebview */ = {
-			isa = PBXGroup;
-			children = (
-				D4CEB6E5225DF322007E4B55 /* test.html */,
-				D4CEB6E6225DF3D7007E4B55 /* WebViewController.h */,
-				D4CEB6E7225DF3D7007E4B55 /* WebViewController.m */,
-			);
-			path = WKWebview;
-			sourceTree = "<group>";
-		};
-		D4CEB6EA2260612B007E4B55 /* URL */ = {
-			isa = PBXGroup;
-			children = (
-				D4CEB6EB22606150007E4B55 /* UrlVC.h */,
-				D4CEB6EC22606150007E4B55 /* UrlVC.m */,
-			);
-			path = URL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,10 +533,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4CEB6E9225ED1A5007E4B55 /* test.html in Resources */,
-				D47F28E4216EF5CA00424800 /* LaunchScreen.storyboard in Resources */,
-				D47F28E1216EF5CA00424800 /* Assets.xcassets in Resources */,
-				D47F28DF216EF5C800424800 /* Main.storyboard in Resources */,
+				D4672E5122962B3B00A5DE44 /* LaunchScreen.storyboard in Resources */,
+				D4672E5022962B3B00A5DE44 /* test.html in Resources */,
+				D4672E4222962B3B00A5DE44 /* Assets.xcassets in Resources */,
+				D44C824C22B8E4C80001BB79 /* runloop.jpg in Resources */,
+				D4672E6B22962B3B00A5DE44 /* Info.plist in Resources */,
+				D4672E5222962B3B00A5DE44 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,65 +594,73 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D48FD77D2249C30900F98977 /* MyViewController.m in Sources */,
-				D4480422223789E700184A7D /* GroupViewController.m in Sources */,
-				D47F29002170310A00424800 /* Son.m in Sources */,
-				D46771232223F3CE000FF23E /* BaseViewController.m in Sources */,
-				D44805F6224320C400184A7D /* SMCallLib.m in Sources */,
-				D44805F0224320C400184A7D /* SMCallTrace.m in Sources */,
-				D44805F1224320C400184A7D /* SMStackCell.m in Sources */,
-				D4E263B3222F527D00E24287 /* ClassVC.m in Sources */,
-				D41F8D44224C619000555B63 /* CrashVC.m in Sources */,
-				D4CEB6ED22606150007E4B55 /* UrlVC.m in Sources */,
-				D44805F3224320C400184A7D /* SMCallStack.m in Sources */,
-				D47F28DC216EF5C800424800 /* ViewController.m in Sources */,
-				D47F28E7216EF5CA00424800 /* main.m in Sources */,
-				D44805EC224320C400184A7D /* SMLagDB.m in Sources */,
-				D47F28D9216EF5C800424800 /* AppDelegate.m in Sources */,
-				D46771292223F4E3000FF23E /* UIViewController+Log.m in Sources */,
-				D4CEB6D8225C393A007E4B55 /* RuntimeVC.m in Sources */,
-				D4CEB6E3225DC6AE007E4B55 /* DoubleDemoVC.m in Sources */,
-				D44805F4224320C400184A7D /* SMClsCallCell.m in Sources */,
-				D4CEB6DB225C3991007E4B55 /* RPerson.m in Sources */,
-				D44805F2224320C400184A7D /* SMStackViewController.m in Sources */,
-				D44805EE224320C400184A7D /* SMCallTraceTimeCostModel.m in Sources */,
-				D4CEB6E8225DF3D7007E4B55 /* WebViewController.m in Sources */,
-				D44805CC223F287200184A7D /* RunloopVC.m in Sources */,
-				D47F2904217037D200424800 /* KeywordVC.m in Sources */,
-				D44805C5223BA32B00184A7D /* MemoryVC.m in Sources */,
-				D44805C8223BA37100184A7D /* MemoryObj.m in Sources */,
-				D46771262223F46C000FF23E /* Sub.m in Sources */,
-				D47F2908217039A200424800 /* KVOViewController.m in Sources */,
-				D44805EB224320C400184A7D /* SMLagButton.m in Sources */,
-				D4E26392222CBCB000E24287 /* UIDebuggingInformationOverlay+Enable.m in Sources */,
-				D44805EF224320C400184A7D /* SMLagMonitor.m in Sources */,
-				D44805F7224320C400184A7D /* SMClsCallViewController.m in Sources */,
-				D47F28F8216F3E6400424800 /* MultiThreadVC.m in Sources */,
-				D44805FB2243610500184A7D /* CrashCollectVC.m in Sources */,
-				D44805EA224320C400184A7D /* SMCallStackModel.m in Sources */,
-				D44805ED224320C400184A7D /* SMCPUMonitor.m in Sources */,
-				D47F28FD217030FB00424800 /* Father.m in Sources */,
-				D44805F5224320C400184A7D /* SMCallTraceCore.c in Sources */,
+				D4672E4722962B3B00A5DE44 /* ViewController.m in Sources */,
+				D4672E5922962B3B00A5DE44 /* SMLagButton.m in Sources */,
+				D4672E6522962B3B00A5DE44 /* SMClsCallViewController.m in Sources */,
+				D4672E3B22962B3B00A5DE44 /* MemoryVC.m in Sources */,
+				D4672E6622962B3B00A5DE44 /* KeywordVC.m in Sources */,
+				D4672E5722962B3B00A5DE44 /* AppDelegate.m in Sources */,
+				D4672E6922962B3B00A5DE44 /* Son.m in Sources */,
+				D4672E5F22962B3B00A5DE44 /* SMStackCell.m in Sources */,
+				D4672E3E22962B3B00A5DE44 /* UIViewController+Log.m in Sources */,
+				D4672E4822962B3B00A5DE44 /* GroupViewController.m in Sources */,
+				D4672E6822962B3B00A5DE44 /* Father.m in Sources */,
+				D4672E6022962B3B00A5DE44 /* SMStackViewController.m in Sources */,
+				D4672E5A22962B3B00A5DE44 /* SMLagDB.m in Sources */,
+				D4672E3D22962B3B00A5DE44 /* BaseViewController.m in Sources */,
+				D4672E4422962B3B00A5DE44 /* KVOViewController.m in Sources */,
+				D4672E5322962B3B00A5DE44 /* UrlVC.m in Sources */,
+				D4672E3F22962B3B00A5DE44 /* Sub.m in Sources */,
+				D4672E6322962B3B00A5DE44 /* SMCallTraceCore.c in Sources */,
+				D4672E4B22962B3B00A5DE44 /* NumberItemCell.m in Sources */,
+				D4672E5B22962B3B00A5DE44 /* SMCPUMonitor.m in Sources */,
+				D4672E4E22962B3B00A5DE44 /* CollectionOffsetBugVC.m in Sources */,
+				D4672E5622962B3B00A5DE44 /* DoubleDemoVC.m in Sources */,
+				D4672E5D22962B3B00A5DE44 /* SMLagMonitor.m in Sources */,
+				D4672E4522962B3B00A5DE44 /* RPerson.m in Sources */,
+				D4672E3A22962B3B00A5DE44 /* MemoryObj.m in Sources */,
+				D4672E6122962B3B00A5DE44 /* SMCallStack.m in Sources */,
+				D4672E4622962B3B00A5DE44 /* CarthageVC.m in Sources */,
+				D4672E4322962B3B00A5DE44 /* RuntimeVC.m in Sources */,
+				D4672E5822962B3B00A5DE44 /* SMCallStackModel.m in Sources */,
+				D4672E4F22962B3B00A5DE44 /* WebViewController.m in Sources */,
+				D4672E5522962B3B00A5DE44 /* main.m in Sources */,
+				D4672E4C22962B3B00A5DE44 /* NumberCell.m in Sources */,
+				D4672E6A22962B3B00A5DE44 /* CViewController.m in Sources */,
+				D4672E4022962B3B00A5DE44 /* UIDebuggingInformationOverlay+Enable.m in Sources */,
+				D4672E4A22962B3B00A5DE44 /* NumberViewModel.m in Sources */,
+				D4672E6722962B3B00A5DE44 /* ClassVC.m in Sources */,
+				D4672E5C22962B3B00A5DE44 /* SMCallTraceTimeCostModel.m in Sources */,
+				D4672E5422962B3B00A5DE44 /* MyViewController.m in Sources */,
+				D4672E6C22962B3B00A5DE44 /* MultiThreadVC.m in Sources */,
+				D4672E3C22962B3B00A5DE44 /* RunloopVC.m in Sources */,
+				D4672E6422962B3B00A5DE44 /* SMCallLib.m in Sources */,
+				D4672E3922962B3B00A5DE44 /* CrashCollectVC.m in Sources */,
+				D4672E4D22962B3B00A5DE44 /* BugVC.m in Sources */,
+				D4672E4922962B3B00A5DE44 /* CrashVC.m in Sources */,
+				D4672E4122962B3B00A5DE44 /* AssembleVC.m in Sources */,
+				D4672E6222962B3B00A5DE44 /* SMClsCallCell.m in Sources */,
+				D4672E5E22962B3B00A5DE44 /* SMCallTrace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D47F28DD216EF5C800424800 /* Main.storyboard */ = {
+		D4672DFB22962B3B00A5DE44 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D47F28DE216EF5C800424800 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D47F28E2216EF5CA00424800 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D47F28E3216EF5CA00424800 /* Base */,
+				D4672DFC22962B3B00A5DE44 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D4672DFD22962B3B00A5DE44 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4672DFE22962B3B00A5DE44 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -695,6 +783,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BN7E4W99SM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = OfferApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -713,6 +805,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BN7E4W99SM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = OfferApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

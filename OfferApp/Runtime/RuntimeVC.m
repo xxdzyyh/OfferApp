@@ -11,6 +11,14 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 
+
+/**
+ 参考资料
+ 
+ 1. https://blog.sunnyxx.com/2014/11/06/runtime-nuts/
+ 2. http://www.cocoachina.com/ios/20190408/26746.html
+ */
+
 @interface NSObject (Sark)
 
 + (void)foo;
@@ -43,14 +51,12 @@
     // Do any additional setup after loading the view.
     
     self.dataSources = @[@{ActionTypeString:@(ActionTypeNone),ActionValueString:@"test"},
+                         @{ActionTypeString:@(ActionTypeNone),ActionValueString:@"test1"},
                          @{ActionTypeString:@(ActionTypeNone),ActionValueString:@"testNSObject"}];
     
 //    id cls = [RPerson class];
 //    void *obj = &cls;
 //    [(__bridge id)obj sayHello];
-    
-    
-    
 }
 
 - (void)test {
@@ -61,6 +67,34 @@
     id cls = [RPerson class];
     void *obj = &cls;
     [(__bridge id)obj sayHello];
+    
+//    2019-04-15 13:55:49.603090+0800 OfferApp[48202:1882299] 0x7ffee73f3aa8
+//    2019-04-15 13:55:49.603254+0800 OfferApp[48202:1882299] 0x7ffee73f3aa0
+//    2019-04-15 13:55:49.603350+0800 OfferApp[48202:1882299] 0x7ffee73f3a98
+
+    NSLog(@"%p",&oj);
+    NSLog(@"%p",&cls);
+    NSLog(@"%p",&obj);
+
+//    2019-04-15 13:55:49.603438+0800 OfferApp[48202:1882299] 0x60000055c2e0
+//    2019-04-15 13:55:49.603570+0800 OfferApp[48202:1882299] 0x108a6cc68
+//    2019-04-15 13:55:49.603664+0800 OfferApp[48202:1882299] 0x7ffee73f3aa0
+    NSLog(@"%p",oj);
+    NSLog(@"%p",cls);
+    NSLog(@"%p",obj);
+
+
+    /**
+     RPerson *obj = [RPerson new];
+     
+     [obj sayHello];
+     */
+}
+
+- (void)test1 {
+    id obj = [RPerson new];
+    
+    [obj sayHello];
 }
 
 - (void)testNSObject {
@@ -107,6 +141,8 @@
         [super tableView:tableView didSelectRowAtIndexPath:indexPath];
     }
 }
+
+#pragma mark - Helper
 
 - (void)printAllMethod:(id)obj {
     unsigned int count;

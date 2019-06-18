@@ -1,36 +1,60 @@
+<!--<html>-->
+<!--<header>-->
+<!--    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
+<!--    <script type="text/javascript">-->
+<!---->
+<!--        function btnClick() {-->
+<!--          test({-->
+<!--            testString: "testString",-->
+<!--            result: function(data) {-->
+<!--              //理论上传过来的是转成JSON格式字符串的MAP,需要统一一下KEY值-->
+<!--            // 此处demo相当与document.getElementById("demo")-->
+<!--              demo.innerHTML = data["data"];-->
+<!--            }-->
+<!--          })-->
+<!--        }-->
+<!---->
+<!--        function test(testData) {-->
+<!--          var testStr = testData.testString-->
+<!--          var result = testData.result-->
+<!--          //此处不能直接将回调函数传给iOS需要将回调函数转成字符串,其他的保持不变即可-->
+<!--          testData.result = result.toString()-->
+<!--          window.webkit.messageHandlers.btnClick.postMessage(testData);-->
+<!--        }-->
+<!---->
+<!--    </script>-->
+<!--</header>-->
+<!--<body bgcolor="red">-->
+<!--    <h2> js回调Test </h2>-->
+<!--    <br/>-->
+<!--    <br/>-->
+<!--    <button type="button" onclick="btnClick()">test回调</button>-->
+<!--    <br/>-->
+<!--    <br/>-->
+<!--    <p id="demo">暂无回调</p>-->
+<!--</body>-->
+<!--</html>-->
+
 <html>
-<header>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script type="text/javascript">
+    <head>  
+        <meta charset="UTF-8">  
+            <title></title>  
+            </head>  
+    <body>
+        <div>纯input与type</div>
+        <input type="file">
 
-        function btnClick() {
-          test({
-            testString: "testString",
-            result: function(data) {
-              //理论上传过来的是转成JSON格式字符串的MAP,需要统一一下KEY值
-            // 此处demo相当与document.getElementById("demo")
-              demo.innerHTML = data["data"];
-            }
-          })
-        }
+        <div>指明需要图片</div>
+        <input type="file" accept='image/*'>
 
-        function test(testData) {
-          var testStr = testData.testString
-          var result = testData.result
-          //此处不能直接将回调函数传给iOS需要将回调函数转成字符串,其他的保持不变即可
-          testData.result = result.toString()
-          window.webkit.messageHandlers.btnClick.postMessage(testData);
-        }
+        <div>指明需要多张图片</div>
+        <input type="file" multiple accept='image/*'>
 
-    </script>
-</header>
-<body bgcolor="red">
-    <h2> js回调Test </h2>
-    <br/>
-    <br/>
-    <button type="button" onclick="btnClick()">test回调</button>
-    <br/>
-    <br/>
-    <p id="demo">暂无回调</p>
-</body>
+        <div>指明调用摄像头获取图片</div>
+        <input type="file" capture='camera' accept='image/*'>
+
+        <div>指明调用摄像头并多张图片</div>
+        <!-- multiple 无效 -->
+        <input type="file" multiple capture='camera' accept='image/*'>
+    </body>
 </html>

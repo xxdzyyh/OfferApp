@@ -6,6 +6,11 @@
 //  Copyright © 2018年 com.learn. All rights reserved.
 //
 
+//  NSRunLoopCommonModes {
+//    NSDefaultRunLoopMode,
+//    NSEventTrackingRunLoopMode
+//  }
+
 #import "MultiThreadVC.h"
 
 @interface MultiThreadVC ()
@@ -57,4 +62,11 @@
     }
 }
 
+- (void)testPerformSelector:(id)arg {
+    NSLog(@"arg = %@",arg);
+}
+
+- (void)test {
+    [self performSelector:@selector(testProperty) onThread:[NSThread mainThread] withObject:nil waitUntilDone:NO modes:@[NSRunLoopCommonModes]];
+}
 @end
