@@ -59,7 +59,6 @@
 		D4672E6822962B3B00A5DE44 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E2D22962B3B00A5DE44 /* Father.m */; };
 		D4672E6922962B3B00A5DE44 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E2E22962B3B00A5DE44 /* Son.m */; };
 		D4672E6A22962B3B00A5DE44 /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E3322962B3B00A5DE44 /* CViewController.m */; };
-		D4672E6B22962B3B00A5DE44 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4672E3422962B3B00A5DE44 /* Info.plist */; };
 		D4672E6C22962B3B00A5DE44 /* MultiThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E3722962B3B00A5DE44 /* MultiThreadVC.m */; };
 /* End PBXBuildFile section */
 
@@ -237,8 +236,8 @@
 		D4672DC422962B3B00A5DE44 /* CrashCollect */ = {
 			isa = PBXGroup;
 			children = (
-				D4672DC522962B3B00A5DE44 /* CrashCollectVC.m */,
 				D4672DC622962B3B00A5DE44 /* CrashCollectVC.h */,
+				D4672DC522962B3B00A5DE44 /* CrashCollectVC.m */,
 			);
 			path = CrashCollect;
 			sourceTree = "<group>";
@@ -280,8 +279,8 @@
 		D4672DD722962B3B00A5DE44 /* Assemble */ = {
 			isa = PBXGroup;
 			children = (
-				D4672DD822962B3B00A5DE44 /* AssembleVC.m */,
 				D4672DD922962B3B00A5DE44 /* AssembleVC.h */,
+				D4672DD822962B3B00A5DE44 /* AssembleVC.m */,
 			);
 			path = Assemble;
 			sourceTree = "<group>";
@@ -537,7 +536,6 @@
 				D4672E5022962B3B00A5DE44 /* test.html in Resources */,
 				D4672E4222962B3B00A5DE44 /* Assets.xcassets in Resources */,
 				D44C824C22B8E4C80001BB79 /* runloop.jpg in Resources */,
-				D4672E6B22962B3B00A5DE44 /* Info.plist in Resources */,
 				D4672E5222962B3B00A5DE44 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

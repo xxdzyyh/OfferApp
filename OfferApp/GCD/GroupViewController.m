@@ -8,6 +8,60 @@
 
 #import "GroupViewController.h"
 
+@interface BFUtils : NSObject 
+
++ (BFUtils *)shared;
+
+@end
+
+@implementation BFUtils
+
++ (BFUtils *)shared {
+    static BFUtils *_share;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _share = [[BFUtils alloc] init];
+    });
+    return _share;
+}
+
+- (NSString *)token {
+    return @".....";
+}
+
+@end
+
+@interface BFHttpClient : NSObject 
+
++ (BFHttpClient *)shareClient;
+
+@end
+
+@implementation BFHttpClient
+
++ (BFHttpClient *)shareClient {
+    static BFHttpClient *_share;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _share = [[BFHttpClient alloc] init];
+        
+        [_share test];
+    });
+    
+    
+    return _share;
+}
+
+- (void)test {
+    NSString *token = [[BFUtils shared] token];
+    
+    NSLog(@"%@",token);
+}
+
+@end
+
+
+
 @interface GroupViewController ()
 
 @end
@@ -19,7 +73,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self group];
+    [BFHttpClient shareClient];
 }
 
 - (void)group {

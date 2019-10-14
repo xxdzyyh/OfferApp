@@ -10,6 +10,17 @@
 #import "SMLagMonitor.h"
 #import "SMCallTrace.h"
 
+@interface MyObject<__covariant T> : NSObject 
+
+@property (nonatomic, strong) T obj;
+
+@end
+
+@implementation MyObject
+
+
+@end
+
 @interface AppDelegate ()
 
 @end
@@ -18,6 +29,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //    [SMCallTrace start];
+    
+    MyObject<NSNumber *> *obj = [[MyObject alloc] init];
+    
+    NSLog(@"%@",obj.obj);
     
     [[UIView appearance] setBackgroundColor:[UIColor whiteColor]];
     
