@@ -69,4 +69,5 @@
 - (void)test {
     [self performSelector:@selector(testProperty) onThread:[NSThread mainThread] withObject:nil waitUntilDone:NO modes:@[NSRunLoopCommonModes]];
 }
+
 @end

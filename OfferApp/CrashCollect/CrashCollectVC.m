@@ -18,9 +18,7 @@ static NSUncaughtExceptionHandler *handle;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-   
+
     handle = NSGetUncaughtExceptionHandler();
     
     NSSetUncaughtExceptionHandler(&crashExceptionHandler);

@@ -11,8 +11,7 @@
 #import "MyViewController.h"
 
 @interface ViewController () {
-    MyViewController *_myVC;
-    
+    MyViewController *_myVC;    
 }
 
 @end
@@ -21,8 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-
+    // Do any additional setup after loading the view, typically from a nib
     self.dataSources = @[@{@"type" : @(ActionTypeController),@"value" : @"AssembleVC",@"desc":@"汇编"},
                          @{@"type" : @(ActionTypeController),@"value" : @"CarthageVC",@"desc":@"carthage"},
                          @{@"type" : @(ActionTypeController),@"value" : @"CViewController",@"desc":@"C语言相关"},
@@ -40,11 +38,6 @@
                          @{@"type" : @(ActionTypeController),@"value":@"RuntimeVC",@"desc":@"运行时"},
                          @{@"type" : @(ActionTypeController),@"value":@"DoubleDemoVC",@"desc":@"double"},];
     
-    
-    
-    
-    
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -54,6 +47,7 @@
 }
 
 - (void)showOverLay {
+    NSLog(@"XXXX");
 #if DEBUG
     id overlayClass = NSClassFromString(@"UIDebuggingInformationOverlay");
     [overlayClass performSelector:NSSelectorFromString(@"prepareDebuggingOverlay")];
@@ -66,7 +60,9 @@
     NSUInteger type = [dict[@"type"] integerValue];
     
     if (type != ActionTypeNone) {
+        
         [super tableView:tableView didSelectRowAtIndexPath:indexPath];
+        
     } else {
         NSString *value = dict[@"value"];
         

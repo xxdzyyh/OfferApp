@@ -57,6 +57,11 @@
         instance_size
      }
      */
+    
+    // yes
+    [[NSObject class] isMemberOfClass:[NSObject class]];
+    
+    
 }
 
 @end

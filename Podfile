@@ -8,7 +8,8 @@ target 'OfferApp' do
   # Pods for OfferApp
     pod 'FMDB'
     pod 'ReactiveCocoa', '=2.3'
-	pod 'XFFoundation',:path => '/Users/xiaoniu/Workspace/XFFoundation'
+#    pod 'Masonry'
+	  pod 'XFFoundation',:path => '/Users/xiaoniu/Workspace/XFFoundation'
     pod 'PromisesObjC', '~> 1.2.7'
     
 end

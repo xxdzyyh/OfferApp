@@ -6,7 +6,7 @@
 //  Copyright © 2018年 com.learn. All rights reserved.
 //
 
-#import <XFFoundation/XFFoundation.h>
+#import <XFDemoTableViewVC.h>
 
 @interface ViewController : XFDemoTableViewVC
 

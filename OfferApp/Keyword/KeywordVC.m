@@ -35,6 +35,49 @@
         if ([value isEqualToString:SuperDesc]) {
             [Son new];
         }  
-    } 
+    }
+    
 }
+
+
+- (void)dif {
+    /**
+        
+            struct objc_method {
+                SEL method_name
+                char *method_types
+                IMP method_imp
+            }
+     
+                            
+     struct objc_class;
+     struct objc_object;
+
+     typedef struct objc_class *Class;
+     typedef struct objc_object *id;
+     
+     
+     typedef struct method_t *Method;
+     typedef struct ivar_t *Ivar;
+     typedef struct category_t *Category;
+     typedef struct property_t *objc_property_t;
+     
+     struct method_t {
+         SEL name;
+         const char *types;
+         MethodListIMP imp;
+
+         struct SortBySELAddress :
+             public std::binary_function<const method_t&,
+                                         const method_t&, bool>
+         {
+             bool operator() (const method_t& lhs,
+                              const method_t& rhs)
+             { return lhs.name < rhs.name; }
+         };
+     };
+     */
+    
+}
+
 @end

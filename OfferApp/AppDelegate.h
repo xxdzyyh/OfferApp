@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <XFFoundation/XFFoundation.h>
-
+//#import <XFFoundation/XFFoundation.h>
+//
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

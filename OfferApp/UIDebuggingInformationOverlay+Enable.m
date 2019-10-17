@@ -89,8 +89,8 @@
     tapGesture.numberOfTapsRequired = 1;
     tapGesture.delegate = handler;
   
-    UIView *statusBarWindow = [[UIApplication sharedApplication] valueForKey:@"statusBarWindow"];
-    [statusBarWindow addGestureRecognizer:tapGesture];
+//    UIView *statusBarWindow = [[UIApplication sharedApplication] valueForKey:@"statusBarWindow"];
+//    [statusBarWindow addGestureRecognizer:tapGesture];
 }
 
 @end

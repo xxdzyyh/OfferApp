@@ -8,7 +8,6 @@
 
 #import "WebViewController.h"
 #import <WebKit/WebKit.h>
-#import <Masonry/Masonry.h>
 
 @interface WebViewController () <WKScriptMessageHandler>
 
@@ -23,9 +22,9 @@
     [super viewDidLoad];
 
     [self.view addSubview:self.webView];    
-    [self.webView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view); 
-    }];
+//    [self.webView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.edges.equalTo(self.view); 
+//    }];
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"];
     

@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "SMLagMonitor.h"
-#import "SMCallTrace.h"
+
 
 @interface MyObject<__covariant T> : NSObject 
 
@@ -28,14 +27,10 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    [SMCallTrace start];
-    
     MyObject<NSNumber *> *obj = [[MyObject alloc] init];
     
     NSLog(@"%@",obj.obj);
-    
-    [[UIView appearance] setBackgroundColor:[UIColor whiteColor]];
-    
+
     return YES;
 }
 
@@ -79,7 +74,7 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-     [SMCallTrace save];
+
 }
 
 @end
