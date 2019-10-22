@@ -46,6 +46,7 @@
 		D4672E6922962B3B00A5DE44 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E2E22962B3B00A5DE44 /* Son.m */; };
 		D4672E6A22962B3B00A5DE44 /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E3322962B3B00A5DE44 /* CViewController.m */; };
 		D4672E6C22962B3B00A5DE44 /* MultiThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E3722962B3B00A5DE44 /* MultiThreadVC.m */; };
+		D498FD03235D576600382842 /* SDWebImageTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D498FD02235D576600382842 /* SDWebImageTestVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +124,8 @@
 		D4672E3722962B3B00A5DE44 /* MultiThreadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiThreadVC.m; sourceTree = "<group>"; };
 		D4672E3822962B3B00A5DE44 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D47F28D4216EF5C800424800 /* OfferApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfferApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D498FD01235D576600382842 /* SDWebImageTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageTestVC.h; sourceTree = "<group>"; };
+		D498FD02235D576600382842 /* SDWebImageTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageTestVC.m; sourceTree = "<group>"; };
 		D4CEB71E2266CE77007E4B55 /* SweetAlert.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SweetAlert.framework; path = Carthage/Build/iOS/SweetAlert.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +162,7 @@
 		D4672DC222962B3B00A5DE44 /* OfferApp */ = {
 			isa = PBXGroup;
 			children = (
+				D498FD00235D574100382842 /* SDWebImage */,
 				D4672DC322962B3B00A5DE44 /* AppDelegate.h */,
 				D4672DC422962B3B00A5DE44 /* CrashCollect */,
 				D4672DC722962B3B00A5DE44 /* Memory */,
@@ -395,6 +399,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D498FD00235D574100382842 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				D498FD01235D576600382842 /* SDWebImageTestVC.h */,
+				D498FD02235D576600382842 /* SDWebImageTestVC.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -535,6 +548,7 @@
 				D4672E6722962B3B00A5DE44 /* ClassVC.m in Sources */,
 				D4672E5422962B3B00A5DE44 /* MyViewController.m in Sources */,
 				D4672E6C22962B3B00A5DE44 /* MultiThreadVC.m in Sources */,
+				D498FD03235D576600382842 /* SDWebImageTestVC.m in Sources */,
 				D4672E3C22962B3B00A5DE44 /* RunloopVC.m in Sources */,
 				D4672E3922962B3B00A5DE44 /* CrashCollectVC.m in Sources */,
 				D4672E4D22962B3B00A5DE44 /* BugVC.m in Sources */,

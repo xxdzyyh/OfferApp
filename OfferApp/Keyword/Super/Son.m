@@ -14,11 +14,13 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
+        // super调用方法，方法的receiver还是self
         // super调用方法的时候直接从父类开始查找，class这个方法由NSObject实现
         // - (Class)class {
         //    return object_getClass(self); 
         // }
         // 因此返回的结果都是Son
+        
         
         NSLog(@"%@",[self class]);
         NSLog(@"%@",[super class]);
@@ -28,9 +30,18 @@
         
         NSLog(@"%@",[self fileName]);
         NSLog(@"%@",[super fileName]);
+        
+        [self test];
 
     }
     return self;
+}
+
+- (void)test {
+    // Son
+    // Father
+    NSLog(@"test---%@",[super class]);
+    NSLog(@"test---%@",[super superclass]);
 }
 
 - (NSString *)fileName {

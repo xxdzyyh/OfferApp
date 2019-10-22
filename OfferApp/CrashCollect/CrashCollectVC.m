@@ -53,7 +53,6 @@ void signalExceptionHandler(int signal) {
     NSLog(@"信号捕获崩溃，堆栈信息：%@",callStack);
     NSString *name = @"wwww";
     NSString *reason = [NSString stringWithFormat:@"signal %d was raised",signal];
-  
 }
 
 + (NSArray *)backtrace {

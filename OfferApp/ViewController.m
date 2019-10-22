@@ -36,7 +36,8 @@
                          @{@"type" : @(ActionTypeController),@"value":@"SMClsCallViewController",@"desc":@"耗时统计"},
                          @{@"type" : @(ActionTypeController),@"value":@"CrashVC",@"desc":@"常见崩溃"},
                          @{@"type" : @(ActionTypeController),@"value":@"RuntimeVC",@"desc":@"运行时"},
-                         @{@"type" : @(ActionTypeController),@"value":@"DoubleDemoVC",@"desc":@"double"},];
+                         @{@"type" : @(ActionTypeController),@"value":@"DoubleDemoVC",@"desc":@"double"},
+                         @{@"type" : @(ActionTypeController),@"value":@"SDWebImageTestVC",@"desc":@"渐进式加载原理"}];
     
 }
 
