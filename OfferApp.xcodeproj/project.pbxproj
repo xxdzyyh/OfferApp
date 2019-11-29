@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7FCA1BB4B2CAB6F78F15E32A /* libPods-OfferApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 447797FAC45F44447C6E5313 /* libPods-OfferApp.a */; };
+		A019F015238E07E1007D2F2E /* NotificationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A019F014238E07E1007D2F2E /* NotificationVC.m */; };
+		A019F01D238E0864007D2F2E /* YGLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A019F01B238E0864007D2F2E /* YGLayout.m */; };
+		A019F01E238E0864007D2F2E /* UIView+Yoga.m in Sources */ = {isa = PBXBuildFile; fileRef = A019F01C238E0864007D2F2E /* UIView+Yoga.m */; };
+		A019F043238F5C74007D2F2E /* RACObserverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A019F042238F5C74007D2F2E /* RACObserverVC.m */; };
+		A03061C5236AE35C00E49162 /* BlockTestsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A03061C4236AE35C00E49162 /* BlockTestsVC.m */; };
 		D44C824C22B8E4C80001BB79 /* runloop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D44C824B22B8E4C80001BB79 /* runloop.jpg */; };
 		D4672E3922962B3B00A5DE44 /* CrashCollectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DC522962B3B00A5DE44 /* CrashCollectVC.m */; };
 		D4672E3A22962B3B00A5DE44 /* MemoryObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DC922962B3B00A5DE44 /* MemoryObj.m */; };
@@ -53,6 +58,17 @@
 		3EDEADCF0F9B431238999766 /* Pods-OfferApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfferApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OfferApp/Pods-OfferApp.debug.xcconfig"; sourceTree = "<group>"; };
 		447797FAC45F44447C6E5313 /* libPods-OfferApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OfferApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EF2A1949D334438935EFF19 /* Pods-OfferApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfferApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-OfferApp/Pods-OfferApp.release.xcconfig"; sourceTree = "<group>"; };
+		A019F013238E07E1007D2F2E /* NotificationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationVC.h; sourceTree = "<group>"; };
+		A019F014238E07E1007D2F2E /* NotificationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationVC.m; sourceTree = "<group>"; };
+		A019F018238E0864007D2F2E /* YGLayout+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YGLayout+Private.h"; sourceTree = "<group>"; };
+		A019F019238E0864007D2F2E /* YGLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGLayout.h; sourceTree = "<group>"; };
+		A019F01A238E0864007D2F2E /* UIView+Yoga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Yoga.h"; sourceTree = "<group>"; };
+		A019F01B238E0864007D2F2E /* YGLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGLayout.m; sourceTree = "<group>"; };
+		A019F01C238E0864007D2F2E /* UIView+Yoga.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Yoga.m"; sourceTree = "<group>"; };
+		A019F041238F5C74007D2F2E /* RACObserverVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACObserverVC.h; sourceTree = "<group>"; };
+		A019F042238F5C74007D2F2E /* RACObserverVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACObserverVC.m; sourceTree = "<group>"; };
+		A03061C3236AE35C00E49162 /* BlockTestsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockTestsVC.h; sourceTree = "<group>"; };
+		A03061C4236AE35C00E49162 /* BlockTestsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockTestsVC.m; sourceTree = "<group>"; };
 		D44C824B22B8E4C80001BB79 /* runloop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = runloop.jpg; sourceTree = "<group>"; };
 		D4672DC322962B3B00A5DE44 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4672DC522962B3B00A5DE44 /* CrashCollectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashCollectVC.m; sourceTree = "<group>"; };
@@ -159,9 +175,60 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A019F012238E07B0007D2F2E /* NSNotification */ = {
+			isa = PBXGroup;
+			children = (
+				A019F013238E07E1007D2F2E /* NotificationVC.h */,
+				A019F014238E07E1007D2F2E /* NotificationVC.m */,
+			);
+			path = NSNotification;
+			sourceTree = "<group>";
+		};
+		A019F016238E0864007D2F2E /* Yoga */ = {
+			isa = PBXGroup;
+			children = (
+				A019F017238E0864007D2F2E /* Source */,
+			);
+			path = Yoga;
+			sourceTree = "<group>";
+		};
+		A019F017238E0864007D2F2E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A019F018238E0864007D2F2E /* YGLayout+Private.h */,
+				A019F019238E0864007D2F2E /* YGLayout.h */,
+				A019F01A238E0864007D2F2E /* UIView+Yoga.h */,
+				A019F01B238E0864007D2F2E /* YGLayout.m */,
+				A019F01C238E0864007D2F2E /* UIView+Yoga.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A019F040238F5BA3007D2F2E /* RAC */ = {
+			isa = PBXGroup;
+			children = (
+				A019F041238F5C74007D2F2E /* RACObserverVC.h */,
+				A019F042238F5C74007D2F2E /* RACObserverVC.m */,
+			);
+			path = RAC;
+			sourceTree = "<group>";
+		};
+		A03061C2236AE32C00E49162 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				A03061C3236AE35C00E49162 /* BlockTestsVC.h */,
+				A03061C4236AE35C00E49162 /* BlockTestsVC.m */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
 		D4672DC222962B3B00A5DE44 /* OfferApp */ = {
 			isa = PBXGroup;
 			children = (
+				A019F040238F5BA3007D2F2E /* RAC */,
+				A019F016238E0864007D2F2E /* Yoga */,
+				A019F012238E07B0007D2F2E /* NSNotification */,
+				A03061C2236AE32C00E49162 /* Block */,
 				D498FD00235D574100382842 /* SDWebImage */,
 				D4672DC322962B3B00A5DE44 /* AppDelegate.h */,
 				D4672DC422962B3B00A5DE44 /* CrashCollect */,
@@ -530,14 +597,18 @@
 				D4672E6822962B3B00A5DE44 /* Father.m in Sources */,
 				D4672E3D22962B3B00A5DE44 /* BaseViewController.m in Sources */,
 				D4672E4422962B3B00A5DE44 /* KVOViewController.m in Sources */,
+				A019F01E238E0864007D2F2E /* UIView+Yoga.m in Sources */,
+				A03061C5236AE35C00E49162 /* BlockTestsVC.m in Sources */,
 				D4672E5322962B3B00A5DE44 /* UrlVC.m in Sources */,
 				D4672E3F22962B3B00A5DE44 /* Sub.m in Sources */,
 				D4672E4B22962B3B00A5DE44 /* NumberItemCell.m in Sources */,
 				D4672E4E22962B3B00A5DE44 /* CollectionOffsetBugVC.m in Sources */,
 				D4672E5622962B3B00A5DE44 /* DoubleDemoVC.m in Sources */,
+				A019F043238F5C74007D2F2E /* RACObserverVC.m in Sources */,
 				D4672E4522962B3B00A5DE44 /* RPerson.m in Sources */,
 				D4672E3A22962B3B00A5DE44 /* MemoryObj.m in Sources */,
 				D4672E4622962B3B00A5DE44 /* CarthageVC.m in Sources */,
+				A019F015238E07E1007D2F2E /* NotificationVC.m in Sources */,
 				D4672E4322962B3B00A5DE44 /* RuntimeVC.m in Sources */,
 				D4672E4F22962B3B00A5DE44 /* WebViewController.m in Sources */,
 				D4672E5522962B3B00A5DE44 /* main.m in Sources */,
@@ -547,6 +618,7 @@
 				D4672E4A22962B3B00A5DE44 /* NumberViewModel.m in Sources */,
 				D4672E6722962B3B00A5DE44 /* ClassVC.m in Sources */,
 				D4672E5422962B3B00A5DE44 /* MyViewController.m in Sources */,
+				A019F01D238E0864007D2F2E /* YGLayout.m in Sources */,
 				D4672E6C22962B3B00A5DE44 /* MultiThreadVC.m in Sources */,
 				D498FD03235D576600382842 /* SDWebImageTestVC.m in Sources */,
 				D4672E3C22962B3B00A5DE44 /* RunloopVC.m in Sources */,
