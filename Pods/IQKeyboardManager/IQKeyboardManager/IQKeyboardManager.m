@@ -51,7 +51,6 @@
 #import <UIKit/UIWindow.h>
 #import <UIKit/NSLayoutConstraint.h>
 #import <UIKit/UIStackView.h>
-#import <UIKit/UIAccessibility.h>
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 130000
 #import <UIKit/UIWindowScene.h>
 #import <UIKit/UIStatusBarManager.h>
@@ -348,14 +347,12 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
 //    }
 //    else
     {
-        __strong __typeof__(UIView) *strongTextFieldView = _textFieldView;
-
-        UIViewController *textFieldViewController = [strongTextFieldView viewContainingController];
+        UIViewController *textFieldViewController = [_textFieldView viewContainingController];
         
         if (textFieldViewController)
         {
             //If it is searchBar textField embedded in Navigation Bar
-            if ([strongTextFieldView textFieldSearchBar] != nil && [textFieldViewController isKindOfClass:[UINavigationController class]]) {
+            if ([_textFieldView textFieldSearchBar] != nil && [textFieldViewController isKindOfClass:[UINavigationController class]]) {
                 
                 UINavigationController *navController = (UINavigationController*)textFieldViewController;
                 if (navController.topViewController) {
@@ -430,9 +427,8 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
 {
     BOOL shouldResignOnTouchOutside = _shouldResignOnTouchOutside;
     
-    __strong __typeof__(UIView) *strongTextFieldView = _textFieldView;
-
-    IQEnableMode enableMode = strongTextFieldView.shouldResignOnTouchOutsideMode;
+    UIView *textFieldView = _textFieldView;
+    IQEnableMode enableMode = textFieldView.shouldResignOnTouchOutsideMode;
     
     if (enableMode == IQEnableModeEnabled)
     {
@@ -444,12 +440,12 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     }
     else
     {
-        UIViewController *textFieldViewController = [strongTextFieldView viewContainingController];
+        UIViewController *textFieldViewController = [textFieldView viewContainingController];
         
         if (textFieldViewController)
         {
             //If it is searchBar textField embedded in Navigation Bar
-            if ([strongTextFieldView textFieldSearchBar] != nil && [textFieldViewController isKindOfClass:[UINavigationController class]]) {
+            if ([_textFieldView textFieldSearchBar] != nil && [textFieldViewController isKindOfClass:[UINavigationController class]]) {
                 
                 UINavigationController *navController = (UINavigationController*)textFieldViewController;
                 if (navController.topViewController) {
@@ -532,14 +528,12 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
 {
     BOOL enableAutoToolbar = _enableAutoToolbar;
     
-    __strong __typeof__(UIView) *strongTextFieldView = _textFieldView;
-
-    UIViewController *textFieldViewController = [strongTextFieldView viewContainingController];
+    UIViewController *textFieldViewController = [_textFieldView viewContainingController];
     
     if (textFieldViewController)
     {
         //If it is searchBar textField embedded in Navigation Bar
-        if ([strongTextFieldView textFieldSearchBar] != nil && [textFieldViewController isKindOfClass:[UINavigationController class]]) {
+        if ([_textFieldView textFieldSearchBar] != nil && [textFieldViewController isKindOfClass:[UINavigationController class]]) {
             
             UINavigationController *navController = (UINavigationController*)textFieldViewController;
             if (navController.topViewController) {
@@ -1128,10 +1122,10 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
                     }
                 }
 
-                CGFloat bottomInset = textFieldView.frame.size.height-textViewHeight;
+                CGFloat bottomInset = self.textFieldView.frame.size.height-textViewHeight;
 
                 if (@available(iOS 11, *)) {
-                    bottomInset -= textFieldView.safeAreaInsets.bottom;
+                    bottomInset -= self.textFieldView.safeAreaInsets.bottom;
                 }
 
                 UIEdgeInsets newContentInset = textView.contentInset;
@@ -1712,13 +1706,11 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     CFTimeInterval startTime = CACurrentMediaTime();
     [self showLog:[NSString stringWithFormat:@"****** %@ started ******",NSStringFromSelector(_cmd)] indentation:1];
 
-    __strong __typeof__(UIView) *strongTextFieldView = _textFieldView;
-
     //If textViewContentInsetChanged is changed then restore it.
     if (_isTextViewContentInsetChanged == YES &&
-        [strongTextFieldView respondsToSelector:@selector(isEditable)] && [strongTextFieldView isKindOfClass:[UIScrollView class]])
+        [_textFieldView respondsToSelector:@selector(isEditable)] && [_textFieldView isKindOfClass:[UIScrollView class]])
     {
-        UIScrollView *textView = (UIScrollView*)strongTextFieldView;
+        UIScrollView *textView = (UIScrollView*)_textFieldView;
         self.isTextViewContentInsetChanged = NO;
         if (UIEdgeInsetsEqualToEdgeInsets(textView.contentInset, self.startingTextViewContentInsets) == NO)
         {

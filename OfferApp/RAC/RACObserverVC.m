@@ -7,7 +7,7 @@
 //
 
 #import "RACObserverVC.h"
-
+#import <ReactiveCocoa/ReactiveCocoa.h>
 @interface Anchor : NSObject
 
 @property (nonatomic ,copy) NSString *name;
@@ -21,6 +21,8 @@
 
 @interface LiveRoom : NSObject
 
+
+@property (strong, nonatomic) Anchor *anchor;
 @property (nonatomic ,copy) NSString *anchorName;
 @property (nonatomic ,copy) NSString *anchorUid;
 
@@ -28,9 +30,26 @@
 
 @implementation LiveRoom
 
+- (instancetype)initWithAnchor:(Anchor *)anchor {
+	self = [super init];
+	if (self) {
+		self.anchor = anchor;
+		
+		[self bind];
+	}
+	return self;
+}
+
+- (void)bind {
+	RAC(self,anchorName) = RACObserve(self.anchor, name);
+	RAC(self, anchorUid) = RACObserve(self, anchor.uid);
+}
+
 @end
 
 @interface RACObserverVC ()
+
+@property (strong, nonatomic) LiveRoom *liveRoom;
 
 @end
 
@@ -38,7 +57,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+	self.liveRoom = [[LiveRoom alloc] initWithAnchor:nil];
+	
+	NSLog(@"anchorName=%@  anchorUid=%@",self.liveRoom.anchorName,self.liveRoom.anchorUid);
+	
+	Anchor *anchor = [[Anchor alloc] init];
+	
+	anchor.name = @"Saber";
+	anchor.uid = @"001";
+	
+	self.liveRoom.anchor = anchor;
+	
+	NSLog(@"anchorName=%@  anchorUid=%@",self.liveRoom.anchorName,self.liveRoom.anchorUid);
 }
 
 
