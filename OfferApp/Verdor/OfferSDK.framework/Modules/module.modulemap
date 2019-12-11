@@ -1,0 +1,6 @@
+framework module OfferSDK {
+  umbrella header "OfferSDK.h"
+
+  export *
+  module * { export * }
+}

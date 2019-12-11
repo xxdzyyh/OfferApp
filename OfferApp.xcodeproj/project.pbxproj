@@ -52,6 +52,8 @@
 		D4672E6A22962B3B00A5DE44 /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E3322962B3B00A5DE44 /* CViewController.m */; };
 		D4672E6C22962B3B00A5DE44 /* MultiThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E3722962B3B00A5DE44 /* MultiThreadVC.m */; };
 		D498FD03235D576600382842 /* SDWebImageTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D498FD02235D576600382842 /* SDWebImageTestVC.m */; };
+		EC502DEC23A11143006FF5AB /* TestFrameworkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC502DEB23A11143006FF5AB /* TestFrameworkVC.m */; };
+		EC502E0B23A12998006FF5AB /* OfferSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC502E0A23A12998006FF5AB /* OfferSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -143,6 +145,9 @@
 		D498FD01235D576600382842 /* SDWebImageTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageTestVC.h; sourceTree = "<group>"; };
 		D498FD02235D576600382842 /* SDWebImageTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageTestVC.m; sourceTree = "<group>"; };
 		D4CEB71E2266CE77007E4B55 /* SweetAlert.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SweetAlert.framework; path = Carthage/Build/iOS/SweetAlert.framework; sourceTree = "<group>"; };
+		EC502DEA23A11143006FF5AB /* TestFrameworkVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFrameworkVC.h; sourceTree = "<group>"; };
+		EC502DEB23A11143006FF5AB /* TestFrameworkVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFrameworkVC.m; sourceTree = "<group>"; };
+		EC502E0A23A12998006FF5AB /* OfferSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OfferSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC502E0B23A12998006FF5AB /* OfferSDK.framework in Frameworks */,
 				7FCA1BB4B2CAB6F78F15E32A /* libPods-OfferApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +231,8 @@
 		D4672DC222962B3B00A5DE44 /* OfferApp */ = {
 			isa = PBXGroup;
 			children = (
+				EC502DE923A110EC006FF5AB /* TestFramework */,
+				EC502DE423A1106E006FF5AB /* Verdor */,
 				A019F040238F5BA3007D2F2E /* RAC */,
 				A019F016238E0864007D2F2E /* Yoga */,
 				A019F012238E07B0007D2F2E /* NSNotification */,
@@ -475,6 +483,23 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		EC502DE423A1106E006FF5AB /* Verdor */ = {
+			isa = PBXGroup;
+			children = (
+				EC502E0A23A12998006FF5AB /* OfferSDK.framework */,
+			);
+			path = Verdor;
+			sourceTree = "<group>";
+		};
+		EC502DE923A110EC006FF5AB /* TestFramework */ = {
+			isa = PBXGroup;
+			children = (
+				EC502DEA23A11143006FF5AB /* TestFrameworkVC.h */,
+				EC502DEB23A11143006FF5AB /* TestFrameworkVC.m */,
+			);
+			path = TestFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -590,6 +615,7 @@
 				D4672E4722962B3B00A5DE44 /* ViewController.m in Sources */,
 				D4672E3B22962B3B00A5DE44 /* MemoryVC.m in Sources */,
 				D4672E6622962B3B00A5DE44 /* KeywordVC.m in Sources */,
+				EC502DEC23A11143006FF5AB /* TestFrameworkVC.m in Sources */,
 				D4672E5722962B3B00A5DE44 /* AppDelegate.m in Sources */,
 				D4672E6922962B3B00A5DE44 /* Son.m in Sources */,
 				D4672E3E22962B3B00A5DE44 /* UIViewController+Log.m in Sources */,
@@ -771,6 +797,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/OfferApp/Verdor",
 				);
 				INFOPLIST_FILE = OfferApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -793,6 +820,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/OfferApp/Verdor",
 				);
 				INFOPLIST_FILE = OfferApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
