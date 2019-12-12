@@ -17,10 +17,21 @@
 
 @implementation Anchor
 
+- (void)updateUid {
+    [self willChangeValueForKey:@"uid"];
+    _uid = @"002";
+    [self didChangeValueForKey:@"uid"];
+}
+
+- (void)setUid:(NSString *)uid {
+    [self willChangeValueForKey:@"uid"];
+    _uid = uid;
+    [self didChangeValueForKey:@"uid"];
+}
+
 @end
 
 @interface LiveRoom : NSObject
-
 
 @property (strong, nonatomic) Anchor *anchor;
 @property (nonatomic ,copy) NSString *anchorName;
@@ -68,8 +79,24 @@
 	anchor.uid = @"001";
 	
 	self.liveRoom.anchor = anchor;
+    
+    RAC(self.liveRoom,anchorName) = RACObserve(self.liveRoom.anchor, name);
 	
 	NSLog(@"anchorName=%@  anchorUid=%@",self.liveRoom.anchorName,self.liveRoom.anchorUid);
+    
+    [anchor updateUid];
+    
+    NSLog(@"anchorName=%@  anchorUid=%@",self.liveRoom.anchorName,self.liveRoom.anchorUid);
+    
+    Anchor *anchor2 = [[Anchor alloc] init];
+    
+    anchor2.name = @"Anch0r";
+    anchor2.uid = @"003";
+    
+    self.liveRoom.anchor = anchor2;
+    
+    NSLog(@"anchorName=%@  anchorUid=%@",self.liveRoom.anchorName,self.liveRoom.anchorUid);
+    
 }
 
 

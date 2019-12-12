@@ -24,9 +24,9 @@
     
     // Do any additional setup after loading the view, typically from a nib
     self.dataSources = @[
-						 @{@"type" : @(ActionTypeController),@"value" : @"TestFrameworkVC",@"desc":@"Framework"},
-						 @{@"type" : @(ActionTypeController),@"value" : @"RACObserverVC",@"desc":@"rac"},
-						 @{@"type" : @(ActionTypeController),@"value" : @"NotificationVC",@"desc":@"通知"},
+                         @{@"type" : @(ActionTypeController),@"value" : @"MasonryViewController",@"desc":@"Masonry "},
+                         @{@"type" : @(ActionTypeController),@"value" : @"RACObserverVC",@"desc":@"rac"},
+                         @{@"type" : @(ActionTypeController),@"value" : @"NotificationVC",@"desc":@"通知"},
                          @{@"type" : @(ActionTypeController),@"value" : @"AssembleVC",@"desc":@"汇编"},
                          @{@"type" : @(ActionTypeController),@"value" : @"CarthageVC",@"desc":@"carthage"},
                          @{@"type" : @(ActionTypeController),@"value" : @"CViewController",@"desc":@"C语言相关"},

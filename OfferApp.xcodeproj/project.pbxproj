@@ -13,6 +13,7 @@
 		A019F01E238E0864007D2F2E /* UIView+Yoga.m in Sources */ = {isa = PBXBuildFile; fileRef = A019F01C238E0864007D2F2E /* UIView+Yoga.m */; };
 		A019F043238F5C74007D2F2E /* RACObserverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A019F042238F5C74007D2F2E /* RACObserverVC.m */; };
 		A03061C5236AE35C00E49162 /* BlockTestsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A03061C4236AE35C00E49162 /* BlockTestsVC.m */; };
+		A0AB67EA23A0F47E0083219E /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AB67E923A0F47D0083219E /* MasonryViewController.m */; };
 		D44C824C22B8E4C80001BB79 /* runloop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D44C824B22B8E4C80001BB79 /* runloop.jpg */; };
 		D4672E3922962B3B00A5DE44 /* CrashCollectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DC522962B3B00A5DE44 /* CrashCollectVC.m */; };
 		D4672E3A22962B3B00A5DE44 /* MemoryObj.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672DC922962B3B00A5DE44 /* MemoryObj.m */; };
@@ -71,6 +72,8 @@
 		A019F042238F5C74007D2F2E /* RACObserverVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACObserverVC.m; sourceTree = "<group>"; };
 		A03061C3236AE35C00E49162 /* BlockTestsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockTestsVC.h; sourceTree = "<group>"; };
 		A03061C4236AE35C00E49162 /* BlockTestsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockTestsVC.m; sourceTree = "<group>"; };
+		A0AB67E823A0F47D0083219E /* MasonryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryViewController.h; sourceTree = "<group>"; };
+		A0AB67E923A0F47D0083219E /* MasonryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryViewController.m; sourceTree = "<group>"; };
 		D44C824B22B8E4C80001BB79 /* runloop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = runloop.jpg; sourceTree = "<group>"; };
 		D4672DC322962B3B00A5DE44 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4672DC522962B3B00A5DE44 /* CrashCollectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashCollectVC.m; sourceTree = "<group>"; };
@@ -228,11 +231,21 @@
 			path = Block;
 			sourceTree = "<group>";
 		};
+		A0AB67E723A0F4640083219E /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				A0AB67E823A0F47D0083219E /* MasonryViewController.h */,
+				A0AB67E923A0F47D0083219E /* MasonryViewController.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
 		D4672DC222962B3B00A5DE44 /* OfferApp */ = {
 			isa = PBXGroup;
 			children = (
 				EC502DE923A110EC006FF5AB /* TestFramework */,
 				EC502DE423A1106E006FF5AB /* Verdor */,
+				A0AB67E723A0F4640083219E /* Masonry */,
 				A019F040238F5BA3007D2F2E /* RAC */,
 				A019F016238E0864007D2F2E /* Yoga */,
 				A019F012238E07B0007D2F2E /* NSNotification */,
@@ -623,6 +636,7 @@
 				D4672E6822962B3B00A5DE44 /* Father.m in Sources */,
 				D4672E3D22962B3B00A5DE44 /* BaseViewController.m in Sources */,
 				D4672E4422962B3B00A5DE44 /* KVOViewController.m in Sources */,
+				A0AB67EA23A0F47E0083219E /* MasonryViewController.m in Sources */,
 				A019F01E238E0864007D2F2E /* UIView+Yoga.m in Sources */,
 				A03061C5236AE35C00E49162 /* BlockTestsVC.m in Sources */,
 				D4672E5322962B3B00A5DE44 /* UrlVC.m in Sources */,
