@@ -35,9 +35,14 @@
     [self setupSubviews];
     [self setupConstraints];
     
+    // 接收指定名称的通知，而不在乎 notification.object 是谁
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(recieveNotify) name:NotificationName object:nil];
+    // 接收指定名称的通知，而 notification.object 必须是 self.firstObj，需要注意self.firstObj如果为nil，就变成接收指定名称的通知，而不在乎 notification.object 是谁
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(recieveNotifyWithFirstObj) name:NotificationName object:self.firstObj];
+    // 接收指定名称的通知，而 notification.object 必须是 self.secondObj，需要注意self.secondObj如果为nil，就变成接收指定名称的通知，而不在乎 notification.object 是谁
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(recieveNotifyWithSecondObj) name:NotificationName object:self.secondObj];
+    
+    // 很多时候，设置了object对消息进行过滤没有生效，就是因为设置的object为nil
 }
 
 - (void)sendNotification {
