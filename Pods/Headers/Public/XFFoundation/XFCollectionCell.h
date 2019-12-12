@@ -1,1 +1,0 @@
-../../../../../XFFoundation/View/XFCollectionCell.h
