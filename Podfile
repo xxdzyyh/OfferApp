@@ -15,5 +15,6 @@ target 'OfferApp' do
     pod 'PromisesObjC', '~> 1.2.7'
     pod 'IGListKit','2.1.0'
     pod 'Yoga','1.14.0'
+		pod 'SDWebImage'
     
 end

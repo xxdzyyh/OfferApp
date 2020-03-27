@@ -52,7 +52,12 @@
 }
 
 - (void)bind {
+	
+	// 如果self.anchor为nil，这个绑定就是无效的
+	// self.anchor不为nil时，设置新的值，self.anchorName不会改变
 	RAC(self,anchorName) = RACObserve(self.anchor, name);
+	
+	// 当self.anchor发生改变时，self.anchorUid会及时变更
 	RAC(self, anchorUid) = RACObserve(self, anchor.uid);
 }
 
@@ -69,7 +74,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-	self.liveRoom = [[LiveRoom alloc] initWithAnchor:nil];
+	Anchor *anchor0 = [[Anchor alloc] init];
+	
+	anchor0.name = @"zero";
+	anchor0.uid = @"000";
+	
+	self.liveRoom = [[LiveRoom alloc] initWithAnchor:anchor0];
 	
 	NSLog(@"anchorName=%@  anchorUid=%@",self.liveRoom.anchorName,self.liveRoom.anchorUid);
 	
@@ -83,20 +93,12 @@
     RAC(self.liveRoom,anchorName) = RACObserve(self.liveRoom.anchor, name);
 	
 	NSLog(@"anchorName=%@  anchorUid=%@",self.liveRoom.anchorName,self.liveRoom.anchorUid);
-    
-    [anchor updateUid];
-    
-    NSLog(@"anchorName=%@  anchorUid=%@",self.liveRoom.anchorName,self.liveRoom.anchorUid);
-    
-    Anchor *anchor2 = [[Anchor alloc] init];
-    
-    anchor2.name = @"Anch0r";
-    anchor2.uid = @"003";
-    
-    self.liveRoom.anchor = anchor2;
-    
-    NSLog(@"anchorName=%@  anchorUid=%@",self.liveRoom.anchorName,self.liveRoom.anchorUid);
-    
+	
+	anchor.name = @"tony";
+	anchor.uid = @"002";
+	
+	NSLog(@"anchorName=%@  anchorUid=%@",self.liveRoom.anchorName,self.liveRoom.anchorUid);
+	
 }
 
 

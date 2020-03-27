@@ -13,6 +13,17 @@
 
 
 /**
+ id objc_msgSend(id self,SEL _cmd,...){
+	 Class c = objc_getClass(self);//找到类
+	 IMP imp = cache_lookup(c,_cmd);//在缓存方法列表中查找imp
+	 if(!imp){
+		 imp = class_getMethodImplementation(c, _cmd);//在方法列表中查找imp
+	 }
+	 return imp(self,_cmd,...);返回方法实现
+ }
+ */
+
+/**
  参考资料
  
  1. https://blog.sunnyxx.com/2014/11/06/runtime-nuts/
@@ -45,6 +56,16 @@
 @end
 
 @implementation RuntimeVC
+
++ (void)initialize {
+	[super initialize];
+
+	NSLog(@"initialize excute");
+}
+
++ (void)load {
+	NSLog(@"+load excute");
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
