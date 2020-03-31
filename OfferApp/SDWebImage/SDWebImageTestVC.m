@@ -9,7 +9,7 @@
 #import "SDWebImageTestVC.h"
 #import <Masonry/Masonry.h>
 #import <UIImageView+WebCache.h>
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 
 @interface SDWebImageTestVC ()
 

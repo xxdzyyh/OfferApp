@@ -55,6 +55,7 @@
 		D498FD03235D576600382842 /* SDWebImageTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D498FD02235D576600382842 /* SDWebImageTestVC.m */; };
 		EC502DEC23A11143006FF5AB /* TestFrameworkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC502DEB23A11143006FF5AB /* TestFrameworkVC.m */; };
 		EC502E0B23A12998006FF5AB /* OfferSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC502E0A23A12998006FF5AB /* OfferSDK.framework */; };
+		EC9EFFEC2433321E00F1919E /* AtomicTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9EFFEB2433321E00F1919E /* AtomicTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -151,6 +152,8 @@
 		EC502DEA23A11143006FF5AB /* TestFrameworkVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFrameworkVC.h; sourceTree = "<group>"; };
 		EC502DEB23A11143006FF5AB /* TestFrameworkVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFrameworkVC.m; sourceTree = "<group>"; };
 		EC502E0A23A12998006FF5AB /* OfferSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OfferSDK.framework; sourceTree = "<group>"; };
+		EC9EFFEA2433321E00F1919E /* AtomicTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AtomicTest.h; sourceTree = "<group>"; };
+		EC9EFFEB2433321E00F1919E /* AtomicTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AtomicTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -463,6 +466,7 @@
 		D4672E3522962B3B00A5DE44 /* MultiThread */ = {
 			isa = PBXGroup;
 			children = (
+				EC9EFFE9243331F300F1919E /* atomic */,
 				D4672E3622962B3B00A5DE44 /* MultiThreadVC.h */,
 				D4672E3722962B3B00A5DE44 /* MultiThreadVC.m */,
 			);
@@ -511,6 +515,15 @@
 				EC502DEB23A11143006FF5AB /* TestFrameworkVC.m */,
 			);
 			path = TestFramework;
+			sourceTree = "<group>";
+		};
+		EC9EFFE9243331F300F1919E /* atomic */ = {
+			isa = PBXGroup;
+			children = (
+				EC9EFFEA2433321E00F1919E /* AtomicTest.h */,
+				EC9EFFEB2433321E00F1919E /* AtomicTest.m */,
+			);
+			path = atomic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -631,6 +644,7 @@
 				EC502DEC23A11143006FF5AB /* TestFrameworkVC.m in Sources */,
 				D4672E5722962B3B00A5DE44 /* AppDelegate.m in Sources */,
 				D4672E6922962B3B00A5DE44 /* Son.m in Sources */,
+				EC9EFFEC2433321E00F1919E /* AtomicTest.m in Sources */,
 				D4672E3E22962B3B00A5DE44 /* UIViewController+Log.m in Sources */,
 				D4672E4822962B3B00A5DE44 /* GroupViewController.m in Sources */,
 				D4672E6822962B3B00A5DE44 /* Father.m in Sources */,
@@ -814,6 +828,7 @@
 					"$(PROJECT_DIR)/OfferApp/Verdor",
 				);
 				INFOPLIST_FILE = OfferApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -837,6 +852,7 @@
 					"$(PROJECT_DIR)/OfferApp/Verdor",
 				);
 				INFOPLIST_FILE = OfferApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

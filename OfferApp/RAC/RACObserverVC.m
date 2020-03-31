@@ -7,7 +7,8 @@
 //
 
 #import "RACObserverVC.h"
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveObjC/ReactiveObjC.h>
+
 @interface Anchor : NSObject
 
 @property (nonatomic ,copy) NSString *name;
@@ -52,7 +53,6 @@
 }
 
 - (void)bind {
-	
 	// 如果self.anchor为nil，这个绑定就是无效的
 	// self.anchor不为nil时，设置新的值，self.anchorName不会改变
 	RAC(self,anchorName) = RACObserve(self.anchor, name);
@@ -90,16 +90,13 @@
 	
 	self.liveRoom.anchor = anchor;
     
-    RAC(self.liveRoom,anchorName) = RACObserve(self.liveRoom.anchor, name);
-	
+//    RAC(self.liveRoom,anchorName) = RACObserve(self.liveRoom.anchor, name);
 	NSLog(@"anchorName=%@  anchorUid=%@",self.liveRoom.anchorName,self.liveRoom.anchorUid);
 	
 	anchor.name = @"tony";
 	anchor.uid = @"002";
 	
 	NSLog(@"anchorName=%@  anchorUid=%@",self.liveRoom.anchorName,self.liveRoom.anchorUid);
-	
 }
-
 
 @end
