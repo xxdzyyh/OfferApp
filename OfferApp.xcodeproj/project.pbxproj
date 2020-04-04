@@ -55,6 +55,8 @@
 		D498FD03235D576600382842 /* SDWebImageTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D498FD02235D576600382842 /* SDWebImageTestVC.m */; };
 		EC502DEC23A11143006FF5AB /* TestFrameworkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC502DEB23A11143006FF5AB /* TestFrameworkVC.m */; };
 		EC502E0B23A12998006FF5AB /* OfferSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC502E0A23A12998006FF5AB /* OfferSDK.framework */; };
+		EC9EB5CF2435B83C00328676 /* GCDHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9EB5CE2435B83C00328676 /* GCDHomeVC.m */; };
+		EC9EB5D22435B8BF00328676 /* SyncAndAsyncVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9EB5D12435B8BF00328676 /* SyncAndAsyncVC.m */; };
 		EC9EFFEC2433321E00F1919E /* AtomicTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9EFFEB2433321E00F1919E /* AtomicTest.m */; };
 /* End PBXBuildFile section */
 
@@ -152,6 +154,10 @@
 		EC502DEA23A11143006FF5AB /* TestFrameworkVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFrameworkVC.h; sourceTree = "<group>"; };
 		EC502DEB23A11143006FF5AB /* TestFrameworkVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFrameworkVC.m; sourceTree = "<group>"; };
 		EC502E0A23A12998006FF5AB /* OfferSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OfferSDK.framework; sourceTree = "<group>"; };
+		EC9EB5CD2435B83C00328676 /* GCDHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDHomeVC.h; sourceTree = "<group>"; };
+		EC9EB5CE2435B83C00328676 /* GCDHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDHomeVC.m; sourceTree = "<group>"; };
+		EC9EB5D02435B8BF00328676 /* SyncAndAsyncVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyncAndAsyncVC.h; sourceTree = "<group>"; };
+		EC9EB5D12435B8BF00328676 /* SyncAndAsyncVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyncAndAsyncVC.m; sourceTree = "<group>"; };
 		EC9EFFEA2433321E00F1919E /* AtomicTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AtomicTest.h; sourceTree = "<group>"; };
 		EC9EFFEB2433321E00F1919E /* AtomicTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AtomicTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -364,6 +370,10 @@
 			children = (
 				D4672DE822962B3B00A5DE44 /* GroupViewController.h */,
 				D4672DE722962B3B00A5DE44 /* GroupViewController.m */,
+				EC9EB5CD2435B83C00328676 /* GCDHomeVC.h */,
+				EC9EB5CE2435B83C00328676 /* GCDHomeVC.m */,
+				EC9EB5D02435B8BF00328676 /* SyncAndAsyncVC.h */,
+				EC9EB5D12435B8BF00328676 /* SyncAndAsyncVC.m */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -660,6 +670,7 @@
 				D4672E5622962B3B00A5DE44 /* DoubleDemoVC.m in Sources */,
 				A019F043238F5C74007D2F2E /* RACObserverVC.m in Sources */,
 				D4672E4522962B3B00A5DE44 /* RPerson.m in Sources */,
+				EC9EB5D22435B8BF00328676 /* SyncAndAsyncVC.m in Sources */,
 				D4672E3A22962B3B00A5DE44 /* MemoryObj.m in Sources */,
 				D4672E4622962B3B00A5DE44 /* CarthageVC.m in Sources */,
 				A019F015238E07E1007D2F2E /* NotificationVC.m in Sources */,
@@ -672,6 +683,7 @@
 				D4672E4A22962B3B00A5DE44 /* NumberViewModel.m in Sources */,
 				D4672E6722962B3B00A5DE44 /* ClassVC.m in Sources */,
 				D4672E5422962B3B00A5DE44 /* MyViewController.m in Sources */,
+				EC9EB5CF2435B83C00328676 /* GCDHomeVC.m in Sources */,
 				A019F01D238E0864007D2F2E /* YGLayout.m in Sources */,
 				D4672E6C22962B3B00A5DE44 /* MultiThreadVC.m in Sources */,
 				D498FD03235D576600382842 /* SDWebImageTestVC.m in Sources */,

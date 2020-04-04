@@ -37,7 +37,7 @@
                          @{@"type" : @(ActionTypeController),@"value" : @"Sub",@"desc":@"关键字"},
                          @{@"type" : @(ActionTypeNone),@"value":@"showOverLay",@"desc":@"UIDebuggingInformationOverlay"},
                          @{@"type" : @(ActionTypeNone),@"value":@"alloc",@"desc":@"only alloc"},
-                         @{@"type" : @(ActionTypeController),@"value":@"GroupViewController",@"desc":@"GCD Group"},
+                         @{@"type" : @(ActionTypeController),@"value":@"GCDHomeVC",@"desc":@"GCD"},
                          @{@"type" : @(ActionTypeController),@"value":@"RunloopVC",@"desc":@"Runloop"},
                          @{@"type" : @(ActionTypeController),@"value":@"SMClsCallViewController",@"desc":@"耗时统计"},
                          @{@"type" : @(ActionTypeController),@"value":@"CrashVC",@"desc":@"常见崩溃"},

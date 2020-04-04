@@ -103,7 +103,7 @@
     dispatch_group_notify(group, dispatch_get_main_queue(), ^{
         NSLog(@"GCD Group 所有的任务都完成了，可以进行下一步操作了");
 		
-		// 这里才是上面任务都完成了
+		// 这里才是上面任务都完成了的回调
 		
 		dispatch_group_enter(group);
 		void(^block)(NSString *a) = ^(NSString *a){
@@ -147,5 +147,6 @@
 	 });
 	 */
 }
+
 
 @end

@@ -22,7 +22,41 @@
     // Do any additional setup after loading the view.
 //    [self test];
     
-    [self test5];
+	/**
+	 在线程刚创建的时候，对鹰应的runloop是没有的，[NSRunLoop currentRunLoop]执行的时候，如果没有会创建一个NSRunloop。
+	 子线程的Runloop是没有开启的,子线程的Runloop是存在的。
+	 
+	 Runloop和线程的关系保存在一个全局的字典里面，key 是 pthread_t, value 是 CFRunloopRef。
+	 
+	 static CFMutableDictionaryRef loopsDic;
+	 static CFSpinLock_t loopsLock;
+	 CFRunloopRef _CGRunloopGet(pthread_t thread) {
+		CFSpinLockLock(&loopsLock);
+	 
+		if (!loopsDic) {
+			// 第一次进入，初始化全局Dict,并为主线程创建Runloop
+			loopsDic = CFDictionaryCreatMutable();
+			CFRunloopRef mainLoop = _CFRunloopCreate();
+			CFDictarySetValue(loopsDic,pthread_main_thread_np(),mainLoop);
+		}
+	 
+		CFRunloopRef loop = CFDictionaryGetValue(loopsDic,thread);
+	 
+		if (!loop) {
+			// 取不到是创建一个
+			loop = _CFRunloopCreate();
+			CFDictionarySetValue(loopsDic,thread,loop);
+			// 注册回调，当线程销毁时，销毁对应的Runloop
+			_CFSetTSD(...,thread,loop,__CFFinlizeRunloop);
+		}
+	 
+		OSSpinLockUnlock(&loopsLock);
+		
+		return loop;
+	 }
+	 
+	 */
+    [self test4];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -32,7 +66,8 @@
     // 没法触发timer source,导致定时器不准
 //    [self test3];
     
-//    [self test4];
+
+
 }
 
 /**
@@ -109,14 +144,7 @@
 }
 
 - (void)asyncTask {
-    NSLog(@"%@",[NSThread currentThread]);
-   id __autoreleasing obj = [MemoryObj memoryObj];
-    
-    
-    [self test3];
-    
-    NSLog(@"%@",obj);
-    NSLog(@"%@",[NSThread currentThread]);
+	[self test5];
 }
 
 
@@ -127,9 +155,15 @@
  在执行test3的时候，cup使用率会升到近100%，此时界面卡主，CADisplayLink的回调也不会触发。
  */
 - (void)test5 {
+	NSLog(@"%@",[NSRunLoop currentRunLoop]);
+	
     CADisplayLink *displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(displayLink)];
     
-    [displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode]; 
+    [displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+	
+	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+		[displayLink invalidate];
+	});
 }
 
 - (void)displayLink {
