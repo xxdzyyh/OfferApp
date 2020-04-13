@@ -22,8 +22,8 @@
     [super viewDidLoad];
     
     
-    // Do any additional setup after loading the view, typically from a nib
-    self.dataSources = @[
+    // Do any additional setup after loading the view, typically from a nib BlockTestsVC
+    self.dataSources = @[@{@"type" : @(ActionTypeController),@"value" : @"BlockTestsVC",@"desc":@"Block"},
                          @{@"type" : @(ActionTypeController),@"value" : @"MasonryViewController",@"desc":@"Masonry "},
                          @{@"type" : @(ActionTypeController),@"value" : @"RACObserverVC",@"desc":@"rac"},
                          @{@"type" : @(ActionTypeController),@"value" : @"NotificationVC",@"desc":@"通知"},

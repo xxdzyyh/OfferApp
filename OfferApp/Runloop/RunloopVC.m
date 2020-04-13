@@ -170,4 +170,13 @@
     NSLog(@"displayLink");
 }
 
+- (void)runloopMode {
+	/**
+	 runloop 有多种运行模式，不同的模式对应不同的场景，但是每次只会在一个特定模式下运行。
+	 每个Mode有自己的 Source、Observer,Timer。添加Timer时要指定Mode。
+	 如果Timer被添加到NSDefaultRunLoopMode，那在滑动时runloop会进入其他Mode，这是这个timer就会不会触发直到runloop回到
+	 NSDefaultRunLoopMode
+	 */
+}
+
 @end

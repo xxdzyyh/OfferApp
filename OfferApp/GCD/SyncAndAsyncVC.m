@@ -16,18 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 
-	[self syncAndAsync];
+	//	[self syncAndAsync];
+	[self test1];
 }
 
 
 - (void)syncAndAsync {
-
 	/**
-	  "BUG IN CLIENT OF LIBDISPATCH: dispatch_sync called on queue already owned by current thread"
+	 "BUG IN CLIENT OF LIBDISPATCH: dispatch_sync called on queue already owned by current thread"
 	
-	 当前是主线程，在主队列做同步操作会阻塞主线程。
+	 dispatch_sync 不会开启新的线程，所以dispatch_sync中的任务会在队列当前所在线程执行。
+	 如果这个线程和dispacth_sync语句执行的线程相同，那就会发生死锁。
+	 
+	 当前是主线程，dispatch_sync和block会发生阻塞。
 	 */
 //	dispatch_sync(dispatch_get_main_queue(), ^{
 //		NSLog(@"%@",[NSThread currentThread]);
@@ -52,6 +54,18 @@
 	 2020-04-02 14:41:00.803161+0800 OfferApp[4576:679914] 主队列同步执行
 	 2020-04-02 14:41:00.803825+0800 OfferApp[4576:680024] 111
 	 */
+}
+
+- (void)test1 {
+	__block int a = 0;
+	
+	while (a<5) {
+		dispatch_async(dispatch_get_global_queue(0, 0),^{
+			a++;
+		});
+	}
+	// 只能知道a>=5，具体的数值和触发多少次循环是相关的，因为多线程的执行时间是未知的，所以a可以大于5
+	NSLog(@"a=%d",a);
 }
 
 @end
