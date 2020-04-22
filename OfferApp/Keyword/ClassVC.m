@@ -17,6 +17,13 @@
 
 @interface ClassVC ()
 
+// 一般使用assgin修饰基础类型，但是assgin也可以修饰引用类型，只是在赋新值的时候，
+// 旧值不会被释放，相当于__unsafe_unretained
+@property (assign, nonatomic) NSObject *a;
+
+// weak只能修饰引用类型，__weak
+@property (weak, nonatomic) NSObject *b;
+
 @end
 
 @implementation ClassVC
@@ -25,6 +32,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+	
+	
     /**
      
      类可以分为两个部分，实例（单独分配空间）和类本身（共享空间）
