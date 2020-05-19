@@ -21,9 +21,92 @@
 
 - (void)viewDidLoad {
 
+	[self blockCaptureVar];
+}
+
+- (void)blockType {
+	// block 是一个对象，那它对应的类是什么
+	// 依据block在内存中位置，block可以分为全局block，栈block，堆block
+
+	// __NSGlobalBlock__ 没有捕获其他变量
+	void(^globalBlock)(void) = ^ {
+		NSLog(@"111");
+	};
+	NSLog(@"%p-----%@",&globalBlock,globalBlock);
+	
+	// 对__NSGlobalBlock__进行copy，不会将其复制到栈上
+	id block = [globalBlock copy];
+	
+	NSLog(@"%p-----%@",&block,block);
+	
+	// 下面的stackBlock在MRC下是__NSStackBlock__
+	// 在ARC下由于有强应用存在，输出的时候是 __NSMallocBlock__
+	// ARC下 block 的 retain 是通过 copy 实现
+	int a = 11;
+	void (^stackBlock)(int x) = ^(int x) {
+		NSLog(@"%d",a);
+	};
+	NSLog(@"%@",stackBlock);
+
+	// 没有任何强引用，所以是__NSStackBlock__
+	NSLog(@"%@",^(int x) {
+		NSLog(@"%d",a);
+	});
+	
+	// __NSStackBlock__调用copy会被copy到对手变成__NSMallocBlock__
+	self.myBlock = [^(int x) {
+		NSLog(@"%d",a);
+	} copy] ;
+
+	NSLog(@"%@",self.myBlock);
+	
+	/**
+	__NSGlobalBlock__  什么都不做
+	__NSStackBlock__   栈复制到堆
+	__NSMallocBlock__  引用计数+1
+	*/
 }
 
 #pragma mark - __block
+
+int z = 6;
+static int a = 100;
+
+- (void)blockCaptureVar {
+	static int b = 200;
+	int c = 100;
+	NSObject *obj = [NSObject new];
+	
+	NSLog(@"基础类型变量----%p----%d",&c,c);
+	NSLog(@"对象类型变量----%p----%@",&obj,obj);
+	NSLog(@"全局变量----%p----%d",&z,z);
+	NSLog(@"静态局部变量----%p----%d",&b,b);
+	
+	void (^block)(void) = ^ {
+		// 地址变了，值没变，是值传递
+		NSLog(@"基础类型变量----%p----%d",&c,c);
+		// 地址变了，指向的地址没有，是指针传递
+		NSLog(@"对象类型变量----%p----%@",&obj,obj);
+		// 地址没有变，说明没有截获
+		NSLog(@"全局变量----%p----%d",&z,z);
+		NSLog(@"静态全局变量----%p----%d",&a,a);
+		// 指针copy
+		NSLog(@"静态局部变量----%p----%d",&b,b);
+	};
+	block();
+	
+	/**
+	 block 变量捕获的具体实现需要看源码，为什么需要捕获呢？因为需要访问权限。
+	 下面说结论
+	 
+	 1 全局变量和静态全局变量  没有截获      因为任意位置都可以访问
+	 2 静态局部变量          指针引用
+	 3 基础类型局部变量       值引用
+	 4 对象类型局部变量       指针引用
+	 
+	*/
+	
+}
 
 - (void)why__block {
 	/**
@@ -78,6 +161,17 @@
 #pragma mark - 循环引用
 
 - (void)memoryTest {
+	
+	/** 重要
+	 
+	 block在捕获局部变量时，会连同其所有权一同捕获。
+	 如果局部变量是强引用，那捕获时也是强引用。
+	 如果局部变量是弱引用，那捕获时也是弱引用。
+	 
+	 这也是为什么__weak可以解决循环引用的原因
+	 */
+	
+	
 	/**
 	 相互强引用
 	 
@@ -108,7 +202,7 @@
 		// weakSelf 不会在block执行的过程中变成nil
 	};
 	
-	// 版本3 手动置空
+	// 版本3 手动置空，如果这个block一直不调用，那这个循环引用会一直存在
 	__block BlockTestsVC *vc = self;
 	self.myBlock = ^(int a) {
 		NSLog(@"%d---%@",a,vc.name);
@@ -123,6 +217,14 @@
 	
 	// 传入的参数是self，在block里面获取的并不是self本身，而是一个引用。
 	self.someBlock(5,self);
+}
+
+- (void)blockCopy {
+	/**
+	 __NSGlobalBlock__  什么都不做
+	 __NSStackBlock__   栈复制到堆
+	 __NSMallocBlock__  引用计数+1
+	 */
 }
 
 #pragma mark - block中self.name 和 _name

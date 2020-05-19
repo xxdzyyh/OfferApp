@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MemoryObj : NSObject
+@interface MemoryObj : NSObject <NSCopying,NSMutableCopying>
 
 + (MemoryObj *)memoryObj;
 

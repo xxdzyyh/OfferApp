@@ -56,6 +56,9 @@
 		EC502DEC23A11143006FF5AB /* TestFrameworkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC502DEB23A11143006FF5AB /* TestFrameworkVC.m */; };
 		EC502E0B23A12998006FF5AB /* OfferSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC502E0A23A12998006FF5AB /* OfferSDK.framework */; };
 		EC92747B243EC1C7003D44AA /* main1.m in Sources */ = {isa = PBXBuildFile; fileRef = EC92747A243EC1C7003D44AA /* main1.m */; };
+		EC9274A624512658003D44AA /* AssociateObjectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9274A524512658003D44AA /* AssociateObjectVC.m */; };
+		EC9274AA2459181F003D44AA /* MessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9274A92459181F003D44AA /* MessageVC.m */; };
+		EC9274AE2468DEB3003D44AA /* CopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9274AD2468DEB3003D44AA /* CopyVC.m */; };
 		EC9EB5CF2435B83C00328676 /* GCDHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9EB5CE2435B83C00328676 /* GCDHomeVC.m */; };
 		EC9EB5D22435B8BF00328676 /* SyncAndAsyncVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9EB5D12435B8BF00328676 /* SyncAndAsyncVC.m */; };
 		EC9EFFEC2433321E00F1919E /* AtomicTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9EFFEB2433321E00F1919E /* AtomicTest.m */; };
@@ -156,6 +159,12 @@
 		EC502DEB23A11143006FF5AB /* TestFrameworkVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFrameworkVC.m; sourceTree = "<group>"; };
 		EC502E0A23A12998006FF5AB /* OfferSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OfferSDK.framework; sourceTree = "<group>"; };
 		EC92747A243EC1C7003D44AA /* main1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main1.m; sourceTree = "<group>"; };
+		EC9274A424512658003D44AA /* AssociateObjectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssociateObjectVC.h; sourceTree = "<group>"; };
+		EC9274A524512658003D44AA /* AssociateObjectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssociateObjectVC.m; sourceTree = "<group>"; };
+		EC9274A82459181F003D44AA /* MessageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageVC.h; sourceTree = "<group>"; };
+		EC9274A92459181F003D44AA /* MessageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageVC.m; sourceTree = "<group>"; };
+		EC9274AC2468DEB3003D44AA /* CopyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyVC.h; sourceTree = "<group>"; };
+		EC9274AD2468DEB3003D44AA /* CopyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyVC.m; sourceTree = "<group>"; };
 		EC9EB5CD2435B83C00328676 /* GCDHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDHomeVC.h; sourceTree = "<group>"; };
 		EC9EB5CE2435B83C00328676 /* GCDHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDHomeVC.m; sourceTree = "<group>"; };
 		EC9EB5D02435B8BF00328676 /* SyncAndAsyncVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyncAndAsyncVC.h; sourceTree = "<group>"; };
@@ -254,6 +263,7 @@
 		D4672DC222962B3B00A5DE44 /* OfferApp */ = {
 			isa = PBXGroup;
 			children = (
+				EC9274A724591804003D44AA /* Message */,
 				EC502DE923A110EC006FF5AB /* TestFramework */,
 				EC502DE423A1106E006FF5AB /* Verdor */,
 				A0AB67E723A0F4640083219E /* Masonry */,
@@ -272,7 +282,6 @@
 				D4672DDA22962B3B00A5DE44 /* Assets.xcassets */,
 				D4672DDB22962B3B00A5DE44 /* Runtime */,
 				D4672DE222962B3B00A5DE44 /* Carthage */,
-				D4672DE522962B3B00A5DE44 /* ViewController.m */,
 				D4672DE622962B3B00A5DE44 /* GCD */,
 				D4672DE922962B3B00A5DE44 /* Crash */,
 				D4672DEC22962B3B00A5DE44 /* Bug */,
@@ -290,6 +299,7 @@
 				D4672E3422962B3B00A5DE44 /* Info.plist */,
 				D4672E3522962B3B00A5DE44 /* MultiThread */,
 				D4672E3822962B3B00A5DE44 /* ViewController.h */,
+				D4672DE522962B3B00A5DE44 /* ViewController.m */,
 			);
 			path = OfferApp;
 			sourceTree = "<group>";
@@ -355,6 +365,8 @@
 				D4672DDD22962B3B00A5DE44 /* KVOViewController.m */,
 				D4672DDE22962B3B00A5DE44 /* RPerson.h */,
 				D4672DE122962B3B00A5DE44 /* RPerson.m */,
+				EC9274A424512658003D44AA /* AssociateObjectVC.h */,
+				EC9274A524512658003D44AA /* AssociateObjectVC.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -448,10 +460,11 @@
 		D4672E2722962B3B00A5DE44 /* Keyword */ = {
 			isa = PBXGroup;
 			children = (
+				EC9274AB2468DE97003D44AA /* Copy */,
 				D4672E2A22962B3B00A5DE44 /* ClassVC.h */,
 				D4672E2922962B3B00A5DE44 /* ClassVC.m */,
-				D4672E2B22962B3B00A5DE44 /* Super */,
 				D4672E3022962B3B00A5DE44 /* KeywordVC.h */,
+				D4672E2B22962B3B00A5DE44 /* Super */,
 				D4672E2822962B3B00A5DE44 /* KeywordVC.m */,
 			);
 			path = Keyword;
@@ -528,6 +541,24 @@
 				EC502DEB23A11143006FF5AB /* TestFrameworkVC.m */,
 			);
 			path = TestFramework;
+			sourceTree = "<group>";
+		};
+		EC9274A724591804003D44AA /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				EC9274A82459181F003D44AA /* MessageVC.h */,
+				EC9274A92459181F003D44AA /* MessageVC.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		EC9274AB2468DE97003D44AA /* Copy */ = {
+			isa = PBXGroup;
+			children = (
+				EC9274AC2468DEB3003D44AA /* CopyVC.h */,
+				EC9274AD2468DEB3003D44AA /* CopyVC.m */,
+			);
+			path = Copy;
 			sourceTree = "<group>";
 		};
 		EC9EFFE9243331F300F1919E /* atomic */ = {
@@ -660,11 +691,13 @@
 				EC9EFFEC2433321E00F1919E /* AtomicTest.m in Sources */,
 				D4672E3E22962B3B00A5DE44 /* UIViewController+Log.m in Sources */,
 				D4672E4822962B3B00A5DE44 /* GroupViewController.m in Sources */,
+				EC9274AA2459181F003D44AA /* MessageVC.m in Sources */,
 				D4672E6822962B3B00A5DE44 /* Father.m in Sources */,
 				D4672E3D22962B3B00A5DE44 /* BaseViewController.m in Sources */,
 				D4672E4422962B3B00A5DE44 /* KVOViewController.m in Sources */,
 				A0AB67EA23A0F47E0083219E /* MasonryViewController.m in Sources */,
 				A019F01E238E0864007D2F2E /* UIView+Yoga.m in Sources */,
+				EC9274A624512658003D44AA /* AssociateObjectVC.m in Sources */,
 				A03061C5236AE35C00E49162 /* BlockTestsVC.m in Sources */,
 				D4672E5322962B3B00A5DE44 /* UrlVC.m in Sources */,
 				D4672E3F22962B3B00A5DE44 /* Sub.m in Sources */,
@@ -688,6 +721,7 @@
 				D4672E6722962B3B00A5DE44 /* ClassVC.m in Sources */,
 				D4672E5422962B3B00A5DE44 /* MyViewController.m in Sources */,
 				EC9EB5CF2435B83C00328676 /* GCDHomeVC.m in Sources */,
+				EC9274AE2468DEB3003D44AA /* CopyVC.m in Sources */,
 				A019F01D238E0864007D2F2E /* YGLayout.m in Sources */,
 				D4672E6C22962B3B00A5DE44 /* MultiThreadVC.m in Sources */,
 				D498FD03235D576600382842 /* SDWebImageTestVC.m in Sources */,

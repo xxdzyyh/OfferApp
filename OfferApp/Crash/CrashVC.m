@@ -18,7 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.dataSources = @[@{ActionTypeString:@(ActionTypeNone),ActionValueString:@"for in crash",ActionDescString:@"for in crash"}
+    self.dataSources = @[@{ActionTypeString:@(ActionTypeNone),ActionValueString:@"for in crash",ActionDescString:@"for in crash"},
+						 @{ActionTypeString:@(ActionTypeNone),ActionValueString:@"default value",ActionDescString:@"for in crash"}
                          
                          ];
 
@@ -34,7 +35,9 @@
         
         if ([value isEqualToString:@"for in crash"]) {
             [self forinCrash];
-        }
+		} else if ([value isEqualToString:@"default value"]) {
+			[self typeCrash];
+		}
         
     } else {
         [super tableView:tableView didSelectRowAtIndexPath:indexPath];
@@ -54,6 +57,14 @@
         NSLog(@"%@",obj);
         [array addObject:@"ddd"];
     }
+}
+
+- (void)typeCrash {
+	NSInteger age;
+	NSLog(@"%ld",age);
+	UILabel *label = [UILabel new];
+	
+	label.text = age ? [NSString stringWithFormat:@"%@",age] : @"";
 }
 
 @end

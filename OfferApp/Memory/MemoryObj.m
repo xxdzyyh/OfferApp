@@ -16,6 +16,10 @@
     return memory;
 }
 
+//- (id)copyWithZone:(NSZone *)zone {
+//
+//}
+
 - (void)dealloc {
     NSLog(@"MemoryObj dealloc");
 }
