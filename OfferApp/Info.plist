@@ -2,6 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -21,13 +26,13 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>请点击"好"以允许访问</string>
+	<string>请点击&quot;好&quot;以允许访问</string>
 	<key>NSContactsUsageDescription</key>
 	<string>为了更好地保障您的账户安全，我们希望访问您的通讯录信息</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>请点击"好"以允许访问</string>
+	<string>请点击&quot;好&quot;以允许访问</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>请点击"好"以允许访问</string>
+	<string>请点击&quot;好&quot;以允许访问</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

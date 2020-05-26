@@ -55,10 +55,15 @@
 		D498FD03235D576600382842 /* SDWebImageTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D498FD02235D576600382842 /* SDWebImageTestVC.m */; };
 		EC502DEC23A11143006FF5AB /* TestFrameworkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC502DEB23A11143006FF5AB /* TestFrameworkVC.m */; };
 		EC502E0B23A12998006FF5AB /* OfferSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC502E0A23A12998006FF5AB /* OfferSDK.framework */; };
+		EC75789F24753138007EBB88 /* NetworkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC75789E24753138007EBB88 /* NetworkVC.m */; };
+		EC7578A3247673F4007EBB88 /* CycleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7578A2247673F4007EBB88 /* CycleVC.m */; };
+		EC7578A724775D14007EBB88 /* NSStringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7578A624775D14007EBB88 /* NSStringVC.m */; };
 		EC92747B243EC1C7003D44AA /* main1.m in Sources */ = {isa = PBXBuildFile; fileRef = EC92747A243EC1C7003D44AA /* main1.m */; };
 		EC9274A624512658003D44AA /* AssociateObjectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9274A524512658003D44AA /* AssociateObjectVC.m */; };
 		EC9274AA2459181F003D44AA /* MessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9274A92459181F003D44AA /* MessageVC.m */; };
 		EC9274AE2468DEB3003D44AA /* CopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9274AD2468DEB3003D44AA /* CopyVC.m */; };
+		EC98E3542473730100FD96EB /* OperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC98E3532473730100FD96EB /* OperationVC.m */; };
+		EC98E3572473A23A00FD96EB /* MyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EC98E3562473A23A00FD96EB /* MyOperation.m */; };
 		EC9EB5CF2435B83C00328676 /* GCDHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9EB5CE2435B83C00328676 /* GCDHomeVC.m */; };
 		EC9EB5D22435B8BF00328676 /* SyncAndAsyncVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9EB5D12435B8BF00328676 /* SyncAndAsyncVC.m */; };
 		EC9EFFEC2433321E00F1919E /* AtomicTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9EFFEB2433321E00F1919E /* AtomicTest.m */; };
@@ -158,6 +163,12 @@
 		EC502DEA23A11143006FF5AB /* TestFrameworkVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFrameworkVC.h; sourceTree = "<group>"; };
 		EC502DEB23A11143006FF5AB /* TestFrameworkVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFrameworkVC.m; sourceTree = "<group>"; };
 		EC502E0A23A12998006FF5AB /* OfferSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OfferSDK.framework; sourceTree = "<group>"; };
+		EC75789D24753138007EBB88 /* NetworkVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkVC.h; sourceTree = "<group>"; };
+		EC75789E24753138007EBB88 /* NetworkVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkVC.m; sourceTree = "<group>"; };
+		EC7578A1247673F4007EBB88 /* CycleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CycleVC.h; sourceTree = "<group>"; };
+		EC7578A2247673F4007EBB88 /* CycleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CycleVC.m; sourceTree = "<group>"; };
+		EC7578A524775D14007EBB88 /* NSStringVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSStringVC.h; sourceTree = "<group>"; };
+		EC7578A624775D14007EBB88 /* NSStringVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringVC.m; sourceTree = "<group>"; };
 		EC92747A243EC1C7003D44AA /* main1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main1.m; sourceTree = "<group>"; };
 		EC9274A424512658003D44AA /* AssociateObjectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssociateObjectVC.h; sourceTree = "<group>"; };
 		EC9274A524512658003D44AA /* AssociateObjectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssociateObjectVC.m; sourceTree = "<group>"; };
@@ -165,6 +176,10 @@
 		EC9274A92459181F003D44AA /* MessageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageVC.m; sourceTree = "<group>"; };
 		EC9274AC2468DEB3003D44AA /* CopyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyVC.h; sourceTree = "<group>"; };
 		EC9274AD2468DEB3003D44AA /* CopyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyVC.m; sourceTree = "<group>"; };
+		EC98E3522473730100FD96EB /* OperationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationVC.h; sourceTree = "<group>"; };
+		EC98E3532473730100FD96EB /* OperationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationVC.m; sourceTree = "<group>"; };
+		EC98E3552473A23A00FD96EB /* MyOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyOperation.h; sourceTree = "<group>"; };
+		EC98E3562473A23A00FD96EB /* MyOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyOperation.m; sourceTree = "<group>"; };
 		EC9EB5CD2435B83C00328676 /* GCDHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDHomeVC.h; sourceTree = "<group>"; };
 		EC9EB5CE2435B83C00328676 /* GCDHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDHomeVC.m; sourceTree = "<group>"; };
 		EC9EB5D02435B8BF00328676 /* SyncAndAsyncVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyncAndAsyncVC.h; sourceTree = "<group>"; };
@@ -263,6 +278,10 @@
 		D4672DC222962B3B00A5DE44 /* OfferApp */ = {
 			isa = PBXGroup;
 			children = (
+				EC7578A424775CFD007EBB88 /* NSString */,
+				EC7578A0247673D0007EBB88 /* UIView */,
+				EC75789C2475311A007EBB88 /* Network */,
+				EC98E350247372C100FD96EB /* NSOperation */,
 				EC9274A724591804003D44AA /* Message */,
 				EC502DE923A110EC006FF5AB /* TestFramework */,
 				EC502DE423A1106E006FF5AB /* Verdor */,
@@ -543,6 +562,33 @@
 			path = TestFramework;
 			sourceTree = "<group>";
 		};
+		EC75789C2475311A007EBB88 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EC75789D24753138007EBB88 /* NetworkVC.h */,
+				EC75789E24753138007EBB88 /* NetworkVC.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EC7578A0247673D0007EBB88 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				EC7578A1247673F4007EBB88 /* CycleVC.h */,
+				EC7578A2247673F4007EBB88 /* CycleVC.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		EC7578A424775CFD007EBB88 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				EC7578A524775D14007EBB88 /* NSStringVC.h */,
+				EC7578A624775D14007EBB88 /* NSStringVC.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
 		EC9274A724591804003D44AA /* Message */ = {
 			isa = PBXGroup;
 			children = (
@@ -559,6 +605,17 @@
 				EC9274AD2468DEB3003D44AA /* CopyVC.m */,
 			);
 			path = Copy;
+			sourceTree = "<group>";
+		};
+		EC98E350247372C100FD96EB /* NSOperation */ = {
+			isa = PBXGroup;
+			children = (
+				EC98E3522473730100FD96EB /* OperationVC.h */,
+				EC98E3532473730100FD96EB /* OperationVC.m */,
+				EC98E3552473A23A00FD96EB /* MyOperation.h */,
+				EC98E3562473A23A00FD96EB /* MyOperation.m */,
+			);
+			path = NSOperation;
 			sourceTree = "<group>";
 		};
 		EC9EFFE9243331F300F1919E /* atomic */ = {
@@ -704,6 +761,7 @@
 				D4672E4B22962B3B00A5DE44 /* NumberItemCell.m in Sources */,
 				D4672E4E22962B3B00A5DE44 /* CollectionOffsetBugVC.m in Sources */,
 				D4672E5622962B3B00A5DE44 /* DoubleDemoVC.m in Sources */,
+				EC7578A724775D14007EBB88 /* NSStringVC.m in Sources */,
 				A019F043238F5C74007D2F2E /* RACObserverVC.m in Sources */,
 				D4672E4522962B3B00A5DE44 /* RPerson.m in Sources */,
 				EC9EB5D22435B8BF00328676 /* SyncAndAsyncVC.m in Sources */,
@@ -717,17 +775,21 @@
 				D4672E6A22962B3B00A5DE44 /* CViewController.m in Sources */,
 				D4672E4022962B3B00A5DE44 /* UIDebuggingInformationOverlay+Enable.m in Sources */,
 				D4672E4A22962B3B00A5DE44 /* NumberViewModel.m in Sources */,
+				EC98E3542473730100FD96EB /* OperationVC.m in Sources */,
 				EC92747B243EC1C7003D44AA /* main1.m in Sources */,
 				D4672E6722962B3B00A5DE44 /* ClassVC.m in Sources */,
 				D4672E5422962B3B00A5DE44 /* MyViewController.m in Sources */,
 				EC9EB5CF2435B83C00328676 /* GCDHomeVC.m in Sources */,
+				EC75789F24753138007EBB88 /* NetworkVC.m in Sources */,
 				EC9274AE2468DEB3003D44AA /* CopyVC.m in Sources */,
 				A019F01D238E0864007D2F2E /* YGLayout.m in Sources */,
 				D4672E6C22962B3B00A5DE44 /* MultiThreadVC.m in Sources */,
+				EC98E3572473A23A00FD96EB /* MyOperation.m in Sources */,
 				D498FD03235D576600382842 /* SDWebImageTestVC.m in Sources */,
 				D4672E3C22962B3B00A5DE44 /* RunloopVC.m in Sources */,
 				D4672E3922962B3B00A5DE44 /* CrashCollectVC.m in Sources */,
 				D4672E4D22962B3B00A5DE44 /* BugVC.m in Sources */,
+				EC7578A3247673F4007EBB88 /* CycleVC.m in Sources */,
 				D4672E4922962B3B00A5DE44 /* CrashVC.m in Sources */,
 				D4672E4122962B3B00A5DE44 /* AssembleVC.m in Sources */,
 			);

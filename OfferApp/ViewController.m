@@ -18,12 +18,27 @@
 
 @implementation ViewController
 
+- (instancetype)initWithCoder:(NSCoder *)coder {
+	self = [super initWithCoder:coder];
+	if (self) {
+		//  storyboard 创建会走
+		NSLog(@"%s",__func__);
+	}
+	return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     
-    // Do any additional setup after loading the view, typically from a nib BlockTestsVC MemoryVC CopyVC
-    self.dataSources = @[@{@"type" : @(ActionTypeController),@"value" : @"CopyVC",@"desc":@"CopyVC"},
+    // Do any additional setup after loading the view, typically from a nib BlockTestsVC OperationVC CycleVC NSStringVC MessageVC
+    self.dataSources = @[
+		@{@"type" : @(ActionTypeController),@"value" : @"MessageVC",@"desc":@"MessageVC"},
+  @{@"type" : @(ActionTypeController),@"value" : @"NSStringVC",@"desc":@"NSStringVC"},
+  @{@"type" : @(ActionTypeController),@"value" : @"CycleVC",@"desc":@"NSStringVC"},
+  @{@"type" : @(ActionTypeController),@"value" : @"NetworkVC",@"desc":@"NetworkVC"},
+  @{@"type" : @(ActionTypeController),@"value" : @"OperationVC",@"desc":@"OperationVC"},
+						 @{@"type" : @(ActionTypeController),@"value" : @"CopyVC",@"desc":@"CopyVC"},
 						 @{@"type" : @(ActionTypeController),@"value" : @"MemoryVC",@"desc":@"MemoryVC"},
 						 @{@"type" : @(ActionTypeController),@"value" : @"BlockTestsVC",@"desc":@"Block"},
                          @{@"type" : @(ActionTypeController),@"value" : @"MasonryViewController",@"desc":@"Masonry "},
@@ -47,12 +62,6 @@
                          @{@"type" : @(ActionTypeController),@"value":@"DoubleDemoVC",@"desc":@"double"},
                          @{@"type" : @(ActionTypeController),@"value":@"SDWebImageTestVC",@"desc":@"渐进式加载原理"}];
     
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    NSLog(@"ViewController viewWillAppear");
 }
 
 - (void)showOverLay {
@@ -99,8 +108,6 @@
      */
     
     _myVC = [MyViewController alloc];
-    
-    
     
     [self.navigationController pushViewController:_myVC animated:YES];
 }
