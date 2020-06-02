@@ -31,9 +31,11 @@
     [super viewDidLoad];
     
     
-    // Do any additional setup after loading the view, typically from a nib BlockTestsVC OperationVC CycleVC NSStringVC MessageVC
+    // Do any additional setup after loading the view, typically from a nib BlockTestsVC OperationVC CycleVC NSStringVC MessageVC HashVSIsEqualVC
     self.dataSources = @[
+  @{@"type" : @(ActionTypeController),@"value" : @"HashVSIsEqualVC",@"desc":@"HashVSIsEqualVC"},
 		@{@"type" : @(ActionTypeController),@"value" : @"MessageVC",@"desc":@"MessageVC"},
+		@{@"type" : @(ActionTypeController),@"value" : @"CustomTransitionVC",@"desc":@"CustomTransitionVC"},
   @{@"type" : @(ActionTypeController),@"value" : @"NSStringVC",@"desc":@"NSStringVC"},
   @{@"type" : @(ActionTypeController),@"value" : @"CycleVC",@"desc":@"NSStringVC"},
   @{@"type" : @(ActionTypeController),@"value" : @"NetworkVC",@"desc":@"NetworkVC"},

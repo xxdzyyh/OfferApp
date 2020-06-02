@@ -73,8 +73,26 @@
     CFRunLoopAddObserver(CFRunLoopGetCurrent(), observer, kCFRunLoopCommonModes);
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
 
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+	NSLog(@"%s",__func__);
 }
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+	NSLog(@"%s",__func__);
+}
+
+- (void)applicationWillResignActive:(UIApplication *)application {
+	NSLog(@"%s",__func__);
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+	NSLog(@"%s",__func__);
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+	NSLog(@"%s",__func__);
+}
+
 
 @end

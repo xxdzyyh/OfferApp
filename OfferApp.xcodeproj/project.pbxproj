@@ -58,6 +58,10 @@
 		EC75789F24753138007EBB88 /* NetworkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC75789E24753138007EBB88 /* NetworkVC.m */; };
 		EC7578A3247673F4007EBB88 /* CycleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7578A2247673F4007EBB88 /* CycleVC.m */; };
 		EC7578A724775D14007EBB88 /* NSStringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7578A624775D14007EBB88 /* NSStringVC.m */; };
+		EC7578AD247CF32A007EBB88 /* CustomTransitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7578AC247CF32A007EBB88 /* CustomTransitionVC.m */; };
+		EC7578B0247CF3E3007EBB88 /* BouncePresentAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7578AF247CF3E3007EBB88 /* BouncePresentAnimatedTransitioning.m */; };
+		EC7578B3247CFBE4007EBB88 /* CustomPushAnimatedTransitoning.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7578B2247CFBE4007EBB88 /* CustomPushAnimatedTransitoning.m */; };
+		EC7578B7247F4997007EBB88 /* HashVSIsEqualVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7578B6247F4997007EBB88 /* HashVSIsEqualVC.m */; };
 		EC92747B243EC1C7003D44AA /* main1.m in Sources */ = {isa = PBXBuildFile; fileRef = EC92747A243EC1C7003D44AA /* main1.m */; };
 		EC9274A624512658003D44AA /* AssociateObjectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9274A524512658003D44AA /* AssociateObjectVC.m */; };
 		EC9274AA2459181F003D44AA /* MessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9274A92459181F003D44AA /* MessageVC.m */; };
@@ -169,6 +173,14 @@
 		EC7578A2247673F4007EBB88 /* CycleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CycleVC.m; sourceTree = "<group>"; };
 		EC7578A524775D14007EBB88 /* NSStringVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSStringVC.h; sourceTree = "<group>"; };
 		EC7578A624775D14007EBB88 /* NSStringVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringVC.m; sourceTree = "<group>"; };
+		EC7578AB247CF32A007EBB88 /* CustomTransitionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTransitionVC.h; sourceTree = "<group>"; };
+		EC7578AC247CF32A007EBB88 /* CustomTransitionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTransitionVC.m; sourceTree = "<group>"; };
+		EC7578AE247CF3E3007EBB88 /* BouncePresentAnimatedTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BouncePresentAnimatedTransitioning.h; sourceTree = "<group>"; };
+		EC7578AF247CF3E3007EBB88 /* BouncePresentAnimatedTransitioning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BouncePresentAnimatedTransitioning.m; sourceTree = "<group>"; };
+		EC7578B1247CFBE4007EBB88 /* CustomPushAnimatedTransitoning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomPushAnimatedTransitoning.h; sourceTree = "<group>"; };
+		EC7578B2247CFBE4007EBB88 /* CustomPushAnimatedTransitoning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPushAnimatedTransitoning.m; sourceTree = "<group>"; };
+		EC7578B5247F4997007EBB88 /* HashVSIsEqualVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashVSIsEqualVC.h; sourceTree = "<group>"; };
+		EC7578B6247F4997007EBB88 /* HashVSIsEqualVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HashVSIsEqualVC.m; sourceTree = "<group>"; };
 		EC92747A243EC1C7003D44AA /* main1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main1.m; sourceTree = "<group>"; };
 		EC9274A424512658003D44AA /* AssociateObjectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssociateObjectVC.h; sourceTree = "<group>"; };
 		EC9274A524512658003D44AA /* AssociateObjectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssociateObjectVC.m; sourceTree = "<group>"; };
@@ -278,6 +290,9 @@
 		D4672DC222962B3B00A5DE44 /* OfferApp */ = {
 			isa = PBXGroup;
 			children = (
+				EC9CAE0F2480DF6D001328FD /* AppStatus */,
+				EC7578B4247F4964007EBB88 /* HashIsEqual */,
+				EC7578AA247CF2FC007EBB88 /* Transitioning */,
 				EC7578A424775CFD007EBB88 /* NSString */,
 				EC7578A0247673D0007EBB88 /* UIView */,
 				EC75789C2475311A007EBB88 /* Network */,
@@ -589,6 +604,28 @@
 			path = NSString;
 			sourceTree = "<group>";
 		};
+		EC7578AA247CF2FC007EBB88 /* Transitioning */ = {
+			isa = PBXGroup;
+			children = (
+				EC7578AB247CF32A007EBB88 /* CustomTransitionVC.h */,
+				EC7578AC247CF32A007EBB88 /* CustomTransitionVC.m */,
+				EC7578AE247CF3E3007EBB88 /* BouncePresentAnimatedTransitioning.h */,
+				EC7578AF247CF3E3007EBB88 /* BouncePresentAnimatedTransitioning.m */,
+				EC7578B1247CFBE4007EBB88 /* CustomPushAnimatedTransitoning.h */,
+				EC7578B2247CFBE4007EBB88 /* CustomPushAnimatedTransitoning.m */,
+			);
+			path = Transitioning;
+			sourceTree = "<group>";
+		};
+		EC7578B4247F4964007EBB88 /* HashIsEqual */ = {
+			isa = PBXGroup;
+			children = (
+				EC7578B5247F4997007EBB88 /* HashVSIsEqualVC.h */,
+				EC7578B6247F4997007EBB88 /* HashVSIsEqualVC.m */,
+			);
+			path = HashIsEqual;
+			sourceTree = "<group>";
+		};
 		EC9274A724591804003D44AA /* Message */ = {
 			isa = PBXGroup;
 			children = (
@@ -616,6 +653,13 @@
 				EC98E3562473A23A00FD96EB /* MyOperation.m */,
 			);
 			path = NSOperation;
+			sourceTree = "<group>";
+		};
+		EC9CAE0F2480DF6D001328FD /* AppStatus */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppStatus;
 			sourceTree = "<group>";
 		};
 		EC9EFFE9243331F300F1919E /* atomic */ = {
@@ -751,6 +795,7 @@
 				EC9274AA2459181F003D44AA /* MessageVC.m in Sources */,
 				D4672E6822962B3B00A5DE44 /* Father.m in Sources */,
 				D4672E3D22962B3B00A5DE44 /* BaseViewController.m in Sources */,
+				EC7578AD247CF32A007EBB88 /* CustomTransitionVC.m in Sources */,
 				D4672E4422962B3B00A5DE44 /* KVOViewController.m in Sources */,
 				A0AB67EA23A0F47E0083219E /* MasonryViewController.m in Sources */,
 				A019F01E238E0864007D2F2E /* UIView+Yoga.m in Sources */,
@@ -772,6 +817,7 @@
 				D4672E4F22962B3B00A5DE44 /* WebViewController.m in Sources */,
 				D4672E5522962B3B00A5DE44 /* main.m in Sources */,
 				D4672E4C22962B3B00A5DE44 /* NumberCell.m in Sources */,
+				EC7578B3247CFBE4007EBB88 /* CustomPushAnimatedTransitoning.m in Sources */,
 				D4672E6A22962B3B00A5DE44 /* CViewController.m in Sources */,
 				D4672E4022962B3B00A5DE44 /* UIDebuggingInformationOverlay+Enable.m in Sources */,
 				D4672E4A22962B3B00A5DE44 /* NumberViewModel.m in Sources */,
@@ -788,6 +834,8 @@
 				D498FD03235D576600382842 /* SDWebImageTestVC.m in Sources */,
 				D4672E3C22962B3B00A5DE44 /* RunloopVC.m in Sources */,
 				D4672E3922962B3B00A5DE44 /* CrashCollectVC.m in Sources */,
+				EC7578B7247F4997007EBB88 /* HashVSIsEqualVC.m in Sources */,
+				EC7578B0247CF3E3007EBB88 /* BouncePresentAnimatedTransitioning.m in Sources */,
 				D4672E4D22962B3B00A5DE44 /* BugVC.m in Sources */,
 				EC7578A3247673F4007EBB88 /* CycleVC.m in Sources */,
 				D4672E4922962B3B00A5DE44 /* CrashVC.m in Sources */,
