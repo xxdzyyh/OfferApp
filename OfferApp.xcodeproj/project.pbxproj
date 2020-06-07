@@ -68,6 +68,7 @@
 		EC9274AE2468DEB3003D44AA /* CopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9274AD2468DEB3003D44AA /* CopyVC.m */; };
 		EC98E3542473730100FD96EB /* OperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC98E3532473730100FD96EB /* OperationVC.m */; };
 		EC98E3572473A23A00FD96EB /* MyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EC98E3562473A23A00FD96EB /* MyOperation.m */; };
+		EC9CAE5D24863C52001328FD /* NSTimerCycleRetainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9CAE5C24863C52001328FD /* NSTimerCycleRetainVC.m */; };
 		EC9EB5CF2435B83C00328676 /* GCDHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9EB5CE2435B83C00328676 /* GCDHomeVC.m */; };
 		EC9EB5D22435B8BF00328676 /* SyncAndAsyncVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9EB5D12435B8BF00328676 /* SyncAndAsyncVC.m */; };
 		EC9EFFEC2433321E00F1919E /* AtomicTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9EFFEB2433321E00F1919E /* AtomicTest.m */; };
@@ -192,6 +193,8 @@
 		EC98E3532473730100FD96EB /* OperationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationVC.m; sourceTree = "<group>"; };
 		EC98E3552473A23A00FD96EB /* MyOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyOperation.h; sourceTree = "<group>"; };
 		EC98E3562473A23A00FD96EB /* MyOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyOperation.m; sourceTree = "<group>"; };
+		EC9CAE5B24863C52001328FD /* NSTimerCycleRetainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerCycleRetainVC.h; sourceTree = "<group>"; };
+		EC9CAE5C24863C52001328FD /* NSTimerCycleRetainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerCycleRetainVC.m; sourceTree = "<group>"; };
 		EC9EB5CD2435B83C00328676 /* GCDHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDHomeVC.h; sourceTree = "<group>"; };
 		EC9EB5CE2435B83C00328676 /* GCDHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDHomeVC.m; sourceTree = "<group>"; };
 		EC9EB5D02435B8BF00328676 /* SyncAndAsyncVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyncAndAsyncVC.h; sourceTree = "<group>"; };
@@ -350,6 +353,7 @@
 		D4672DC722962B3B00A5DE44 /* Memory */ = {
 			isa = PBXGroup;
 			children = (
+				EC9CAE5A24863C07001328FD /* CycleRefrence */,
 				D4672DC822962B3B00A5DE44 /* MemoryVC.h */,
 				D4672DC922962B3B00A5DE44 /* MemoryObj.m */,
 				D4672DCA22962B3B00A5DE44 /* MemoryObj.h */,
@@ -662,6 +666,15 @@
 			path = AppStatus;
 			sourceTree = "<group>";
 		};
+		EC9CAE5A24863C07001328FD /* CycleRefrence */ = {
+			isa = PBXGroup;
+			children = (
+				EC9CAE5B24863C52001328FD /* NSTimerCycleRetainVC.h */,
+				EC9CAE5C24863C52001328FD /* NSTimerCycleRetainVC.m */,
+			);
+			path = CycleRefrence;
+			sourceTree = "<group>";
+		};
 		EC9EFFE9243331F300F1919E /* atomic */ = {
 			isa = PBXGroup;
 			children = (
@@ -824,6 +837,7 @@
 				EC98E3542473730100FD96EB /* OperationVC.m in Sources */,
 				EC92747B243EC1C7003D44AA /* main1.m in Sources */,
 				D4672E6722962B3B00A5DE44 /* ClassVC.m in Sources */,
+				EC9CAE5D24863C52001328FD /* NSTimerCycleRetainVC.m in Sources */,
 				D4672E5422962B3B00A5DE44 /* MyViewController.m in Sources */,
 				EC9EB5CF2435B83C00328676 /* GCDHomeVC.m in Sources */,
 				EC75789F24753138007EBB88 /* NetworkVC.m in Sources */,
