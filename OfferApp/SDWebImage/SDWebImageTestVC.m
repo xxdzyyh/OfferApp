@@ -9,6 +9,8 @@
 #import "SDWebImageTestVC.h"
 #import <Masonry/Masonry.h>
 #import <UIImageView+WebCache.h>
+#import <SDImageCache.h>
+
 #import <ReactiveObjC/ReactiveObjC.h>
 
 @interface SDWebImageTestVC ()
@@ -30,24 +32,38 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+	[[SDImageCache sharedImageCache] clearMemory];
+	[[SDImageCache sharedImageCache] clearDiskOnCompletion:^{
+		
+	}];
+	
+	
     [self.view addSubview:self.imageView];
     [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(300, 300));
         make.center.equalTo(self.view);
     }];
     
-    [RACObserve(self.imageView, image) subscribeNext:^(UIImage *x) {
-        NSLog(@"%@",x);
-    }];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
+	[self.navigationController popViewControllerAnimated:NO];
     /**
      不是所有的图片都可以使用 SDWebImageProgressiveLoad 。Progressive JPEG
      */
-    [self.imageView sd_setImageWithURL:[NSURL URLWithString:@"https://img.alicdn.com/imgextra/i4/1716499517/O1CN01nm8ud62KApqtVhVbI_!!1716499517.jpg"] placeholderImage:nil options:SDWebImageProgressiveLoad];
+	[self.imageView sd_setImageWithURL:[NSURL URLWithString:@"https://img.alicdn.com/imgextra/i4/1716499517/O1CN01nm8ud62KApqtVhVbI_!!1716499517.jpg"] placeholderImage:nil options:SDWebImageRetryFailed completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+		NSLog(@"111");
+	}];
+	
+	[self.imageView sd_setImageWithURL:[NSURL URLWithString:@"https://img.alicdn.com/imgextra/i4/1716499517/O1CN01nm8ud62KApqtVhVbI_!!1716499517.jpg"] placeholderImage:nil options:SDWebImageRetryFailed completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+		NSLog(@"222");
+	}];
+	
+	[self.imageView sd_setImageWithURL:[NSURL URLWithString:@"https://img.alicdn.com/imgextra/i4/1716499517/O1CN01nm8ud62KApqtVhVbI_!!1716499517.jpg"] placeholderImage:nil options:SDWebImageRetryFailed completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+		NSLog(@"333");
+	}];
 }
 
 #pragma mark - Setter & Getter
@@ -59,6 +75,10 @@
         _imageView.backgroundColor = [UIColor lightGrayColor];
     }
     return _imageView;
+}
+
+- (void)dealloc {
+	NSLog(@"SDWebImageTestVC dealloc");
 }
 
 @end

@@ -29,6 +29,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     MyObject<NSNumber *> *obj = [[MyObject alloc] init];
     
+	[[NSURLCache sharedURLCache] setMemoryCapacity:10 * 1024 * 1024];
+	[[NSURLCache sharedURLCache] setDiskCapacity:1024 * 1024 * 10];
+	
     NSLog(@"%@",obj.obj);
 
     return YES;

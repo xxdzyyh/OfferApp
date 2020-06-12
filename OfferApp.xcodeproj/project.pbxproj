@@ -69,6 +69,8 @@
 		EC98E3542473730100FD96EB /* OperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC98E3532473730100FD96EB /* OperationVC.m */; };
 		EC98E3572473A23A00FD96EB /* MyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EC98E3562473A23A00FD96EB /* MyOperation.m */; };
 		EC9CAE5D24863C52001328FD /* NSTimerCycleRetainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9CAE5C24863C52001328FD /* NSTimerCycleRetainVC.m */; };
+		EC9CAE6C2491D68D001328FD /* NSURLCache+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9CAE6B2491D68D001328FD /* NSURLCache+Test.m */; };
+		EC9CAE712491E16A001328FD /* RequestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9CAE702491E16A001328FD /* RequestVC.m */; };
 		EC9EB5CF2435B83C00328676 /* GCDHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9EB5CE2435B83C00328676 /* GCDHomeVC.m */; };
 		EC9EB5D22435B8BF00328676 /* SyncAndAsyncVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9EB5D12435B8BF00328676 /* SyncAndAsyncVC.m */; };
 		EC9EFFEC2433321E00F1919E /* AtomicTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9EFFEB2433321E00F1919E /* AtomicTest.m */; };
@@ -195,6 +197,10 @@
 		EC98E3562473A23A00FD96EB /* MyOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyOperation.m; sourceTree = "<group>"; };
 		EC9CAE5B24863C52001328FD /* NSTimerCycleRetainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerCycleRetainVC.h; sourceTree = "<group>"; };
 		EC9CAE5C24863C52001328FD /* NSTimerCycleRetainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerCycleRetainVC.m; sourceTree = "<group>"; };
+		EC9CAE6A2491D68D001328FD /* NSURLCache+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLCache+Test.h"; sourceTree = "<group>"; };
+		EC9CAE6B2491D68D001328FD /* NSURLCache+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLCache+Test.m"; sourceTree = "<group>"; };
+		EC9CAE6F2491E16A001328FD /* RequestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestVC.h; sourceTree = "<group>"; };
+		EC9CAE702491E16A001328FD /* RequestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestVC.m; sourceTree = "<group>"; };
 		EC9EB5CD2435B83C00328676 /* GCDHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDHomeVC.h; sourceTree = "<group>"; };
 		EC9EB5CE2435B83C00328676 /* GCDHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDHomeVC.m; sourceTree = "<group>"; };
 		EC9EB5D02435B8BF00328676 /* SyncAndAsyncVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyncAndAsyncVC.h; sourceTree = "<group>"; };
@@ -293,6 +299,7 @@
 		D4672DC222962B3B00A5DE44 /* OfferApp */ = {
 			isa = PBXGroup;
 			children = (
+				EC9CAE6D2491E138001328FD /* Request */,
 				EC9CAE0F2480DF6D001328FD /* AppStatus */,
 				EC7578B4247F4964007EBB88 /* HashIsEqual */,
 				EC7578AA247CF2FC007EBB88 /* Transitioning */,
@@ -560,6 +567,8 @@
 			children = (
 				D498FD01235D576600382842 /* SDWebImageTestVC.h */,
 				D498FD02235D576600382842 /* SDWebImageTestVC.m */,
+				EC9CAE6A2491D68D001328FD /* NSURLCache+Test.h */,
+				EC9CAE6B2491D68D001328FD /* NSURLCache+Test.m */,
 			);
 			path = SDWebImage;
 			sourceTree = "<group>";
@@ -673,6 +682,15 @@
 				EC9CAE5C24863C52001328FD /* NSTimerCycleRetainVC.m */,
 			);
 			path = CycleRefrence;
+			sourceTree = "<group>";
+		};
+		EC9CAE6D2491E138001328FD /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				EC9CAE6F2491E16A001328FD /* RequestVC.h */,
+				EC9CAE702491E16A001328FD /* RequestVC.m */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 		EC9EFFE9243331F300F1919E /* atomic */ = {
@@ -820,6 +838,7 @@
 				D4672E4E22962B3B00A5DE44 /* CollectionOffsetBugVC.m in Sources */,
 				D4672E5622962B3B00A5DE44 /* DoubleDemoVC.m in Sources */,
 				EC7578A724775D14007EBB88 /* NSStringVC.m in Sources */,
+				EC9CAE712491E16A001328FD /* RequestVC.m in Sources */,
 				A019F043238F5C74007D2F2E /* RACObserverVC.m in Sources */,
 				D4672E4522962B3B00A5DE44 /* RPerson.m in Sources */,
 				EC9EB5D22435B8BF00328676 /* SyncAndAsyncVC.m in Sources */,
@@ -840,6 +859,7 @@
 				EC9CAE5D24863C52001328FD /* NSTimerCycleRetainVC.m in Sources */,
 				D4672E5422962B3B00A5DE44 /* MyViewController.m in Sources */,
 				EC9EB5CF2435B83C00328676 /* GCDHomeVC.m in Sources */,
+				EC9CAE6C2491D68D001328FD /* NSURLCache+Test.m in Sources */,
 				EC75789F24753138007EBB88 /* NetworkVC.m in Sources */,
 				EC9274AE2468DEB3003D44AA /* CopyVC.m in Sources */,
 				A019F01D238E0864007D2F2E /* YGLayout.m in Sources */,

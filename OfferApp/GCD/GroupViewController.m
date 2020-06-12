@@ -7,6 +7,8 @@
 //
 
 #import "GroupViewController.h"
+#import <UIImageView+WebCache.h>
+#import <SDWebImageDownloader.h>
 
 @interface BFUtils : NSObject 
 
@@ -64,6 +66,8 @@
 
 @interface GroupViewController ()
 
+@property (strong, nonatomic) UIImageView *imageView;
+
 @end
 
 @implementation GroupViewController
@@ -73,7 +77,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
 	
-	[self group];
+	[self case1];
 }
 
 - (void)group {
@@ -104,28 +108,7 @@
         NSLog(@"GCD Group 所有的任务都完成了，可以进行下一步操作了");
 		
 		// 这里才是上面任务都完成了的回调
-		
-		dispatch_group_enter(group);
-		void(^block)(NSString *a) = ^(NSString *a){
-			sleep(3);
-			dispatch_group_leave(group);
-			NSLog(@"%@",a);
-		};
-		
-		dispatch_async(dispatch_get_global_queue(0, 0), ^{
-			block(@"finish 0");
-		});
-		
-		
-		dispatch_group_enter(group);
-		dispatch_async(dispatch_get_global_queue(0, 0), ^{
-			block(@"finish 1");
-		});
-		
-		// 因为是异步执行，所以上面两个block几乎是同一时间执行完，这个可以用来完成多个网络请求完成后进行下一步动作
-		dispatch_group_notify(group, dispatch_get_main_queue(), ^{
-			NSLog(@"GCD Group 所有的任务都完成了，可以进行下一步操作了");
-		});
+
     });
 	
 	/**
@@ -148,5 +131,67 @@
 	 */
 }
 
+- (void)enterLeave {
+	dispatch_group_t group = dispatch_group_create();
+
+	void(^block)(NSString *a) = ^(NSString *a){
+		sleep(3);
+		NSLog(@"%@",a);
+		dispatch_group_leave(group);
+	};
+
+	dispatch_group_enter(group);
+	dispatch_async(dispatch_get_global_queue(0, 0), ^{
+		block(@"finish 0");
+	});
+
+
+	dispatch_group_enter(group);
+	dispatch_async(dispatch_get_global_queue(0, 0), ^{
+		block(@"finish 1");
+	});
+
+	// 因为是异步执行，所以上面两个block几乎是同一时间执行完，这个可以用来完成多个网络请求完成后进行下一步动作
+	dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+		NSLog(@"GCD Group 所有的任务都完成了，可以进行下一步操作了");
+	});
+}
+
+- (void)case1 {
+	dispatch_group_t group = dispatch_group_create();
+
+	dispatch_group_enter(group);
+	[self asyncTaskWithCompletion:^{
+		dispatch_group_leave(group);
+	}];
+
+
+	dispatch_group_enter(group);
+	[self asyncTaskWithCompletion:^{
+		dispatch_group_leave(group);
+	}];
+
+	// 因为是异步执行，所以上面两个block几乎是同一时间执行完，这个可以用来完成多个网络请求完成后进行下一步动作
+	dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+		NSLog(@"GCD Group 所有的任务都完成了，可以进行下一步操作了");
+	});
+}
+
+- (void)asyncTaskWithCompletion:(void(^)(void))completionBlock {
+	NSLog(@"asyncTask start");
+	[[SDWebImageDownloader sharedDownloader] downloadImageWithURL:[NSURL URLWithString:@"https://img.alicdn.com/imgextra/i4/1716499517/O1CN01nm8ud62KApqtVhVbI_!!1716499517.jpg"] completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, BOOL finished) {
+		NSLog(@"asyncTask finish %@",image);
+		if (completionBlock) {
+			completionBlock();
+		}
+	}];
+}
+
+- (UIImageView *)imageView {
+	if (_imageView == nil) {
+		_imageView = [[UIImageView alloc] init];
+	}
+	return _imageView;
+}
 
 @end
