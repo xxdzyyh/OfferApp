@@ -24,25 +24,36 @@ __weak id objTrack;
     
 //    MemoryObj *obj = [MemoryObj memoryObj];
 
-	obj1 = [MemoryObj new];
+	NSString *t1 = @"string";
+	NSString *t2 = @"string";
 	
+	NSString *t3 = [NSString stringWithFormat:@"string"];
+	NSString *t4 = [NSString stringWithString:@"string"];
+	NSString *t5 = [[NSString alloc] initWithString:@"string"];
 	
+	NSLog(@"%p %p %p %p",t1,t2,t3,t4);
+	NSLog(@"%p %p %p %p",&t1,&t2,&t3,&t4);
 	
-	printf("obj1:%ld\n", CFGetRetainCount((__bridge CFTypeRef)(obj1)));
+	NSLog(@"t1==t2 is %d",t1==t2);
+	NSLog(@"t2==t3 is %d",t2==t3);
+	NSLog(@"t3==t4 is %d",t3==t4);
 	
-	id obj2 = obj1;
-	printf("obj1:%ld\n", CFGetRetainCount((__bridge CFTypeRef)(obj1)));
-	
-	id obj3 = obj2;
-	
-	printf("obj1:%ld\n", CFGetRetainCount((__bridge CFTypeRef)(obj1)));
-	printf("obj2:%ld\n", CFGetRetainCount((__bridge CFTypeRef)(obj2)));
-	printf("obj3:%ld\n", CFGetRetainCount((__bridge CFTypeRef)(obj3)));
-	
-	id obj4 = [obj1 copy];
-	
-	printf("obj4:%ld\n", CFGetRetainCount((__bridge CFTypeRef)(obj4)));
-	
+//	obj1 = [MemoryObj new];
+//
+//	printf("obj1:%ld\n", CFGetRetainCount((__bridge CFTypeRef)(obj1)));
+//
+//	id obj2 = obj1;
+//	printf("obj1:%ld\n", CFGetRetainCount((__bridge CFTypeRef)(obj1)));
+//
+//	id obj3 = obj2;
+//
+//	printf("obj1:%ld\n", CFGetRetainCount((__bridge CFTypeRef)(obj1)));
+//	printf("obj2:%ld\n", CFGetRetainCount((__bridge CFTypeRef)(obj2)));
+//	printf("obj3:%ld\n", CFGetRetainCount((__bridge CFTypeRef)(obj3)));
+//
+//	id obj4 = [obj1 copy];
+//
+//	printf("obj4:%ld\n", CFGetRetainCount((__bridge CFTypeRef)(obj4)));
 }
 
 /**
