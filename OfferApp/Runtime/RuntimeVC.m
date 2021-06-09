@@ -70,8 +70,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.dataSources = @[@{ActionTypeString:@(ActionTypeNone),ActionValueString:@"test"},
+    // MethodExchangeVC
+    self.dataSources = @[@{ActionTypeString:@(ActionTypeController),ActionValueString:@"MethodExchangeVC"},
+                         @{ActionTypeString:@(ActionTypeNone),ActionValueString:@"test"},
                          @{ActionTypeString:@(ActionTypeNone),ActionValueString:@"test1"},
                          @{ActionTypeString:@(ActionTypeNone),ActionValueString:@"testNSObject"}];
     

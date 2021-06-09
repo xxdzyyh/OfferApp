@@ -8,11 +8,13 @@ target 'OfferApp' do
   # Pods for OfferApp
     pod 'FMDB'
     pod 'ReactiveObjC'
-	  pod 'XFFoundation',:path => '/Users/wangxuefeng/WorkSpace/XFFoundation'
+   pod 'XFFoundation',:path => '/Users/mac/WorkSpace/XFFoundation'
 #    pod 'XFFoundation',:git => 'https://github.com/xxdzyyh/XFFoundation.git'
     pod 'PromisesObjC', '~> 1.2.7'
     pod 'IGListKit','2.1.0'
     pod 'Yoga','1.14.0'
 		pod 'SDWebImage'
-    
+    pod 'SDCycleScrollView','>= 1.82'
+#    pod 'Dynatrace/SessionReplay', '~> 8.197'
+#    pod 'OHHTTPStubs'    
 end

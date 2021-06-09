@@ -1,0 +1,1 @@
+../../../../../XFFoundation/Base/SynthesizeSingleton.h

@@ -33,6 +33,7 @@
     
     // Do any additional setup after loading the view, typically from a nib BlockTestsVC OperationVC CycleVC NSStringVC MessageVC HashVSIsEqualVC NSTimerCycleRetainVC RequestVC
     self.dataSources = @[
+        @{@"type" : @(ActionTypeController),@"value" : @"SDCycleScrollViewDemoVC",@"desc":@"SDCycleScrollView"},
 		@{@"type" : @(ActionTypeController),@"value" : @"RequestVC",@"desc":@"RequestVC"},
 		@{@"type" : @(ActionTypeController),@"value" : @"NSTimerCycleRetainVC",@"desc":@"NSTimerCycleRetainVC"},
   @{@"type" : @(ActionTypeController),@"value" : @"HashVSIsEqualVC",@"desc":@"HashVSIsEqualVC"},

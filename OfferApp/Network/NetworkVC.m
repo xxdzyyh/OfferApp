@@ -43,20 +43,20 @@
  */
 - (void)whyShareManager {
 	
-	AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-	
-	manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-	manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-	
-	[manager GET:@"http://www.baidu.com" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-		// 如果manager出了这个代码块就被释放，那回调的block就不会执行，现在回调已经被执行了。
-		NSLog(@"%@",responseObject);
-		
-		// 不调用下面的方法，manager就不会释放，引起内存泄漏
-		[manager invalidateSessionCancelingTasks:YES];
-	} failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-		NSLog(@"%@",error);
-	}];
+//	AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+//	
+//	manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+//	manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+//	
+//    [manager GET:@"http://www.baidu.com" parameters:nil header:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//		// 如果manager出了这个代码块就被释放，那回调的block就不会执行，现在回调已经被执行了。
+//		NSLog(@"%@",responseObject);
+//		
+//		// 不调用下面的方法，manager就不会释放，引起内存泄漏
+//		[manager invalidateSessionCancelingTasks:YES resetSession:YES];
+//	} failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//		NSLog(@"%@",error);
+//	}];
 }
 
 

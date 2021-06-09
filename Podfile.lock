@@ -1,19 +1,24 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
-  - AFNetworking/NSURLSession (3.2.1):
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.1)
-  - AFNetworking/Security (3.2.1)
-  - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - Dynatrace/SessionReplay (8.211.1.1015):
+    - Dynatrace/SessionReplayXCFramework
+  - Dynatrace/SessionReplayXCFramework (8.211.1.1015):
+    - Dynatrace/xcframework
+  - Dynatrace/xcframework (8.211.1.1015)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -22,24 +27,24 @@ PODS:
   - IGListKit/Default (2.1.0):
     - IGListKit/Diffing
   - IGListKit/Diffing (2.1.0)
-  - IQKeyboardManager (6.5.5)
+  - IQKeyboardManager (6.5.6)
   - Masonry (1.1.0)
-  - MBProgressHUD (1.0.0)
-  - MJRefresh (3.3.1)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.5.0)
   - PromisesObjC (1.2.8)
   - ReactiveObjC (3.1.1)
   - SAMKeychain (1.5.3)
-  - SDCycleScrollView (1.80):
+  - SDCycleScrollView (1.82):
     - SDWebImage (>= 5.0.0)
   - SDWebImage (5.6.1):
     - SDWebImage/Core (= 5.6.1)
   - SDWebImage/Core (5.6.1)
   - SVProgressHUD (2.2.5)
   - XFFoundation (0.0.1):
-    - AFNetworking (= 3.2.1)
+    - AFNetworking
     - IQKeyboardManager
     - Masonry
-    - MBProgressHUD (= 1.0.0)
+    - MBProgressHUD
     - MJRefresh
     - SAMKeychain
     - SDCycleScrollView
@@ -55,90 +60,90 @@ PODS:
     - XFFoundation/ViewController (= 0.0.1)
     - YYModel
   - XFFoundation/AccountManager (0.0.1):
-    - AFNetworking (= 3.2.1)
+    - AFNetworking
     - IQKeyboardManager
     - Masonry
-    - MBProgressHUD (= 1.0.0)
+    - MBProgressHUD
     - MJRefresh
     - SAMKeychain
     - SDCycleScrollView
     - SVProgressHUD
     - YYModel
   - XFFoundation/Base (0.0.1):
-    - AFNetworking (= 3.2.1)
+    - AFNetworking
     - IQKeyboardManager
     - Masonry
-    - MBProgressHUD (= 1.0.0)
+    - MBProgressHUD
     - MJRefresh
     - SAMKeychain
     - SDCycleScrollView
     - SVProgressHUD
     - YYModel
   - XFFoundation/Category (0.0.1):
-    - AFNetworking (= 3.2.1)
+    - AFNetworking
     - IQKeyboardManager
     - Masonry
-    - MBProgressHUD (= 1.0.0)
+    - MBProgressHUD
     - MJRefresh
     - SAMKeychain
     - SDCycleScrollView
     - SVProgressHUD
     - YYModel
   - XFFoundation/Marco (0.0.1):
-    - AFNetworking (= 3.2.1)
+    - AFNetworking
     - IQKeyboardManager
     - Masonry
-    - MBProgressHUD (= 1.0.0)
+    - MBProgressHUD
     - MJRefresh
     - SAMKeychain
     - SDCycleScrollView
     - SVProgressHUD
     - YYModel
   - XFFoundation/Plugin (0.0.1):
-    - AFNetworking (= 3.2.1)
+    - AFNetworking
     - IQKeyboardManager
     - Masonry
-    - MBProgressHUD (= 1.0.0)
+    - MBProgressHUD
     - MJRefresh
     - SAMKeychain
     - SDCycleScrollView
     - SVProgressHUD
     - YYModel
   - XFFoundation/Request (0.0.1):
-    - AFNetworking (= 3.2.1)
+    - AFNetworking
     - IQKeyboardManager
     - Masonry
-    - MBProgressHUD (= 1.0.0)
+    - MBProgressHUD
     - MJRefresh
     - SAMKeychain
     - SDCycleScrollView
     - SVProgressHUD
     - YYModel
   - XFFoundation/Tools (0.0.1):
-    - AFNetworking (= 3.2.1)
+    - AFNetworking
     - IQKeyboardManager
     - Masonry
-    - MBProgressHUD (= 1.0.0)
+    - MBProgressHUD
     - MJRefresh
     - SAMKeychain
     - SDCycleScrollView
     - SVProgressHUD
     - YYModel
   - XFFoundation/View (0.0.1):
-    - AFNetworking (= 3.2.1)
+    - AFNetworking
     - IQKeyboardManager
     - Masonry
-    - MBProgressHUD (= 1.0.0)
+    - MBProgressHUD
     - MJRefresh
     - SAMKeychain
     - SDCycleScrollView
     - SVProgressHUD
     - YYModel
   - XFFoundation/ViewController (0.0.1):
-    - AFNetworking (= 3.2.1)
+    - AFNetworking
     - IQKeyboardManager
     - Masonry
-    - MBProgressHUD (= 1.0.0)
+    - MBProgressHUD
     - MJRefresh
     - SAMKeychain
     - SDCycleScrollView
@@ -148,17 +153,20 @@ PODS:
   - YYModel (1.0.4)
 
 DEPENDENCIES:
+  - Dynatrace/SessionReplay (~> 8.197)
   - FMDB
   - IGListKit (= 2.1.0)
   - PromisesObjC (~> 1.2.7)
   - ReactiveObjC
+  - SDCycleScrollView (>= 1.82)
   - SDWebImage
-  - XFFoundation (from `/Users/wangxuefeng/WorkSpace/XFFoundation`)
+  - XFFoundation (from `/Users/mac/WorkSpace/XFFoundation`)
   - Yoga (= 1.14.0)
 
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - Dynatrace
     - FMDB
     - IGListKit
     - IQKeyboardManager
@@ -176,26 +184,27 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   XFFoundation:
-    :path: "/Users/wangxuefeng/WorkSpace/XFFoundation"
+    :path: "/Users/mac/WorkSpace/XFFoundation"
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Dynatrace: 3c0a271b0afc2cbc31acd5ff1a03718fa7634eca
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   IGListKit: b826c68ef7a4ae1626c09d4d3e1ea7a169e6c36e
-  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
-  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
-  SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
+  SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
   SDWebImage: 7edb9c3ea661e77a66661f7f044de8c1b55d1120
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  XFFoundation: 8e736033615d4d34f299b86921643d6049cc85bb
+  XFFoundation: 817ee49c8d63dc9dda5d548797e7e0a164f132c6
   Yoga: cff67a400f6b74dc38eb0bad4f156673d9aa980c
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 9875eefa8b44df24b7385c3e1bfae5b96d032dc8
+PODFILE CHECKSUM: 175506d2b20f9bb40e2977aadba4b271032ded78
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.1

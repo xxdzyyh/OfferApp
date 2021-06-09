@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-OfferApp/Pods-OfferApp-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/DynatraceSessionReplay/DynatraceSessionReplay.framework/DynatraceSessionReplay
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Dynatrace/Dynatrace.framework/Dynatrace

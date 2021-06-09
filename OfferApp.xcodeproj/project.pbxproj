@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0405B849266B564C000218A0 /* OSLogTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0405B848266B564C000218A0 /* OSLogTestVC.m */; };
+		044EC964256FAC0F008B2A62 /* MyURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 044EC963256FAC0F008B2A62 /* MyURLProtocol.m */; };
+		044EC97A256FC4CA008B2A62 /* Empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 044EC979256FC4CA008B2A62 /* Empty.json */; };
+		0494670D25E109BA007812CF /* SDCycleScrollViewDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0494670C25E109BA007812CF /* SDCycleScrollViewDemoVC.m */; };
+		04A15C65260B46660084534D /* MethodExchangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A15C64260B46660084534D /* MethodExchangeVC.m */; };
 		7FCA1BB4B2CAB6F78F15E32A /* libPods-OfferApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 447797FAC45F44447C6E5313 /* libPods-OfferApp.a */; };
 		A019F015238E07E1007D2F2E /* NotificationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A019F014238E07E1007D2F2E /* NotificationVC.m */; };
 		A019F01D238E0864007D2F2E /* YGLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A019F01B238E0864007D2F2E /* YGLayout.m */; };
@@ -54,7 +59,6 @@
 		D4672E6C22962B3B00A5DE44 /* MultiThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E3722962B3B00A5DE44 /* MultiThreadVC.m */; };
 		D498FD03235D576600382842 /* SDWebImageTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D498FD02235D576600382842 /* SDWebImageTestVC.m */; };
 		EC502DEC23A11143006FF5AB /* TestFrameworkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC502DEB23A11143006FF5AB /* TestFrameworkVC.m */; };
-		EC502E0B23A12998006FF5AB /* OfferSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC502E0A23A12998006FF5AB /* OfferSDK.framework */; };
 		EC75789F24753138007EBB88 /* NetworkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC75789E24753138007EBB88 /* NetworkVC.m */; };
 		EC7578A3247673F4007EBB88 /* CycleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7578A2247673F4007EBB88 /* CycleVC.m */; };
 		EC7578A724775D14007EBB88 /* NSStringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7578A624775D14007EBB88 /* NSStringVC.m */; };
@@ -77,6 +81,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0405B847266B564C000218A0 /* OSLogTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSLogTestVC.h; sourceTree = "<group>"; };
+		0405B848266B564C000218A0 /* OSLogTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSLogTestVC.m; sourceTree = "<group>"; };
+		044EC962256FAC0F008B2A62 /* MyURLProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyURLProtocol.h; sourceTree = "<group>"; };
+		044EC963256FAC0F008B2A62 /* MyURLProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyURLProtocol.m; sourceTree = "<group>"; };
+		044EC979256FC4CA008B2A62 /* Empty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Empty.json; sourceTree = "<group>"; };
+		0494670B25E109BA007812CF /* SDCycleScrollViewDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollViewDemoVC.h; sourceTree = "<group>"; };
+		0494670C25E109BA007812CF /* SDCycleScrollViewDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollViewDemoVC.m; sourceTree = "<group>"; };
+		04A15C63260B46660084534D /* MethodExchangeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodExchangeVC.h; sourceTree = "<group>"; };
+		04A15C64260B46660084534D /* MethodExchangeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodExchangeVC.m; sourceTree = "<group>"; };
 		3EDEADCF0F9B431238999766 /* Pods-OfferApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfferApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OfferApp/Pods-OfferApp.debug.xcconfig"; sourceTree = "<group>"; };
 		447797FAC45F44447C6E5313 /* libPods-OfferApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OfferApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EF2A1949D334438935EFF19 /* Pods-OfferApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfferApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-OfferApp/Pods-OfferApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -214,7 +227,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC502E0B23A12998006FF5AB /* OfferSDK.framework in Frameworks */,
 				7FCA1BB4B2CAB6F78F15E32A /* libPods-OfferApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +241,24 @@
 				6EF2A1949D334438935EFF19 /* Pods-OfferApp.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		0405B846266B5626000218A0 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				0405B847266B564C000218A0 /* OSLogTestVC.h */,
+				0405B848266B564C000218A0 /* OSLogTestVC.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		0494670A25E1098A007812CF /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				0494670B25E109BA007812CF /* SDCycleScrollViewDemoVC.h */,
+				0494670C25E109BA007812CF /* SDCycleScrollViewDemoVC.m */,
+			);
+			path = SDCycleScrollView;
 			sourceTree = "<group>";
 		};
 		632B53FC7AF156B85C23DD30 /* Frameworks */ = {
@@ -299,8 +329,8 @@
 		D4672DC222962B3B00A5DE44 /* OfferApp */ = {
 			isa = PBXGroup;
 			children = (
+				0405B846266B5626000218A0 /* Log */,
 				EC9CAE6D2491E138001328FD /* Request */,
-				EC9CAE0F2480DF6D001328FD /* AppStatus */,
 				EC7578B4247F4964007EBB88 /* HashIsEqual */,
 				EC7578AA247CF2FC007EBB88 /* Transitioning */,
 				EC7578A424775CFD007EBB88 /* NSString */,
@@ -412,6 +442,8 @@
 				D4672DE122962B3B00A5DE44 /* RPerson.m */,
 				EC9274A424512658003D44AA /* AssociateObjectVC.h */,
 				EC9274A524512658003D44AA /* AssociateObjectVC.m */,
+				04A15C63260B46660084534D /* MethodExchangeVC.h */,
+				04A15C64260B46660084534D /* MethodExchangeVC.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -576,6 +608,7 @@
 		EC502DE423A1106E006FF5AB /* Verdor */ = {
 			isa = PBXGroup;
 			children = (
+				0494670A25E1098A007812CF /* SDCycleScrollView */,
 				EC502E0A23A12998006FF5AB /* OfferSDK.framework */,
 			);
 			path = Verdor;
@@ -668,13 +701,6 @@
 			path = NSOperation;
 			sourceTree = "<group>";
 		};
-		EC9CAE0F2480DF6D001328FD /* AppStatus */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AppStatus;
-			sourceTree = "<group>";
-		};
 		EC9CAE5A24863C07001328FD /* CycleRefrence */ = {
 			isa = PBXGroup;
 			children = (
@@ -689,6 +715,9 @@
 			children = (
 				EC9CAE6F2491E16A001328FD /* RequestVC.h */,
 				EC9CAE702491E16A001328FD /* RequestVC.m */,
+				044EC962256FAC0F008B2A62 /* MyURLProtocol.h */,
+				044EC963256FAC0F008B2A62 /* MyURLProtocol.m */,
+				044EC979256FC4CA008B2A62 /* Empty.json */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -714,6 +743,7 @@
 				D47F28D1216EF5C800424800 /* Frameworks */,
 				D47F28D2216EF5C800424800 /* Resources */,
 				90ED76D8BCF0A1624ECB3619 /* [CP] Copy Pods Resources */,
+				62F7DC2C3B9FFE26AE535412 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -766,6 +796,7 @@
 				D4672E4222962B3B00A5DE44 /* Assets.xcassets in Resources */,
 				D44C824C22B8E4C80001BB79 /* runloop.jpg in Resources */,
 				D4672E5222962B3B00A5DE44 /* Main.storyboard in Resources */,
+				044EC97A256FC4CA008B2A62 /* Empty.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -788,6 +819,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62F7DC2C3B9FFE26AE535412 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OfferApp/Pods-OfferApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OfferApp/Pods-OfferApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OfferApp/Pods-OfferApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		90ED76D8BCF0A1624ECB3619 /* [CP] Copy Pods Resources */ = {
@@ -818,12 +866,14 @@
 				D4672E3B22962B3B00A5DE44 /* MemoryVC.m in Sources */,
 				D4672E6622962B3B00A5DE44 /* KeywordVC.m in Sources */,
 				EC502DEC23A11143006FF5AB /* TestFrameworkVC.m in Sources */,
+				044EC964256FAC0F008B2A62 /* MyURLProtocol.m in Sources */,
 				D4672E5722962B3B00A5DE44 /* AppDelegate.m in Sources */,
 				D4672E6922962B3B00A5DE44 /* Son.m in Sources */,
 				EC9EFFEC2433321E00F1919E /* AtomicTest.m in Sources */,
 				D4672E3E22962B3B00A5DE44 /* UIViewController+Log.m in Sources */,
 				D4672E4822962B3B00A5DE44 /* GroupViewController.m in Sources */,
 				EC9274AA2459181F003D44AA /* MessageVC.m in Sources */,
+				04A15C65260B46660084534D /* MethodExchangeVC.m in Sources */,
 				D4672E6822962B3B00A5DE44 /* Father.m in Sources */,
 				D4672E3D22962B3B00A5DE44 /* BaseViewController.m in Sources */,
 				EC7578AD247CF32A007EBB88 /* CustomTransitionVC.m in Sources */,
@@ -849,6 +899,7 @@
 				D4672E4F22962B3B00A5DE44 /* WebViewController.m in Sources */,
 				D4672E5522962B3B00A5DE44 /* main.m in Sources */,
 				D4672E4C22962B3B00A5DE44 /* NumberCell.m in Sources */,
+				0405B849266B564C000218A0 /* OSLogTestVC.m in Sources */,
 				EC7578B3247CFBE4007EBB88 /* CustomPushAnimatedTransitoning.m in Sources */,
 				D4672E6A22962B3B00A5DE44 /* CViewController.m in Sources */,
 				D4672E4022962B3B00A5DE44 /* UIDebuggingInformationOverlay+Enable.m in Sources */,
@@ -870,6 +921,7 @@
 				D4672E3922962B3B00A5DE44 /* CrashCollectVC.m in Sources */,
 				EC7578B7247F4997007EBB88 /* HashVSIsEqualVC.m in Sources */,
 				EC7578B0247CF3E3007EBB88 /* BouncePresentAnimatedTransitioning.m in Sources */,
+				0494670D25E109BA007812CF /* SDCycleScrollViewDemoVC.m in Sources */,
 				D4672E4D22962B3B00A5DE44 /* BugVC.m in Sources */,
 				EC7578A3247673F4007EBB88 /* CycleVC.m in Sources */,
 				D4672E4922962B3B00A5DE44 /* CrashVC.m in Sources */,
@@ -1027,7 +1079,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.learn.OfferApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.learn.OfferApp111;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1051,7 +1103,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.learn.OfferApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.learn.OfferApp111;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

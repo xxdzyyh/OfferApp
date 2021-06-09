@@ -1,0 +1,280 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target i386-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DynatraceSessionReplay
+import CoreData
+@_exported import DynatraceSessionReplay
+import Foundation
+import Swift
+import SystemConfiguration
+import UIKit
+import WebKit
+@_inheritsConvenienceInitializers @objc(DBScreenshotJob) public class DBScreenshotJob : CoreData.NSManagedObject {
+  @objc deinit
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+}
+@objc @_inheritsConvenienceInitializers public class AgentManager : ObjectiveC.NSObject {
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc extension AgentManager {
+  @objc public static func start(_ config: Foundation.NSDictionary)
+  @objc public static func start(defaultConfig: [Swift.String : Any]? = nil, beaconUrl: Swift.String, applicationId: Swift.String)
+  @objc public static func uploadData()
+  @objc public static func changeUploadIntervalTime(_ uploadIntervalTime: Foundation.TimeInterval)
+  @objc public static func configure(_ newConfiguration: DynatraceSessionReplay.TrackingConfiguration)
+  @objc public static func trackCustomEvent(name: Swift.String, withView view: UIKit.UIView? = UIApplication.shared.keyWindow, takeScreenshot: Swift.Bool = false)
+  @objc public static func takeScreenshot()
+  @objc public static func setMaskingConfiguration(_ maskingConfiguration: DynatraceSessionReplay.MaskingConfiguration) throws
+  @objc public static func setLockedMaskingConfiguration(_ maskingConfiguration: DynatraceSessionReplay.MaskingConfiguration) throws
+  @objc public static func lockMaskingConfiguration()
+  @objc public static func getMaskingConfiguration() -> DynatraceSessionReplay.MaskingConfiguration
+}
+extension DBBeaconDataJob {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DynatraceSessionReplay.DBBeaconDataJob>
+  @objc @NSManaged dynamic public var data: Foundation.NSData {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var visitId: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var endTime: Foundation.NSDate {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var protocolVersion: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var startTime: Foundation.NSDate {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var agentIdentifier: Swift.String {
+    @objc get
+    @objc set
+  }
+}
+@_inheritsConvenienceInitializers @objc(DBSession) public class DBSession : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension UIResponder {
+  public var parentViewController: UIKit.UIViewController? {
+    get
+  }
+}
+extension DBScreenshotJob {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DynatraceSessionReplay.DBScreenshotJob>
+  @objc @NSManaged dynamic public var screenshotId: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var visitId: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var visitorId: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var visitStore: Foundation.NSNumber {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timestamp: Foundation.NSDate {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var agentIdentifier: Swift.String {
+    @objc get
+    @objc set
+  }
+}
+@objc public enum MaskingLevelType : Swift.Int16 {
+  case safest
+  case safe
+  case custom
+  public typealias RawValue = Swift.Int16
+  public init?(rawValue: Swift.Int16)
+  public var rawValue: Swift.Int16 {
+    get
+  }
+}
+@objc public enum MaskingRule : Swift.Int16 {
+  case maskAllInputFields
+  case maskAllLabelTexts
+  case maskAllImages
+  case maskAllWebViews
+  case maskAllSwitches
+  public typealias RawValue = Swift.Int16
+  public init?(rawValue: Swift.Int16)
+  public var rawValue: Swift.Int16 {
+    get
+  }
+}
+public enum TrackingEventType : Swift.String {
+  case touch
+  case resolution
+  case inputStart
+  case inputChange
+  case inputEnd
+  case custom
+  case scroll
+  case gesture
+  case displayView
+  case webLoadFinished
+  case loadTable
+  case lifecycle
+  case startSession
+  case alertView
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+}
+@objc public enum POI : Swift.Int16 {
+  case crash
+  public typealias RawValue = Swift.Int16
+  public init?(rawValue: Swift.Int16)
+  public var rawValue: Swift.Int16 {
+    get
+  }
+}
+@objc public class MaskingConfiguration : ObjectiveC.NSObject {
+  @objc public init(maskingLevelType: DynatraceSessionReplay.MaskingLevelType = .safest)
+  public func lockMaskingConfiguration()
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc extension MaskingConfiguration {
+  @objc dynamic public func add(rule: DynatraceSessionReplay.MaskingRule) throws
+  @objc dynamic public func addAllRules() throws
+  @objc dynamic public func remove(rule: DynatraceSessionReplay.MaskingRule) throws
+  @objc dynamic public func removeAllRules() throws
+  @objc dynamic public func addMaskedView(viewIds: [Swift.String]) throws
+  @objc dynamic public func addNonMaskedView(viewIds: [Swift.String]) throws
+  @objc dynamic public func removeMaskedView(viewIds: [Swift.String]) throws
+  @objc dynamic public func removeNonMaskedView(viewIds: [Swift.String]) throws
+}
+extension FileManager {
+  public static func getSessionReplayBaseDirectoryURL() -> Foundation.URL
+  public func allocatedSizeOfDirectoryAtURL(_ directoryURL: Foundation.URL) throws -> Swift.UInt64
+}
+extension DBEvent {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DynatraceSessionReplay.DBEvent>
+  @objc @NSManaged dynamic public var startTime: Foundation.NSDate {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dbSession: DynatraceSessionReplay.DBSession {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var screenshotId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var type: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var screenshotSize: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var agentIdentifier: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var positionX: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var positionY: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var viewWidth: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var viewHeight: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var masked: Swift.Bool {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TrackingConfiguration : ObjectiveC.NSObject {
+  public enum TransmissionMode : Swift.String {
+    case data
+    case wifi
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(DBBeaconDataJob) public class DBBeaconDataJob : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension UIInterfaceOrientation {
+  public func toDegrees() -> Foundation.NSNumber
+}
+@_inheritsConvenienceInitializers @objc(DBEvent) public class DBEvent : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension DBSession {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DynatraceSessionReplay.DBSession>
+  @objc @NSManaged dynamic public var agentIdentifier: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var visitorId: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sessionId: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var visitStore: Foundation.NSNumber {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dbEvents: Foundation.NSSet {
+    @objc get
+    @objc set
+  }
+}
+extension DBSession {
+  @objc(addDbEventsObject:) @NSManaged dynamic public func addToDbEvents(_ value: DynatraceSessionReplay.DBEvent)
+  @objc(removeDbEventsObject:) @NSManaged dynamic public func removeFromDbEvents(_ value: DynatraceSessionReplay.DBEvent)
+  @objc(addDbEvents:) @NSManaged dynamic public func addToDbEvents(_ values: Foundation.NSSet)
+  @objc(removeDbEvents:) @NSManaged dynamic public func removeFromDbEvents(_ values: Foundation.NSSet)
+}
+extension DynatraceSessionReplay.MaskingLevelType : Swift.Equatable {}
+extension DynatraceSessionReplay.MaskingLevelType : Swift.Hashable {}
+extension DynatraceSessionReplay.MaskingLevelType : Swift.RawRepresentable {}
+extension DynatraceSessionReplay.MaskingRule : Swift.Equatable {}
+extension DynatraceSessionReplay.MaskingRule : Swift.Hashable {}
+extension DynatraceSessionReplay.MaskingRule : Swift.RawRepresentable {}
+extension DynatraceSessionReplay.TrackingEventType : Swift.Equatable {}
+extension DynatraceSessionReplay.TrackingEventType : Swift.Hashable {}
+extension DynatraceSessionReplay.TrackingEventType : Swift.RawRepresentable {}
+extension DynatraceSessionReplay.POI : Swift.Equatable {}
+extension DynatraceSessionReplay.POI : Swift.Hashable {}
+extension DynatraceSessionReplay.POI : Swift.RawRepresentable {}
+extension DynatraceSessionReplay.TrackingConfiguration.TransmissionMode : Swift.Equatable {}
+extension DynatraceSessionReplay.TrackingConfiguration.TransmissionMode : Swift.Hashable {}
+extension DynatraceSessionReplay.TrackingConfiguration.TransmissionMode : Swift.RawRepresentable {}

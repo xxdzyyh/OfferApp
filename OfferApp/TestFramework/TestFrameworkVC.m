@@ -7,7 +7,7 @@
 //
 
 #import "TestFrameworkVC.h"
-#import <OfferSDK/OfferSDK.h>
+//#import <OfferSDK/OfferSDK.h>
 
 @interface TestFrameworkVC ()
 
@@ -19,15 +19,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 	
-	Question *question = [[Question alloc] init];
-	
-	question.uid = @"123";
-	question.type = 1;
-	question.content = @"framework";
-	//
-	NSString *json = [question toJsonString];
-	
-	NSLog(@"%@",json);
+//	Question *question = [[Question alloc] init];
+//	
+//	question.uid = @"123";
+//	question.type = 1;
+//	question.content = @"framework";
+//	//
+//	NSString *json = [question toJsonString];
+//	
+//	NSLog(@"%@",json);
 }
 
 

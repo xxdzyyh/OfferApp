@@ -8,7 +8,9 @@
 
 #import "RequestVC.h"
 #import <AFNetworking/AFNetworking.h>
-
+//#import <OHHTTPStubs/HTTPStubs.h>
+//#import <OHHTTPStubs/HTTPStubsResponse.h>
+//
 @interface RequestVC ()
 
 @end
@@ -17,22 +19,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+//    [HTTPStubs stubRequestsPassingTest:^BOOL(NSURLRequest * _Nonnull request) {
+//        return [request.URL.host isEqualToString:@"www.jianshu.com"];
+//    } withStubResponse:^HTTPStubsResponse * _Nonnull(NSURLRequest * _Nonnull request) {
+//        NSArray *array = @[@"Hello", @"world"];
+//        NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Empty" ofType:@"json"]];
+//        return [HTTPStubsResponse responseWithData:data statusCode:200 headers:nil];
+//    }];
+    
 	AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
 	
 	manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-	[manager.requestSerializer setCachePolicy:NSURLRequestReturnCacheDataElseLoad];
-	
-	[manager setDataTaskWillCacheResponseBlock:^NSCachedURLResponse * _Nonnull(NSURLSession * _Nonnull session, NSURLSessionDataTask * _Nonnull dataTask, NSCachedURLResponse * _Nonnull proposedResponse) {
-		NSLog(@"%@",proposedResponse);
-		return  proposedResponse;
-	}];
-	
-	[manager GET:@"http://www.jianshu.com/p/88719de97921" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-		NSLog(@"%@",responseObject);
-	} failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-		NSLog(@"%@",error);
-	}];
+
+    [manager GET:@"http://www.jianshu.com/p/88719de97921" parameters:nil headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:nil];
+        NSLog(@"%@",dict);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"%@",task);
+    }];
 }
 
 

@@ -21,13 +21,12 @@
 	[self test1];
 }
 
-
 - (void)syncAndAsync {
 	/**
 	 "BUG IN CLIENT OF LIBDISPATCH: dispatch_sync called on queue already owned by current thread"
 	
 	 dispatch_sync 不会开启新的线程，所以dispatch_sync中的任务会在队列当前所在线程执行。
-	 如果这个线程和dispacth_sync语句执行的线程相同，那就会发生死锁。
+	 如果这个线程和dispacth_sync语句执行的线程相同，那就会发生死 J锁。
 	 
 	 当前是主线程，dispatch_sync和block会发生阻塞。
 	 */

@@ -1,0 +1,11 @@
+framework module DynatraceSessionReplay {
+  umbrella header "DynatraceSessionReplay.h"
+
+  export *
+  module * { export * }
+}
+
+module DynatraceSessionReplay.Swift {
+    header "DynatraceSessionReplay-Swift.h"
+    requires objc
+}

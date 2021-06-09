@@ -62,8 +62,6 @@
 
 @end
 
-
-
 @interface GroupViewController ()
 
 @property (strong, nonatomic) UIImageView *imageView;

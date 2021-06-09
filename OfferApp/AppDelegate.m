@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#import "MyURLProtocol.h"
+
+//#import <OHHTTPStubs/HTTPStubs.h>
 
 @interface MyObject<__covariant T> : NSObject 
 
@@ -96,6 +99,5 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
 	NSLog(@"%s",__func__);
 }
-
 
 @end

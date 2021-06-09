@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    [self test];
+    [self test];
     
 	/**
 	 在线程刚创建的时候，对鹰应的runloop是没有的，[NSRunLoop currentRunLoop]执行的时候，如果没有会创建一个NSRunloop。

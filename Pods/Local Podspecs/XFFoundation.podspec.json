@@ -1,0 +1,87 @@
+{
+  "name": "XFFoundation",
+  "version": "0.0.1",
+  "summary": "不同的项目都可以用的项目基础库，主要为了快速完成新的项目",
+  "description": "如果你有更好的想法，可以聊聊怎么去做",
+  "homepage": "https://github.com/xxdzyyh/XFFoundation",
+  "license": "MIT (xf)",
+  "authors": {
+    "xxdzyyh": "xxdzyyh@163.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/xxdzyyh/XFFoundation.git",
+    "branch": "master"
+  },
+  "public_header_files": "Header/*.h",
+  "source_files": "header/*",
+  "dependencies": {
+    "AFNetworking": [
+
+    ],
+    "Masonry": [
+
+    ],
+    "MBProgressHUD": [
+
+    ],
+    "MJRefresh": [
+
+    ],
+    "SDCycleScrollView": [
+
+    ],
+    "SVProgressHUD": [
+
+    ],
+    "YYModel": [
+
+    ],
+    "IQKeyboardManager": [
+
+    ],
+    "SAMKeychain": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Base",
+      "source_files": "Base/*"
+    },
+    {
+      "name": "Marco",
+      "source_files": "Marco/*"
+    },
+    {
+      "name": "Category",
+      "source_files": "Category/*"
+    },
+    {
+      "name": "Tools",
+      "source_files": "Tools/**/*"
+    },
+    {
+      "name": "AccountManager",
+      "source_files": "AccountManager/*"
+    },
+    {
+      "name": "Request",
+      "source_files": "Request/**/*"
+    },
+    {
+      "name": "View",
+      "source_files": "View/*"
+    },
+    {
+      "name": "ViewController",
+      "source_files": "ViewController/**/*"
+    },
+    {
+      "name": "Plugin",
+      "source_files": "Plugin/*"
+    }
+  ]
+}

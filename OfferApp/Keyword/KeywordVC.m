@@ -22,6 +22,7 @@
     
     self.dataSources = @[
 			@{ActionTypeString : @(ActionTypeNone),ActionDescString:SuperDesc,ActionValueString:SuperDesc},
+            @{ActionTypeString : @(ActionTypeNone),ActionDescString:@"NSDictionary",ActionValueString:@"NSDictionary"},
 			@{ActionTypeString : @(ActionTypeNone),ActionDescString:@"nil Nil NULL NSNull",ActionValueString:@"nil Nil NULL NSNull"}];
 }
 
@@ -34,12 +35,24 @@
     if (type == ActionTypeNone) {
         if ([value isEqualToString:SuperDesc]) {
             [Son new];
-		} else {
+        } else if ([value isEqualToString:@"NSDictionary"]) {
+            [self testNSDictionary];
+        } else {
 			[self empty];
 		}
 	} else {
 		[super tableView:tableView didSelectRowAtIndexPath:indexPath];
 	}
+}
+
+- (void)testNSDictionary {
+    NSDictionary *dict = @{@"key0":@"value0"};
+    for (id key in dict) {
+        NSString *v = dict[key];
+        v = @"value0-------";
+    }
+    
+    NSLog(@"%@",dict);
 }
 
 
