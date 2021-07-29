@@ -14,11 +14,6 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - Dynatrace/SessionReplay (8.211.1.1015):
-    - Dynatrace/SessionReplayXCFramework
-  - Dynatrace/SessionReplayXCFramework (8.211.1.1015):
-    - Dynatrace/xcframework
-  - Dynatrace/xcframework (8.211.1.1015)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -30,7 +25,7 @@ PODS:
   - IQKeyboardManager (6.5.6)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
-  - MJRefresh (3.5.0)
+  - MJRefresh (3.6.1)
   - PromisesObjC (1.2.8)
   - ReactiveObjC (3.1.1)
   - SAMKeychain (1.5.3)
@@ -153,20 +148,18 @@ PODS:
   - YYModel (1.0.4)
 
 DEPENDENCIES:
-  - Dynatrace/SessionReplay (~> 8.197)
   - FMDB
   - IGListKit (= 2.1.0)
   - PromisesObjC (~> 1.2.7)
   - ReactiveObjC
   - SDCycleScrollView (>= 1.82)
   - SDWebImage
-  - XFFoundation (from `/Users/mac/WorkSpace/XFFoundation`)
+  - XFFoundation (from `/Users/wxf/WorkSpace/XFFoundation`)
   - Yoga (= 1.14.0)
 
 SPEC REPOS:
   trunk:
     - AFNetworking
-    - Dynatrace
     - FMDB
     - IGListKit
     - IQKeyboardManager
@@ -184,17 +177,16 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   XFFoundation:
-    :path: "/Users/mac/WorkSpace/XFFoundation"
+    :path: "/Users/wxf/WorkSpace/XFFoundation"
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  Dynatrace: 3c0a271b0afc2cbc31acd5ff1a03718fa7634eca
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   IGListKit: b826c68ef7a4ae1626c09d4d3e1ea7a169e6c36e
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  MJRefresh: d2c1970d1cf6e77fcfcdfe76c943dfab8dbfa5c1
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
@@ -205,6 +197,6 @@ SPEC CHECKSUMS:
   Yoga: cff67a400f6b74dc38eb0bad4f156673d9aa980c
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 175506d2b20f9bb40e2977aadba4b271032ded78
+PODFILE CHECKSUM: c79961d120a9a15a71250140edf55cd08130b3d7
 
 COCOAPODS: 1.10.1

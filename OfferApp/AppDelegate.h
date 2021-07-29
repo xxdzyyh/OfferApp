@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 //#import <XFFoundation/XFFoundation.h>
-//
-#import <Dynatrace/Dynatrace.h>
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

@@ -58,6 +58,7 @@
 		D4672E6A22962B3B00A5DE44 /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E3322962B3B00A5DE44 /* CViewController.m */; };
 		D4672E6C22962B3B00A5DE44 /* MultiThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4672E3722962B3B00A5DE44 /* MultiThreadVC.m */; };
 		D498FD03235D576600382842 /* SDWebImageTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D498FD02235D576600382842 /* SDWebImageTestVC.m */; };
+		E0FA401A26B2B93D0053B998 /* SJLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E0FA401926B2B93D0053B998 /* SJLogger.m */; };
 		EC502DEC23A11143006FF5AB /* TestFrameworkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC502DEB23A11143006FF5AB /* TestFrameworkVC.m */; };
 		EC75789F24753138007EBB88 /* NetworkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC75789E24753138007EBB88 /* NetworkVC.m */; };
 		EC7578A3247673F4007EBB88 /* CycleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7578A2247673F4007EBB88 /* CycleVC.m */; };
@@ -180,6 +181,8 @@
 		D498FD01235D576600382842 /* SDWebImageTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageTestVC.h; sourceTree = "<group>"; };
 		D498FD02235D576600382842 /* SDWebImageTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageTestVC.m; sourceTree = "<group>"; };
 		D4CEB71E2266CE77007E4B55 /* SweetAlert.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SweetAlert.framework; path = Carthage/Build/iOS/SweetAlert.framework; sourceTree = "<group>"; };
+		E0FA401826B2B93C0053B998 /* SJLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJLogger.h; sourceTree = "<group>"; };
+		E0FA401926B2B93D0053B998 /* SJLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJLogger.m; sourceTree = "<group>"; };
 		EC502DEA23A11143006FF5AB /* TestFrameworkVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFrameworkVC.h; sourceTree = "<group>"; };
 		EC502DEB23A11143006FF5AB /* TestFrameworkVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFrameworkVC.m; sourceTree = "<group>"; };
 		EC502E0A23A12998006FF5AB /* OfferSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OfferSDK.framework; sourceTree = "<group>"; };
@@ -248,6 +251,8 @@
 			children = (
 				0405B847266B564C000218A0 /* OSLogTestVC.h */,
 				0405B848266B564C000218A0 /* OSLogTestVC.m */,
+				E0FA401826B2B93C0053B998 /* SJLogger.h */,
+				E0FA401926B2B93D0053B998 /* SJLogger.m */,
 			);
 			path = Log;
 			sourceTree = "<group>";
@@ -743,7 +748,6 @@
 				D47F28D1216EF5C800424800 /* Frameworks */,
 				D47F28D2216EF5C800424800 /* Resources */,
 				90ED76D8BCF0A1624ECB3619 /* [CP] Copy Pods Resources */,
-				62F7DC2C3B9FFE26AE535412 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -821,23 +825,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		62F7DC2C3B9FFE26AE535412 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OfferApp/Pods-OfferApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OfferApp/Pods-OfferApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OfferApp/Pods-OfferApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		90ED76D8BCF0A1624ECB3619 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -898,6 +885,7 @@
 				D4672E4322962B3B00A5DE44 /* RuntimeVC.m in Sources */,
 				D4672E4F22962B3B00A5DE44 /* WebViewController.m in Sources */,
 				D4672E5522962B3B00A5DE44 /* main.m in Sources */,
+				E0FA401A26B2B93D0053B998 /* SJLogger.m in Sources */,
 				D4672E4C22962B3B00A5DE44 /* NumberCell.m in Sources */,
 				0405B849266B564C000218A0 /* OSLogTestVC.m in Sources */,
 				EC7578B3247CFBE4007EBB88 /* CustomPushAnimatedTransitoning.m in Sources */,

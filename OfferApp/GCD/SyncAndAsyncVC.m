@@ -7,8 +7,12 @@
 //
 
 #import "SyncAndAsyncVC.h"
+#import "SJLogger.h"
 
 @interface SyncAndAsyncVC ()
+
+@property (nonatomic, strong) dispatch_queue_t concurentQueue;
+@property (nonatomic, assign) int index;
 
 @end
 
@@ -16,9 +20,52 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.concurentQueue = dispatch_queue_create([@"com.readWriteLock" UTF8String], DISPATCH_QUEUE_CONCURRENT);
 
-	//	[self syncAndAsync];
-	[self test1];
+    [self syncConcurentQueue];
+//	[self test1];
+}
+
+- (void)syncConcurentQueue {
+    
+    for (int i=0; i<10000; i++) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            SJLogInfo(@"%d",i);
+        });
+    }
+    
+    dispatch_sync(self.concurentQueue, ^{
+        SJLogInfo(@"---block 1--- %@",[NSThread currentThread]);
+        SJLogInfo(@"index:%d",self.index);
+    });
+    
+    SJLogInfo(@"%@",[NSThread mainThread]);
+    dispatch_sync(self.concurentQueue, ^{
+        SJLogInfo(@"---block 2--- %@",[NSThread currentThread]);
+        SJLogInfo(@"index:%d",self.index);
+    });
+    
+    dispatch_sync(self.concurentQueue, ^{
+        SJLogInfo(@"---block 3--- %@",[NSThread currentThread]);
+        SJLogInfo(@"index:%d",self.index);
+    });
+    
+    dispatch_barrier_async(self.concurentQueue, ^{
+        SJLogInfo(@"sleep start %@",[NSThread currentThread]);
+        SJLogInfo(@"index:%d",self.index);
+        self.index = 666;
+        sleep(3);
+        SJLogInfo(@"index:%d",self.index);
+        SJLogInfo(@"sleep end %@",[NSThread currentThread]);
+    });
+    
+    SJLogInfo(@"%@",[NSThread mainThread]);
+    dispatch_sync(self.concurentQueue, ^{
+        SJLogInfo(@"---block 4--- %@",[NSThread currentThread]);
+        SJLogInfo(@"index:%d",self.index);
+    });
+    
 }
 
 - (void)syncAndAsync {
